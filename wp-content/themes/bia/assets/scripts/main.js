@@ -41,6 +41,7 @@
     }
   };
 
+
   // The routing fires all common scripts, followed by the page specific scripts.
   // Add additional events for more control over timing e.g. a finalize event
   var UTIL = {
@@ -71,6 +72,20 @@
     }
   };
 
+  function configurer() {
+    $('#instagramFeed .instagramImage .image').each(function(){
+        var width = $(this).width();
+        $(this).height(width);
+    });
+
+    $(window).on('resize',function(){
+      $('#instagramFeed .instagramImage .image').each(function(){
+          var width = $(this).width();
+          $(this).height(width);
+      });
+    });   
+  }
+  window.onload = configurer;
   // Load Events
   $(document).ready(UTIL.loadEvents);
 

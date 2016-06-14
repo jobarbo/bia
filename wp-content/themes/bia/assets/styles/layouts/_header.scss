@@ -1,0 +1,118 @@
+
+	#splash{
+    background-image: url(../images/splash_image.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat:no-repeat;
+
+	}
+	h1{
+		font: 0/0 a;
+   		color: transparent;
+   		text-shadow: none;
+   		background-color: transparent;
+   		border: 0;
+   		position: absolute;
+	}
+
+	.social{
+		position: absolute;
+    	bottom: 0px;
+    	right: 30px;
+    	li{
+			color: #fff;
+    		list-style: none;
+    		margin-bottom: 40px;
+		}
+	}
+		
+	.social img{
+		width: 20px;
+		height: 20px;
+	}
+	#logo{
+		width: 400px;
+    	position: absolute;
+    	left: 60px;
+    	z-index: 999999999;
+    	top: 30px;
+	}
+	#barreH{
+		width: 100%;
+    	z-index: 99999;
+    	height: 80px;
+    	background-color: #f42534;
+    	position: relative;
+		button{
+			float: right;
+    		border: none;
+    		background-color: white;
+    		color: #f42534;
+    		padding:10px 25px 10px 35px;
+    		margin-top: 20px;
+    		outline: none;
+    		font-family: Apercu;
+
+		}
+		button:before{
+ 			content: "";
+    		width: 100px;
+    		height: 50px;
+    		background-color: #f42534;
+   			display: block;
+    		position: absolute;
+    		top: -35px;
+    		right: 86px;
+            -webkit-transform: rotate(45deg);
+    		transform: rotate(45deg);
+}
+	}
+
+	#barreV{
+		width: 80px;
+		height: 100vh;
+		background-color: #f42534;
+		position: relative;
+    	margin-top: -80px;
+    	float: right;
+    	z-index: 0;
+   	 	height: 100vh;
+    	background-color: #f42534;
+	}
+	#splashTitre{
+    right: 72px;
+    top: 250px;
+    position: absolute;
+    font-family: druk-medium;
+    color: #fff;
+    webkit-transform: skew(180deg,167deg);
+    ms-transform: skew(180deg,167deg);
+    -webkit-transform: skew(180deg,167deg);
+    transform: skew(180deg,167deg);
+	
+		
+	}
+	h2{
+			font-size: 100px!important;
+    		width: 468px;
+    		letter-spacing: 5px;
+            text-transform: uppercase;
+		}
+.enSavoirPlus{
+    background-color: white;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 30px 20px 30px;
+    font-family: apercu;
+    font-size: 20px;
+    a{
+        color:#f42534;
+    }
+}
+
+	
+
+
