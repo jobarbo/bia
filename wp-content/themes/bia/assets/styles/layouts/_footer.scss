@@ -9,10 +9,25 @@ footer {
     text-align: center;
 
 }
+.courriel{
+    width: 200px;
+}
 .content-info{
     	.container{
+            a{
+                color: rgba(255, 255, 255, 1);
+                transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                cursor: pointer;
+                text-decoration:none;
+            }
+            a:hover{
+                color: rgba(255, 255, 255, 0.5);
+            }
     		p{
-    			color: white;
+    			
     			font-family: apercu;
     			font-size: 16px;
     		}

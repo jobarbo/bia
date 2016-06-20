@@ -1,105 +1,142 @@
-
-	#splash{
+@media only screen and (min-width: 1920px) {
+#splash{
+    #logo {
+    width: 600px!important;
+    position: absolute;
+    left: 60px;
+    z-index: 999999999;
+    top: 30px;
+    }
+    .enSavoirPlus {
+    background-color: #fff;
+    width: 650px!important;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 40px 60px!important;
+    font-family: apercu;
+    font-size: 30px!important;
+    }
+    h2{
+    font-size: 146px!important;
+    width: 650px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    }
+}
+    
+}
+#splash {
     background-image: url(../images/splash_image.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
-    background-repeat:no-repeat;
-
-	}
-	h1{
-		font: 0/0 a;
-   		color: transparent;
-   		text-shadow: none;
-   		background-color: transparent;
-   		border: 0;
-   		position: absolute;
-	}
-
-	.social{
-		position: absolute;
-    	bottom: 0px;
-    	right: 30px;
-    	li{
-			color: #fff;
-    		list-style: none;
-    		margin-bottom: 40px;
-		}
-	}
-		
-	.social img{
-		width: 20px;
-		height: 20px;
-	}
-	#logo{
-		width: 400px;
-    	position: absolute;
-    	left: 60px;
-    	z-index: 999999999;
-    	top: 30px;
-	}
-	#barreH{
-		width: 100%;
-    	z-index: 99999;
-    	height: 80px;
-    	background-color: #f42534;
-    	position: relative;
-		button{
-			float: right;
-    		border: none;
-    		background-color: white;
-    		color: #f42534;
-    		padding:10px 25px 10px 35px;
-    		margin-top: 20px;
-    		outline: none;
-    		font-family: Apercu;
-
-		}
-		button:before{
- 			content: "";
-    		width: 100px;
-    		height: 50px;
-    		background-color: #f42534;
-   			display: block;
-    		position: absolute;
-    		top: -35px;
-    		right: 86px;
-            -webkit-transform: rotate(45deg);
-    		transform: rotate(45deg);
+    background-repeat: no-repeat;
+    z-index: 50;
+    position: relative;
 }
-	}
+h1 {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+.social {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    li {
+        color: #fff;
+        list-style: none;
+        margin-bottom: 40px;
+    }
+}
+.social img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
 
-	#barreV{
-		width: 80px;
-		height: 100vh;
-		background-color: #f42534;
-		position: relative;
-    	margin-top: -80px;
-    	float: right;
-    	z-index: 0;
-   	 	height: 100vh;
-    	background-color: #f42534;
-	}
-	#splashTitre{
+}
+.social img:hover {
+    opacity: 0.5;
+}
+#logo {
+    width: 400px;
+    position: absolute;
+    left: 60px;
+    z-index: 999999999;
+    top: 30px;
+}
+#barreH {
+    width: 100%;
+    z-index: 99999;
+    height: 80px;
+    background-color: #f42534;
+    position: relative;
+    button {
+        float: right;
+        border: none;
+        background-color: white;
+        color: rgb(244, 37, 52);
+        padding: 10px 25px 10px 35px;
+        margin-top: 20px;
+        outline: none;
+        font-family: Apercu;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    button:hover{
+            color: rgba(244, 37, 52, 0.5);
+    }
+    
+    button:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 92px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid #f42534;
+        border-right: 20px solid transparent;
+    }
+}
+#barreV {
+    width: 80px;
+    height: 100vh;
+    background-color: #f42534;
+    position: relative;
+    margin-top: -80px;
+    float: right;
+    z-index: 0;
+    height: 100vh;
+    background-color: #f42534;
+}
+#splashTitre {
     right: 72px;
     top: 250px;
     position: absolute;
     font-family: druk-medium;
     color: #fff;
-    webkit-transform: skew(180deg,167deg);
-    ms-transform: skew(180deg,167deg);
-    -webkit-transform: skew(180deg,167deg);
-    transform: skew(180deg,167deg);
-	
-		
-	}
-	h2{
-			font-size: 100px!important;
-    		width: 468px;
-    		letter-spacing: 5px;
-            text-transform: uppercase;
-		}
-.enSavoirPlus{
+    webkit-transform: skew(180deg, 167deg);
+    ms-transform: skew(180deg, 167deg);
+    -webkit-transform: skew(180deg, 167deg);
+    transform: skew(180deg, 167deg);
+}
+h2 {
+    font-size: 100px!important;
+    width: 468px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.enSavoirPlus {
     background-color: white;
     width: 450px;
     height: auto;
@@ -108,11 +145,38 @@
     padding: 20px 30px 20px 30px;
     font-family: apercu;
     font-size: 20px;
-    a{
-        color:#f42534;
+    a {
+        color: #f42534;
     }
 }
-
-	
-
-
+@media only screen and (max-width: 992px) {
+#splash {
+        #logo {
+            width: 150px;
+            position: absolute;
+            left: 20px;
+        }
+        #barreV {
+            width: 55px;
+            height: 75vh;
+            .social {
+                bottom: -25px;
+                right: 15px;
+            }
+        }
+        #splashTitre {
+            right: 50px;
+            top: 250px;
+            h2 {
+                width: auto;
+                font-size: 42px!important;
+            }
+        }
+        .enSavoirPlus {
+            padding-top: 10%;
+            height: 25vh;
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}

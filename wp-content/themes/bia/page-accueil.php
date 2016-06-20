@@ -1,9 +1,7 @@
-<?php /* Template Name: Accueil */ ?>
-
+<?php /* Template Name: Page Accueil */ ?>
 	<div id="splash">
-	 
 		<div id="barreH">
-			<button>Contact</button>
+			<a href="#formulaireInscription" ><button >Contact</button></a>
 		</div>
 		<h1>Bia</h1>
 		<img id="logo" src='<?php echo get_template_directory_uri(); ?>/dist/images/bia_logo.svg' alt="Logo Bia" />
@@ -24,41 +22,43 @@
 		</div>
 	</div>
 	<div id="listeProfessionel" >
-		<div class="row">
-			<div class="col-md-8 imgProfessionel">
+		<div class="row borderBox">
+			<div class="row-height">
+				<div class="col-md-8 col-md-height imgProfessionel">
 
-			</div>
-			<div class="col-md-4">
-				<div id="proContent">
-					<h3 class="titreSection">Formation continue pour les professionnels du sport et de la santé.</h3>
-
-					<ul>
-						<li>Physiothérapeute</li>
-						<li>Kinésiologue</li>
-						<li>Entraîneur physique</li>
-						<li>Psychologue</li>
-						<li>Chiropraticien</li>
-						<li>Podiatre</li>
-					</ul>
 				</div>
-				
+				<div class="col-md-4 col-md-height textProfessionel">
+					<div id="proContent">
+						<h3 class="titreSection" ">Formation continue pour les professionnels du sport et de la santé.</h3>
+
+						<ul>
+							<li>Physiothérapeute</li>
+							<li>Kinésiologue</li>
+							<li>Entraîneur physique</li>
+							<li>Psychologue</li>
+							<li>Chiropraticien</li>
+							<li>Podiatre</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div id="triangle-bottomright1"></div>
+				<div id="triangle-bottomright2"></div>
 			</div>
-			<div id="triangle-bottomright1"></div>
-			<div id="triangle-bottomright2"></div>
-			
 		</div>
 	</div>
 	<div id="approcheScientifique">
 		<div class="container-fluid">
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-150px" data-center="opacity:1;margin-top:0px"><p>1</p></div>
 			<div class="row borderBox">
+				
 				<div class="row-height">
-					
-						<h3 class="titreSection">approche scientifique</h3>
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="electrocardiogram">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/electrocardiogram.png" />
 							</div>
 						</div>
+						<h3 class="titreSection">approche scientifique</h3>
 						<div class="col-md-6 col-md-height col-md-middle rightBox">
 							<p>Nous avons à coeur votre avancement professionnel. Nos formations sont basées sur les dernières évidences scientifiques tout en vous offrant des outils directement transférables à votre pratique.</p>
 						</div>
@@ -69,10 +69,12 @@
 	</div>
 	<div id="formateursRenommes">
 		<div class="container-fluid">
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>2</p></div>
 			<div class="row borderBox">
+			
 				<div class="row-height">
 					
-						<h3 class="titreSection">formateurs renommés</h3>
+						
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="imgBulle">
 								<div class="bulle2">
@@ -86,6 +88,7 @@
 							</div>
 							<span class="clear"></span>
 						</div>
+						<h3 class="titreSection" >formateurs renommés</h3>
 						<div class="col-md-6 col-md-height col-md-middle rightBox">
 							<div class="infoFormateur">
 								<p>Dans l’objectif d’assurer un haut standard de formation, nos formateurs sont des experts passionnés, expérimentés et reconnus par leur pairs. Vous serez formez par la référence du domaine de formation choisie.</p>
@@ -105,15 +108,18 @@
 	</div>
 	<div id="formationsVariee">
 		<div class="container-fluid">
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>3</p></div>
 			<div class="row borderBox">
+			
 				<div class="row-height">
 					
-						<h3 class="titreSection">Formations variées</h3>
+						
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="triangle">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/triangle_white.png" />
 							</div>
 						</div>
+						<h3 class="titreSection">Formations variées</h3>
 						<div class="col-md-6 col-md-height col-md-middle rightBox">
 							<div class="infoFormation">
 								<p>Bia se démarque par la variété de ses formations. Spinning, aérobie, yoga, pilates, haltérophilie, entraînement en course à pied, préparation physique, psychologie sportive, nutrition sportive, clientèles spécifiques... sont quelques-unes des formations que nous offrons. </p>
@@ -135,54 +141,57 @@
 	<div id="pageContact">
 		<div class="container-fluid">
 			<div class="row borderBox">
-				<div id="instagramFeed">
-					<div class="instagramImage" >
-						<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
-						</div>
-					</div>
-					<div class="instagramImage">
-						<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram2.jpg);">
-						</div>
-					</div>
-					<div class="instagramImage">
-						<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram3.jpg);">
-						</div>
-					</div>
-					<div class="instagramImage">
-						<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram4.jpg);">	
-						</div>
-					</div>
-					<span class="clear"></span>
-				</div>
-				<div class="row-height">
-					
-					<ul class="social"> 
+			<ul class="social mobile"> 
 						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
 						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
 						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
 					</ul>
-						<h3 class="titreSection">#onsueensemble</h3>
-
-						<div class="formulaireInscription">
+				<div class="containerFeed">
+					<div id="instagramFeed">
+						<div class="instagramImage" >
+							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
+							</div>
+						</div>
+						<div class="instagramImage">
+							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram2.jpg);">
+							</div>
+						</div>
+						<div class="instagramImage">
+							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram3.jpg);">
+							</div>
+						</div>
+						<div class="instagramImage">
+							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram4.jpg);">	
+							</div>
+						</div>
+						<span class="clear"></span>
+					</div>
+				</div>
+				<h3 class="titreSection">#onsueensemble</h3>
+				<div class="row-height">
+					
+					<ul class="social desktop"> 
+						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
+						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
+						<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
+					</ul>
+						<div id="formulaireInscription">
 							<p>Pour rester à l'affut de nos offres et de nos formations à venir.</p>
 							<form action="action_page.php">
   								
-  								<input type="text" name="firstname" value="John">
+  								<input type="text" name="firstname" value="Prénom">
   								
-  								<input type="text" name="lastname" value="Appleseed">
+  								<input type="text" name="lastname" value="Nom">
   								
-  								<input type="text" name="regio" value="Quebec"><br>
+  								<input type="text" name="regio" value="Ville"><br>
   								
-  								<input type="text" name="titre" value="test@bia.com">
+  								<input type="text" name="titre" value="Courriel">
   							
-  								<input type="text" name="interet" value="Titre Professionel">
+  								<input type="text" name="interet" value="Profession">
   								<span class="formSelect">
-  									<select name="interet">
-  										<option value="0">Intérêts</option>
-	  									<option value="1">1</option>
-	  									<option value="2">2</option>
-	  									<option value="3">3</option>
-	  									<option value="4">4</option>
+  									<select name="interet" id="sources" class="custom-select sources" placeholder="Intérêts">
+	  									<option value="1">Nutrition</option>
+	  									<option value="2">Psychologie sportive</option>
   									</select><br>
   								</span>
   								
