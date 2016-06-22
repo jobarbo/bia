@@ -1,36 +1,42 @@
-@media only screen and (min-width: 1920px) {
-#splash{
-    #logo {
-    width: 600px!important;
-    position: absolute;
-    left: 60px;
-    z-index: 999999999;
-    top: 30px;
+@media only screen and (min-width: 1900px) {
+    #splash{
+        #logo {
+            width: 600px!important;
+            position: absolute;
+            left: 60px;
+            z-index: 999999999;
+            top: 30px;
+        }
+        #splashTitre{
+                top: 400px;
+            }
+            .enSavoirPlus {
+            background-color: #fff;
+            width: 500px!important;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            padding: 40px 50px!important;
+            font-family: apercu;
+            font-size: 20px!important;
+            #logoEncadre{
+                width: 50%;
+            }
+        }
+
+        h2{
+            font-size: 146px!important;
+            width: 650px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
     }
-    .enSavoirPlus {
-    background-color: #fff;
-    width: 650px!important;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    padding: 40px 60px!important;
-    font-family: apercu;
-    font-size: 30px!important;
-    }
-    h2{
-    font-size: 146px!important;
-    width: 650px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    }
-}
-    
 }
 #splash {
     background-image: url(../images/splash_image.jpg);
     background-size: cover;
     height: 100vh;
-    background-position: center;
+    background-position: center 0px;
     background-repeat: no-repeat;
     z-index: 50;
     position: relative;
@@ -148,14 +154,40 @@ h2 {
     a {
         color: #f42534;
     }
+    #logoEncadre{
+    width: 40%;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: auto;
+    }
 }
 @media only screen and (max-width: 992px) {
+#splash {
+        #logo {
+            width: 350px;
+        }
+        #splashTitre {
+            right: 50px;
+            top: 500px;
+            h2 {
+                width: 372px;
+                font-size: 70px!important;
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: 580px) {
 #splash {
         #logo {
             width: 150px;
             position: absolute;
             left: 20px;
         }
+        
         #barreV {
             width: 55px;
             height: 75vh;
@@ -166,17 +198,45 @@ h2 {
         }
         #splashTitre {
             right: 50px;
-            top: 250px;
+            top: 220px;
             h2 {
                 width: auto;
                 font-size: 42px!important;
             }
         }
         .enSavoirPlus {
-            padding-top: 10%;
+            padding-top: 15px;
             height: 25vh;
-            font-size: 16px;
+            font-size: 13px;
             width: 100%;
+            #logoEncadre{
+                width: 150px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+
+    #splash {
+        .enSavoirPlus {
+            padding-top: 5%;
+            height: 30vh;
+            font-size: 13px;
+            width: 100%;
+            #logoEncadre{
+                width: 110px;
+                padding-bottom: 10px;
+            }
+        }
+
+    #barreV {
+            width: 55px;
+            height: 70vh;
+            .social {
+                bottom: -25px;
+                right: 15px;
+            }
         }
     }
 }
