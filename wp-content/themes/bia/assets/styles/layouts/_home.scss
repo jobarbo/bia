@@ -707,6 +707,7 @@ img {
             width: 300px;
             margin-right: 50px;
             margin-left: 50px;
+            cursor: pointer;
 
                 p{
                 position:relative;
@@ -745,6 +746,12 @@ img {
                 height: 0;
 
             }
+
+            &.active{
+                p:after{
+                    content: '-';
+                }
+            }
             
         }
             #list-interet{
@@ -755,9 +762,16 @@ img {
                 padding: 0;
                 
                 li{
-                    width: 33.12%;
+                    width: 25%;
                     display: inline-block;
+                    
+
                     label{
+                        -webkit-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
+                        -webkit-transform-origin: 50% 0;
+                        transform-origin: 50% 0;
+                        cursor: pointer;
 
                     }
                     label:after{
@@ -768,14 +782,14 @@ img {
                         font-family: apercu;
                         font-size: larger;
                         bottom: 27px;
-                        right: 25%;
+                        right: 15%;
                         /* margin-bottom: 25px; */
                         /* -webkit-transform: rotate(45deg) translateY(-50%); */
                         /* transform: rotate(-45deg) translateY(-50%); */
-                        -webkit-transition: all .4s ease-in-out;
+                        /*-webkit-transition: all .4s ease-in-out;
                         transition: all .4s ease-in-out;
                         -webkit-transform-origin: 50% 0;
-                        transform-origin: 50% 0;
+                        transform-origin: 50% 0;*/
                         width: 0;
                         height: 0;
 
@@ -963,7 +977,7 @@ img {
         }
         #formulaireInscription {
             .triangleRouge:before{
-                left: 20px;
+                left: 0px;
             }
             p {
                 width: 350px;
@@ -1246,6 +1260,21 @@ img {
                 width: 80%;
                 margin-bottom: 50px;
             }
+            #listInterets{
+                width: 80%;
+                margin-bottom: 30px;
+            }
+
+            #list-interet{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul{
+                li{
+                    width: 49%;
+                }
+            }
 
         }
     }
@@ -1283,7 +1312,11 @@ img {
                 }
             }
         }
+        #formulaireInscription ul li{
+            width: 98%;
+        }       
     }
+
 }
 @media only screen and (max-width: 580px) {
     #approcheScientifique {
@@ -1380,6 +1413,27 @@ img {
         margin-top: 10px;
         -webkit-transform: rotate(-225deg) translateY(-50%);
         transform: rotate(-225deg) translateY(-50%);
+    }
+    #pageContact #formulaireInscription ul li label:after {
+        position: absolute;
+        display: block;
+        content: '+';
+        font-weight: bolder;
+        font-family: apercu;
+        font-size: larger;
+        bottom: 27px;
+        right: 8%;
+        width: 0;
+        height: 0;
+    }
+    #pageContact #formulaireInscription ul li label {
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        /* padding-right: 37px; */
+        /* text-align: left; */
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 360px) {
