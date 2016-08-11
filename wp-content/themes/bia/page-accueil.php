@@ -1,5 +1,5 @@
 <?php /* Template Name: Page Accueil */ ?>
-	<div id="splash">
+	<div id="splash" style="background-image: url(<?php echo get_field('image_splash'); ?>)">
 		<div id="barreH">
 			<a href="#formulaireInscription" ><button ><?php echo _e('Contact','bia'); ?></button></a>
 		</div>
@@ -32,10 +32,10 @@
 	<div id="listeProfessionel" >
 		<div class="row borderBox">
 			<div class="row-height">
-				<div class="col-md-8 col-md-height imgProfessionel">
+				<div class="col-md-8 col-md-height imgProfessionel" style="background-image: url(<?php echo get_field('image_section_1'); ?>">
 
 				</div>
-				<div class="col-md-4 col-md-height textProfessionel">
+				<div class="col-md-4 col-md-height col-sm-top textProfessionel">
 					<div id="proContent">
 						<h3 class="titreSection" "><?php echo get_field('titre_1'); ?></h3>
 						<?php echo get_field('texte_1'); ?>
@@ -136,8 +136,25 @@
 						<?php if(get_field('twitter','option')){ ?>
 							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
 						<?php } ?>
-					</ul>
-				<!--div class="containerFeed">
+			</ul>
+				<div class="footerBloc">
+					<div class="col-md-6 lienGauche">
+						<div class="imgLienGauche" style="background-image:url(<?php echo get_field('image_lien_gauche');  ?>)">
+						<h3 class="titreSection"><?php echo get_field('titre_image_lien_gauche'); ?></h3>	
+						<a href="<?php echo get_field('url_gauche'); ?>"><p><?php echo get_field('libelle_gauche') ?></p></a>
+						</div>
+					</div>
+					<div class="col-md-6 lienDroit">
+						<div class="imgLienDroit" style="background-image:url(<?php echo get_field('image_lien_droite');  ?>)">	
+						<h3 class="titreSection"><?php echo get_field('titre_image_lien_droite'); ?></h3>
+						<a href="<?php echo get_field('url_gauche'); ?>"><p><?php echo get_field('libelle_droite') ?></p></a>
+						</div>
+						
+					</div>
+
+
+				</div>
+				<div class="containerFeed">
 					<div id="instagramFeed">
 						<div class="instagramImage" >
 							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
@@ -158,7 +175,7 @@
 						<span class="clear"></span>
 					</div>
 				</div>
-				<h3 class="titreSection">#onsueensemble</h3-->
+				<h3 class="titreSection">#onsueensemble</h3>
 				<div class="row-height">
 					
 					<ul class="social desktop"> 
