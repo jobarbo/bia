@@ -2,8 +2,8 @@
   <div class="container">
     <nav class="nav-primary">
       <?php
-      if (has_nav_menu('top_navigation')) :
-        wp_nav_menu(['theme_location' => 'top_navigation', 'menu_class' => 'nav']);
+      if (has_nav_menu('primary_navigation')) :
+        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
       endif;
       ?>
     </nav>
@@ -29,20 +29,13 @@
 			</ul>
 		</div>
 		<div id="splashTitre">
-			<?php if(is_page('2')){ ?>
-				<h2><?php echo _e('Formations</br> de haut niveau','bia'); ?></h2>
-			<?php }else{ ?>
-				<h2><?php echo get_field('titre_splash'); ?></h2>
-			<?php } ?>
-			
+			<h2>Formations</br> de haut niveau</h2>
 		</div>
-		<?php if(is_page('2')){ ?>
 		<div class="enSavoirPlus">
-			<img id="logoEncadre" src="<?php echo get_field('image_information') ?>" /> 
+		<img id="logoEncadre" src="<?php echo get_field('image_information') ?>"> 
 			<?php echo get_field('texte_information'); ?>
 			<?php if(get_field('lien_evenement')){ ?>
 				<a href="<?php echo get_field('lien_evenement'); ?>" target="_blank">En savoir plus</a>
 			<?php } ?>
 		</div>
-		<?php } ?>
 	</div>

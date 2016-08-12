@@ -29,7 +29,38 @@
     
     }
 }
-
+@media only screen and (min-width: 1790px){
+    #pageContact{
+        #formulaireInscription{
+            #list-interet{
+                width: 1210px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1345px){
+    #pageContact{
+        #formulaireInscription{
+            #mc_embed_signup{
+               #list-interet{
+                    width: 870px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                ul{
+                    li{
+                        width: 235px;
+                        margin-right: 20px;
+                        margin-left: 20px;
+                    }
+                } 
+            }
+            
+        }
+    }
+}
 
 
 
@@ -574,7 +605,7 @@ img {
     .footerBloc{
         position:relative;
         height: 450px;
-        .lienGauche{
+        .bg-photo{
             padding:0;
             height: 400px;
             .imgLienGauche{
@@ -596,27 +627,27 @@ img {
                     color:#ffffff;
                 }
                 a{
-                    cursor: pointer;
-                    p{
+                        cursor: pointer;
                         color: white;
-                        /* border-bottom-style: solid; */
-                        font-family: 'apercu';
-                        bottom: 15px;
+                        font-family: apercu;
+                        letter-spacing: .05em;
+                        bottom: 25px;
                         position: absolute;
-                        /* width: 200px; */
-                        /* width: 100px; */
-                        /* margin-left: auto; */
-                        /* margin-right: auto; */
+                        font-size: 20px;
                         float: left;
+                        padding-bottom: 3px;
+                        border-bottom-style: solid;
+                        border-bottom-width: thin;
                         left: 5%;
-                        font-size: 17px;
-                        text-decoration: underline; 
-                    }
+                        /* text-decoration: underline; */
+                    
+                }a:hover{
+                    text-decoration: none;
                 }
                 
             }
         }
-        .lienDroit{
+        .bg-blanc{
             padding:0;
             height: 400px;
             .imgLienDroit{
@@ -638,21 +669,21 @@ img {
                 }
                 a{
                     cursor: pointer;
-                   p{
-                        color: black;
-                        /* border-bottom-style: solid; */
-                        font-family: 'apercu';
-                        bottom: 15px;
-                        position: absolute;
-                        font-size: 17px;
-                        /* width: 200px; */
-                        /* width: 100px; */
-                        /* margin-left: auto; */
-                        /* margin-right: auto; */
-                        float: left;
-                        left: 5%;
-                        text-decoration: underline; 
-                    } 
+                    color: #000;
+                    font-family: apercu;
+                    letter-spacing: .05em;
+                    bottom: 25px;
+                    position: absolute;
+                    font-size: 20px;
+                    float: left;
+                    padding-bottom: 3px;
+                    border-bottom-style: solid;
+                    border-bottom-width: thin;
+                    left: 5%;
+                    /* text-decoration: underline; */ 
+                }
+                a:hover{
+                    text-decoration: none;
                 }
                 
             }
@@ -862,7 +893,7 @@ img {
                     width: 300px;
                     /* margin-bottom: 50px; */
                     font-family: apercu;
-                    font-size: 16px;
+                    font-size: 14px;
                     outline: none;
                     -webkit-transition: all .5s;
                     transition: all .5s;

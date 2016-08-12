@@ -11,6 +11,11 @@ use Roots\Sage\Wrapper;
   <body <?php body_class(); ?>>
     <div class="wrap" role="document">
       <div class="content">
+       <?php
+      do_action('get_header');
+      get_template_part('templates/header');
+     
+    ?>
         <main>
          <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->

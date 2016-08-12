@@ -1,34 +1,5 @@
 <?php /* Template Name: Page Accueil */ ?>
-	<div id="splash" style="background-image: url(<?php echo get_field('image_splash'); ?>)">
-		<div id="barreH">
-			<a href="#formulaireInscription" ><button ><?php echo _e('Contact','bia'); ?></button></a>
-		</div>
-		<h1>Bia</h1>
-		<img id="logo" src='<?php echo get_template_directory_uri(); ?>/dist/images/bia_logo.svg' alt="Logo Bia" />
-		<div id="barreV">
-			<ul class="social"> 
-				<?php if(get_field('facebook','option')){ ?>
-					<li><a href="<?php echo get_field('facebook','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook_white.svg" alt="Logo Facebook" /></a></li>
-				<?php } ?>
-				<?php if(get_field('instagram','option')){ ?>
-					<li><a href="<?php echo get_field('instagram','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram_white.svg" alt="Logo Instagram" /></a></li>
-				<?php } ?>
-				<?php if(get_field('twitter','option')){ ?>
-					<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter_white.svg" alt="Logo Twitter" /></a></li>
-				<?php } ?>
-			</ul>
-		</div>
-		<div id="splashTitre">
-			<h2>Formations</br> de haut niveau</h2>
-		</div>
-		<div class="enSavoirPlus">
-		<img id="logoEncadre" src="<?php echo get_field('image_information') ?>"> 
-			<?php echo get_field('texte_information'); ?>
-			<?php if(get_field('lien_evenement')){ ?>
-				<a href="<?php echo get_field('lien_evenement'); ?>" target="_blank">En savoir plus</a>
-			<?php } ?>
-		</div>
-	</div>
+
 	<div id="listeProfessionel" >
 		<div class="row borderBox">
 			<div class="row-height">
@@ -105,8 +76,6 @@
 			<div class="row borderBox">
 			
 				<div class="row-height">
-					
-						
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="triangle">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/triangle_white.png" />
@@ -123,76 +92,5 @@
 			</div>
 		</div>
 	</div>
-	<div id="pageContact">
-		<div class="container-fluid">
-			<div class="row borderBox">
-			<ul class="social mobile"> 
-						<?php if(get_field('facebook','option')){ ?>
-							<li><a href="<?php echo get_field('facebook','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
-						<?php } ?>
-						<?php if(get_field('instagram','option')){ ?>
-							<li><a href="<?php echo get_field('instagram','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
-						<?php } ?>
-						<?php if(get_field('twitter','option')){ ?>
-							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
-						<?php } ?>
-			</ul>
-				<div class="footerBloc">
-					<div class="col-md-6 lienGauche">
-						<div class="imgLienGauche" style="background-image:url(<?php echo get_field('image_lien_gauche');  ?>)">
-						<h3 class="titreSection"><?php echo get_field('titre_image_lien_gauche'); ?></h3>	
-						<a href="<?php echo get_field('url_gauche'); ?>"><p><?php echo get_field('libelle_gauche') ?></p></a>
-						</div>
-					</div>
-					<div class="col-md-6 lienDroit">
-						<div class="imgLienDroit" style="background-image:url(<?php echo get_field('image_lien_droite');  ?>)">	
-						<h3 class="titreSection"><?php echo get_field('titre_image_lien_droite'); ?></h3>
-						<a href="<?php echo get_field('url_gauche'); ?>"><p><?php echo get_field('libelle_droite') ?></p></a>
-						</div>
-						
-					</div>
-
-
-				</div>
-				<div class="containerFeed">
-					<div id="instagramFeed">
-						<div class="instagramImage" >
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram2.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram3.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram4.jpg);">	
-							</div>
-						</div>
-						<span class="clear"></span>
-					</div>
-				</div>
-				<h3 class="titreSection">#onsueensemble</h3>
-				<div class="row-height">
-					
-					<ul class="social desktop"> 
-						<?php if(get_field('facebook','option')){ ?>
-							<li><a href="<?php echo get_field('facebook','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
-						<?php } ?>
-						<?php if(get_field('instagram','option')){ ?>
-							<li><a href="<?php echo get_field('instagram','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
-						<?php } ?>
-						<?php if(get_field('twitter','option')){ ?>
-							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
-						<?php } ?>
-					</ul>
-						<?php include("templates/contact-form.php"); ?>
-					
-				</div>			
-			</div>
-		</div>
-	</div>
+	
 
