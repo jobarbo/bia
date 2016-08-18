@@ -286,3 +286,10 @@ gulp.task('wiredep', function() {
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
+
+// ### Compile
+// Watch sans l'OSTI de browser-sync.
+gulp.task('compile', function() {
+ gulp.watch([path.source + 'styles/**/*'], ['styles']);
+ gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
+});
