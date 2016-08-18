@@ -38,3 +38,10 @@ if( function_exists('acf_add_options_page') ) {
   ));
  
 }
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+  return '</br><a class="bouton" href="'. get_permalink($post->ID) . '"> Lire la suite</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

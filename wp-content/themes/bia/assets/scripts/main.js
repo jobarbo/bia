@@ -94,7 +94,10 @@
 
 //---------------------------------
 
+$("#btMenu").click(function () {
+    $('#side-menu').toggleClass('visually-visible');
 
+    });
 
 
 
@@ -114,12 +117,17 @@
       
 
     }
-      if($(window).width() > 1025){
+      /*if($(window).width() > 1025){
       var s = skrollr.init({
           forceHeight: false,
           mobileDeceleration: 0.004
       });
-    }
+    }*/
+
+    //Filtres page formations
+    $('#filtres .section-filtre button').click(function(e){
+      $(this).parent().find('ul').slideToggle();
+    });
 
 
 

@@ -1,0 +1,628 @@
+.bouton{
+	background-color: transparent;
+    border-style: none;
+    border-bottom: #000;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #000;
+    font-family: apercu;
+    font-size: 16px;
+    outline: none;
+}
+.bouton:hover{
+	text-decoration:none;
+	color:black;
+}
+main{
+	height: auto;
+   	background: url(../images/background_grey_min.png) repeat-y 5% 0,url(../images/background_grey_min.png) repeat-y 95% 0,url(../images/background_grey_min.png) repeat-y 50%,#f2f2f2;
+    position: relative;
+    z-index: 5;
+}
+/*--------------------Bia-single formation---------------------------*/
+body.single-product{
+	main{
+		.description{
+			padding-left:4%;
+			padding-right:4%;
+		}
+		.heure{
+			padding-left:4%;
+		}
+		.endroit{
+			padding-left: 4%;
+    		padding-right: 4%;
+		}
+		.post{
+			background-size:cover;
+			background-position: center center;
+		}
+		.date{
+			font-family: apercu;
+		    font-size: 16px;
+		    letter-spacing: 1px;
+		    padding-left: 4%;
+		    margin-top: 30px;
+		}
+		h4{
+			font-family: apercu;
+		    font-size: 30px;
+		    letter-spacing: 1px;
+		    padding-left: 4%;
+		}
+		.formateurs-list{
+			padding-left: 4%;
+			h6{
+				font-family: apercu;
+			    font-size: 20px;
+			    letter-spacing: 1px;
+			}
+			ul{
+				list-style: none;
+			    padding: 0;
+			    font-family: apercu;
+			    font-size: 16px;
+			    letter-spacing: 1px;
+			    li{
+			    	display: inline-block;
+			    	background-color: transparent;
+				    border-style: none;
+				    border-bottom: #000;
+				    border-bottom-style: solid;
+				    border-bottom-width: 2px;
+				    color: #000;
+				    font-family: apercu;
+				    p{
+				    	margin-bottom:0px;
+				    }
+			    }
+			}
+		}
+		.price{
+			font-family: apercu;
+		    font-size: 25px;
+		    letter-spacing: 1px;
+		    padding-left: 4%;
+		    float: left;
+		    position: absolute;
+		    bottom: 30px;
+		}
+		.bouton{
+			font-family: apercu;
+		    font-size: 20px;
+		    letter-spacing: 1px;
+		    position: absolute;
+		    bottom: 30px;
+		    right: 30px;
+		
+		}
+
+	}
+}
+/*--------------------Bia-blog et faq---------------------------*/
+body.blog,body.faq{
+	main{
+		padding-left:3%;
+		padding-right:3%;
+		.content{
+			background-color:white;
+
+			.image{
+				height: 400px;
+    			position: relative;
+    			background-size: cover;
+    			background-position: center center;
+    			margin-bottom: 25px;
+    			.encadre{
+    				padding: 15px 25px 15px 25px;
+				    bottom: 20px;
+				    left: 30px;
+				    position: absolute;
+				    background-color: white;
+				    color: #000;
+				    text-decoration: underline;
+				    font-family: apercu;
+				    font-size: 16px;
+				    outline: none;
+    			}
+			}
+			p{
+				font-family: apercu;
+				padding-left: 25px;
+				font-size: 16px;
+			}
+			h4{
+				font-family: apercu;
+				font-size: 30px;
+				letter-spacing: 1px;
+				padding-left: 25px;					
+			}
+			.description{
+				padding-right: 25px;
+				padding-bottom: 30px;
+				margin-bottom: 40px;
+				a{
+					padding-top: 25px;
+    				display: inline-block;
+				}					
+			}
+			.author{
+				img{
+					box-shadow: 0 1px 5px #888;
+					border-radius: 50%;
+				    height: 50px;
+				    width: 50px;
+				    z-index: 4;
+				    margin-right: 40px;
+
+				}
+			}			
+		}
+	}
+}
+
+/*--------------------Bia-commanditaires---------------------------*/
+body.commanditaires{
+	main{
+		
+    	#list-post-type{
+    		margin-bottom: 50px;
+    		.post-in-list{
+    			margin-top: 50px;
+    		}
+    		h4{
+	    		font-family: druk-medium;
+			    color: #f42534;
+			    font-size: 56px!important;
+			    letter-spacing: 5px;
+			    -webkit-transform: skew(180deg,167deg);
+			    transform: skew(180deg,167deg);
+			    /* position: absolute; */
+			    text-transform: uppercase;
+			    width: 200px;
+			    top: 50px;
+			    z-index: 999;
+			    margin-bottom: 50px;
+			    margin-left: 5%;
+			    margin-top: 75px;
+    		}
+    		a{
+    			cursor: pointer;
+			    letter-spacing: .05em;
+			    position: relative;
+			    border-bottom-width: thin;
+			    margin-left: auto;
+			    margin-right: auto;
+			    display: block;
+			    width: 80px;
+			    text-align: center;
+			    border-bottom-style: solid;
+			    padding-bottom: 3px;
+			    color: #000;
+			    font-family: apercu;
+			    font-size: 18px;
+    		}
+    		img{
+    			border-radius: 50%;
+			    display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			    position: relative;
+			   	width: 150px;
+			   	height: auto;
+
+    		}
+    	}
+    	.row-title{
+    		h4{
+    		font-family: druk-medium;
+		    color: #f42534;
+		    font-size: 56px!important;
+		    letter-spacing: 5px;
+		    -webkit-transform: skew(180deg,167deg);
+		    transform: skew(180deg,167deg);
+		    /* position: absolute; */
+		    text-transform: uppercase;
+		    width: 200px;
+		    top: 50px;
+		    z-index: 999;
+		    margin-bottom: 50px;
+		    margin-left: 5%;
+    		}
+    	}
+    	.row-post{
+    		background-color: white;
+    		padding: 20px 15px 20px 15px;
+    		margin-bottom: 25px;
+    		font-family: apercu;
+		    font-size: 15px;
+		    outline: none;
+		    .post-in-list:last-of-type{
+		    	padding-left:50px;
+		    }
+		    button{
+				background-color: #fff;
+			    border-style: none;
+			    border-bottom: #000;
+			    border-bottom-style: solid;
+			    padding-bottom: 3px;
+			    color: #000;
+			    font-family: apercu;
+			    font-size: 18px;
+			    outline: none;
+		    }
+		    a{
+		    	cursor: pointer;
+			    color: #000;
+			    font-family: apercu;
+			    letter-spacing: .05em;
+			    position: relative;
+			    font-size: 18px;
+			    padding-bottom: 3px;
+			    border-bottom-style: solid;
+			    border-bottom-width: thin;
+			    margin-left: auto;
+			    margin-right: auto;
+			    display: block;
+			    width: 80px;
+			    text-align: center;
+		    }
+    		img{
+			    background-size: 100%;
+			    position: relative;
+			    /* float: left; */
+			    height: auto;
+			    width: 200px;
+			    z-index: 4;
+			    margin-right: 40px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    display: block;
+    		}
+    		h5{
+    			font-family: druk-medium;
+			    color: #000;
+			    font-size: 36px!important;
+			    letter-spacing: 2px;
+			    -webkit-transform: skew(180deg,167deg);
+			    transform: skew(180deg,167deg);
+			    text-transform: uppercase;
+			    width: 220px;
+			    top: 50px;
+			    z-index: 999;
+			    margin-bottom: 42px;
+    		}
+    		.titre{
+    			font-family: apercu;
+    			font-size: 18px;
+    			outline: none;
+    		}
+    		.contenu{
+    			width: 95%;
+    			margin-bottom: 25px;
+    		}
+    	}
+    	.row-title{
+    		margin-top: 75px;
+    	}
+    	
+	}
+	
+}
+
+
+
+/*--------------------Bia-Formateurs-apropos--------------------------*/
+body.formateurs,body.a-propos{
+	main{
+    	.row-title{
+    		margin-top: 60px;
+    		h4{
+	    		font-family: druk-medium;
+			    color: #f42534;
+			    font-size: 56px!important;
+			    letter-spacing: 5px;
+			    -webkit-transform: skew(180deg,167deg);
+			    transform: skew(180deg,167deg);
+			    /* position: absolute; */
+			    text-transform: uppercase;
+			    width: 200px;
+			    top: 50px;
+			    z-index: 999;
+			    margin-bottom: 50px;
+			    margin-left: 5%;
+    		}
+    	}
+    	.row-post{
+    		background-color: white;
+    		padding: 20px 15px 20px 15px;
+    		margin-bottom: 25px;
+    		font-family: apercu;
+		    font-size: 15px;
+		    outline: none;
+		    .post-right{
+		    	padding-top: 25px;
+			    padding-bottom: 25px;
+			    padding-left: 50px;
+			    padding-right: 15px;
+			    .content{    
+			    	width: 95%;
+			    }
+		    	h4{
+			    	font-family: druk-medium;
+				    color: #000;
+				    font-size: 36px!important;
+				    letter-spacing: 2px;
+				    -webkit-transform: skew(180deg,167deg);
+				    transform: skew(180deg,167deg);
+				    text-transform: uppercase;
+				    width: 220px;
+				    top: 50px;
+				    z-index: 999;
+				    margin-bottom: 42px;}
+		    	}
+		    .contenu{
+		    	width: 95%;
+    			margin-bottom: 25px;
+		    }
+		    .post-in-list:last-of-type {
+    			padding-left: 50px;
+			}
+		    .formateurs-link{
+		    	display: block;
+			    width: auto;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-top: 20px;
+    			margin-bottom: 20px;
+    			text-align: center;
+			    a{
+				    text-align: center;
+				    
+			    }
+			    .bouton{
+				    background-color: #fff;
+				    border-style: none;
+				    border-bottom: #000;
+				    border-bottom-style: solid;
+				    border-bottom-width: 2px;
+				    padding-bottom: 3px;
+				    color: #000;
+				    font-family: apercu;
+				    font-size: 16px;
+				    outline: none;
+				    margin-right: 15px;
+				    margin-top: 30px;
+				    margin-bottom: 25px;
+
+			    	}
+		    }
+		    
+		    
+
+
+    		img{
+			    background-size: 100%;
+			    border-radius: 50%;
+			    position: relative;
+			    height: 200px;
+			    width: 200px;
+			    z-index: 4;
+			    margin-left: auto;
+			    margin-right: auto;
+			    display: block;
+    		}
+    		h5{
+    			font-family: druk-medium;
+			    color: #000;
+			    font-size: 36px!important;
+			    letter-spacing: 2px;
+			    -webkit-transform: skew(180deg,167deg);
+			    transform: skew(180deg,167deg);
+			    text-transform: uppercase;
+			    width: 220px;
+			    top: 50px;
+			    z-index: 999;
+			    margin-bottom: 42px;
+    		}
+    		.titre{
+    			font-family: apercu;
+    			font-size: 18px;
+    			outline: none;
+    		}
+    	}
+    	
+	}
+	
+}
+
+/*--------------------Bia-Formations---------------------------*/
+body.formations{
+	main{
+	
+	#list-formations{
+		padding: 50px 15px 15px;
+    	width: 90%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	position: relative;
+    	margin-top: 20px;;
+
+    	.formation{
+    		height: auto;
+    		margin-bottom: 30px;
+	    	.content{
+	    		background-color: #fff;
+	    		padding:25px;
+	    		.location{
+	    			font-family: apercu;
+    				font-size: 16px;
+    				outline: none;
+	    		}
+	    		.date{
+	    			font-family: apercu;
+    				font-size: 18px;
+    				outline: none;
+	    		}
+	    		h5{
+	    			font-family: druk-medium;
+				    color: #000000;
+				    font-size: 36px!important;
+				    letter-spacing: 2px;
+				    -webkit-transform: skew(180deg,167deg);
+				    transform: skew(180deg,167deg);
+				    /* position: absolute; */
+				    text-transform: uppercase;
+				    width: 220px;
+				    top: 50px;
+				    z-index: 999;
+				    /* margin-left: 25px; */
+				    margin-bottom: 42px;
+	    		}
+	    		.formateurs-list{
+	    			h6{
+	    				font-family: apercu;
+					    font-size: 16px;
+					    color: #d3ced2;
+					    outline: none;
+					
+	    			}
+	    			ul{
+	    				padding-left:0px;
+	    				li{
+	    					list-style: none;
+	    					margin-top: 0px;
+    						margin-bottom: 50px;
+    						clear: both;
+	    					img{
+
+	    						
+	    					    background-size: 100%;
+							    border-radius: 50%;
+							    position: relative;
+							    float: left;
+							   	box-shadow: 0px 1px 5px #888;;
+							    height: 60px;
+							    /* left: -36px; */
+							    width: 60px;
+							    /* top: 135px; */
+							    /* right: 345px; */
+							    z-index: 4;
+							    margin-right: 40px;	
+
+	    					}
+	    					p{
+	    						font-family: apercu;
+							    font-size: 16px;
+							    outline: none;
+							    padding-top: 15px;
+
+	    					}
+	    				}
+	    			}
+	    		}
+	    		.qty{
+	    			margin-top: 50px;
+				    font-family: apercu;
+				    font-size: 18px;
+				    outline: none;
+				    width: 40%;
+				    position: relative;
+				    display: block;
+				    p{
+				    	font-family: apercu;
+					    font-size: 16px;
+					    color: #d3ced2;
+					    outline: none;
+				    }
+				   
+	    		}
+	    		 .bouton{
+				    
+						float: right;
+						font-family: apercu;
+						font-size: 18px;
+						outline: none;
+						top:-30px;
+						position:relative;
+    					display: block;
+				    	
+				    }
+	    	}
+		}
+
+    }
+}
+}
+	#filtres{
+	h4{
+		font-family: druk-medium;
+    	color: #f42534;
+    	font-size: 56px!important;
+    	letter-spacing: 5px;
+    	-webkit-transform: skew(180deg,167deg);
+	    transform: skew(180deg,167deg);
+	    position: absolute;
+	    text-transform: uppercase;
+	    width: 200px;
+	    top: 50px;
+	    z-index: 999;
+	    margin-left: 4%;
+	}
+	.row:last-of-type{
+		background-color: #fff;
+    	padding: 50px 15px 15px 15px;
+    	width: 85%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	position: relative;
+    	margin-top: 150px;
+    	box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.14);
+    	.section-filtre{
+    		button{
+    			background-color:white;
+				border-style: none;
+			    border-bottom: #000;
+			    border-bottom-style: solid;
+			    margin-right: 15px;
+			    margin-left: 15px;
+			    text-align: center;
+			    padding-bottom: 7px;
+			    width: 250px;
+			    margin-bottom: 25px;
+			    font-family: apercu;
+			    font-size: 16px;
+			    outline: none;
+			    -webkit-transition: all .5s;
+			    transition: all .5s;
+			    -webkit-appearance: none;
+			    border-radius: 0;
+    		}
+    		ul{
+    			display: none;
+    			padding-left:0px;
+				li{
+	    			width: 25%;
+				    display: inline-block;
+				    border-style: none;
+				    border-bottom: #000;
+				    margin-right: 15px;
+				    margin-left: 15px;
+				    text-align: center;
+				    padding-bottom: 7px;
+				    width: 250px;
+				    font-family: apercu;
+				    font-size: 14px;
+				    outline: none;
+				    -webkit-transition: all .5s;
+				    transition: all .5s;
+				    -webkit-appearance: none;
+				    border-radius: 0;
+	    		}
+    		}
+
+    	}
+	}
+}
+
+ 

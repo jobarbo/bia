@@ -32,6 +32,12 @@
         }
     }
 }
+
+
+#splash #side-menu li:nth-child(4){
+    margin-bottom:60px;
+}
+
 #splash {
     
     background-size: cover;
@@ -40,6 +46,99 @@
     background-repeat: no-repeat;
     z-index: 50;
     position: relative;
+    #btMenu{
+        z-index: 9999999999999;
+    }
+    #barreH{
+       .nav>li{
+        display: inline-block;
+        } 
+    }
+    .visually-hidden{
+        display: none;
+    }
+    .visually-visible{
+        display:block;
+    }
+    #side-menu{
+        //display: none;
+        top:0;
+        z-index: 999999;
+        background-color: #f42534;
+        position: absolute;
+        width: 100vw;
+        background: url(../images/background_red_min.png) repeat-y 5% 0,url(../images/background_red_min.png) repeat-y 95% 0,url(../images/background_red_min.png) repeat-y 50%,#f42534;
+       
+        li{
+            display: block;
+
+        }
+        #p-droite, #p-gauche{
+            height:100vh
+        }
+        #p-gauche{
+            .circle-image{
+                height: 400px;
+                width: 400px;
+                position: relative;
+                z-index: 4;
+                background-size: cover;
+                display: block;
+                border-radius: 50%;
+                background-position: center center;
+                margin-left: auto;
+                margin-right: auto;
+                top: 25vh;
+                        }
+            }
+        
+        #p-droite{
+            .nav{
+                padding-top:15vh;
+            }
+        }
+        .bold{
+            font-family: druk-medium;
+            color: #f42534;
+            font-size: 45px!important;
+            letter-spacing: 2px;
+            width: 260px;
+            -webkit-font-smoothing: antialiased;
+            transform: skew(180deg,167deg);
+            webkit-transform: skew(180deg, 167deg);
+            ms-transform: skew(180deg, 167deg);
+            -webkit-transform: skew(180deg, 167deg);
+            text-transform: uppercase;
+
+            a{
+                color:white;
+                padding-top:0px;
+                padding-bottom:0px;
+            }a:hover{
+                background-color:#f42534;
+            }a:focus{
+                background-color:transparent;
+            }
+
+        }
+        .smaller{
+            letter-spacing: 0.05em;
+            -webkit-font-smoothing: antialiased;
+            font-size: 18px;
+            font-family: apercu;
+            a{
+                color: white;
+                padding-top:5px;
+                padding-bottom:5px;
+            }a:hover{
+                background-color:transparent;
+            }a:focus{
+                background-color:transparent;
+            }
+        }
+    }
+    
+
 }
 h1 {
     font: 0/0 a;
@@ -72,42 +171,73 @@ h1 {
     opacity: 0.5;
 }
 #logo {
-    width: 400px;
+    width: 200px;
     position: absolute;
     left: 60px;
     z-index: 999999999;
     top: 30px;
 }
+
 #barreH {
     width: 100%;
     z-index: 99999;
     height: 80px;
     background-color: #f42534;
     position: relative;
+  
+    .nav{
+        top: 20px;
+        right: 200px;
+        position: absolute;
+        li{
+            a{
+                padding: 10px 15px;
+                color: white;
+                font-family: apercu;
+                letter-spacing: 0.05em;
+                -webkit-font-smoothing: antialiased;
+                font-size: 18px;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+            }a:hover{
+                background-color: #f42534;
+                color: black;
+            }
+            a:focus{
+                background-color: #f42534;
+                color: black;
+                text-decoration:none;
+            }
+        }
+    }
+
     button {
+        position: absolute;
+        right: 15px;
+        top: 30px;
         float: right;
         border: none;
-        background-color: white;
-        color: rgb(244, 37, 52);
-        padding: 10px 25px 10px 35px;
-        margin-top: 20px;
+        background-color: #f42534;
+        color: white;
         outline: none;
         font-family: Apercu;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
+        -webkit-font-smoothing: antialiased;
     }
     button:hover{
-            color: rgba(244, 37, 52, 0.5);
+            color: black;
     }
     
     button:before {
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
-        right: 92px;
+        top: 0px;
+        right: 75px;
         width: 0;
         height: 0;
         border-top: 20px solid #f42534;

@@ -61,6 +61,27 @@
         }
     }
 }
+@media only screen and (max-width: 990px){
+    #pageContact{
+        #formulaireInscription{
+            #mc_embed_signup{
+               #list-interet{
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                ul{
+                    li{
+                        width: 95%;
+                        margin-right: 20px;
+                        margin-left: 20px;
+                    }
+                } 
+            }
+            
+        }
+    }
+}
 
 
 
@@ -335,12 +356,12 @@
         margin-left: 60px;
     }
 }
-img {
+/*img {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     display: table;
-}
+}*/
 .electrocardiogram {
     margin-left: auto;
     margin-right: auto;
