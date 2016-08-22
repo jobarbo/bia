@@ -11,6 +11,9 @@
 						<?php if(get_field('twitter','option')){ ?>
 							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
 						<?php } ?>
+						<?php if(get_field('linkedin','option')){ ?>
+							<li><a href="<?php echo get_field('linkedin','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/linkedin.svg" alt="Logo LinkedIn" /></a></li>
+						<?php } ?>
 			</ul>
 				<div class="footerBloc">
 					<div class="row">
@@ -18,14 +21,14 @@
 							<div class="col-md-6 bg-photo">
 								<div class="imgLienGauche" style="background-image:url(<?php echo get_field('image_p_formations','option');  ?>)">
 								<h3 class="titreSection"><?php echo _e('Prochaines Formations','bia'); ?></h3>	
-								<a href="<?php echo get_permalink('122'); ?>"><?php echo _e('Voir le calendrier','bia'); ?></a>
+								<a class="bouton white" href="<?php echo get_permalink(122); ?>"><?php echo _e('Voir le calendrier','bia'); ?></a>
 								</div>
 							</div>
 						<?php }else{ ?>
 							<div class="col-md-6 bg-photo">
 								<div class="imgLienGauche" style="background-image:url(<?php echo get_field('image_supporteurs','option');  ?>)">
-								<h3 class="titreSection"><?php echo _e('Nos<br/>supporteurs','bia'); ?></h3>	
-								<a href="<?php echo get_permalink('12'); ?>"><?php echo _e('Nos commanditaires','bia'); ?></a>
+								<h3 class="titreSection"><?php echo _e('Nos<br/>partenaires','bia'); ?></h3>	
+								<a class="bouton white" class="bouton" href="<?php echo get_permalink(126); ?>"><?php echo _e('Nos partenaires','bia'); ?></a>
 								</div>
 							</div>
 						<?php } ?>
@@ -34,14 +37,14 @@
 						<div class="col-md-6 bg-blanc">
 							<div class="imgLienDroit" style="background-image:url(<?php echo get_field('image_c_bia','option');  ?>)">	
 								<h3 class="titreSection"><?php echo _e('Club bia','bia'); ?></h3>
-								<a href="<?php echo get_permalink('152'); ?>"><?php echo _e('Découvrez les avantages','bia'); ?></a>
+								<a class="bouton" href="<?php echo get_permalink(152); ?>"><?php echo _e('Découvrez les avantages','bia'); ?></a>
 							</div>
 						</div>
 						<?php }else{ ?>
 							<div class="col-md-6 bg-photo">
 								<div class="imgLienGauche" style="background-image:url(<?php echo get_field('image_supporteurs','option');  ?>)">
-								<h3 class="titreSection"><?php echo _e('Nos<br/>supporteurs','bia'); ?></h3>	
-								<a href="<?php echo get_permalink('12'); ?>"><?php echo _e('Nos commanditaires','bia'); ?></a>
+								<h3 class="titreSection"><?php echo _e('Nos<br/>partenaires','bia'); ?></h3>	
+								<a class="bouton white" href="<?php echo get_permalink(126); ?>"><?php echo _e('Nos partenaires','bia'); ?></a>
 								</div>
 							</div>
 						<?php } ?>
@@ -68,7 +71,7 @@
 						<span class="clear"></span>
 					</div>
 				</div>
-				<h3 class="titreSection">#onsueensemble</h3>
+				<h3 class="titreSection">#biaformations</h3>
 				<div class="row-height">
 					
 					<ul class="social desktop"> 
@@ -81,6 +84,9 @@
 						<?php if(get_field('twitter','option')){ ?>
 							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
 						<?php } ?>
+						<?php if(get_field('linkedin','option')){ ?>
+							<li><a href="<?php echo get_field('linkedin','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/linkedin.svg" alt="Logo LinkedIn" /></a></li>
+						<?php } ?>
 					</ul>
 						<?php include("contact-form.php"); ?>
 					
@@ -89,9 +95,20 @@
 		</div>
 	</div>
 <footer class="content-info">
-  <div class="container courriel">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-    <a href="mailto:info@biaformations.com"><p>info@biaformations.com</p></a>
+  <div class="container-fluid">
+    <div class="row">
+    	<div class="col-sm-6">
+    		<?php
+				if (has_nav_menu('top_navigation')) :
+				    wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav']);
+				endif;
+			?>
+    	</div>
+    	<div class="col-sm-6 information-contact">
+    		<a href="tel:+14388816353" class="tel">438 881-6353</a>
+    		<a href="mailto:info@biaformations.com" class="email">info@biaformations.com</a>
+    	</div>
+    </div>
   </div>
 </footer>
  

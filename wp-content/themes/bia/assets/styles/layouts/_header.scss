@@ -1,12 +1,16 @@
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1921px){
     #splash{
-        #logo {
-            width: 600px!important;
-            position: absolute;
-            left: 60px;
-            z-index: 999999999;
-            top: 30px;
+        #splashTitre{
+            h2{
+                font-size: 140px!important;
+            } 
         }
+        
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    #splash{
         #splashTitre{
                 top: 400px;
             }
@@ -25,21 +29,26 @@
         }
 
         h2{
-            font-size: 146px!important;
-            width: 650px;
-            letter-spacing: 5px;
+            font-size: 100px!important;
+            width: auto;
+            letter-spacing: 3px;
             text-transform: uppercase;
+
         }
     }
 }
 
 
-#splash #side-menu li:nth-child(4){
+#side-menu li:nth-child(4){
     margin-bottom:60px;
 }
-
+#barreH{
+       .nav>li{
+        display: inline-block;
+        } 
+    }
 #splash {
-    
+    margin-top: -80px;
     background-size: cover;
     height: 100vh;
     background-position: center 0px;
@@ -49,18 +58,13 @@
     #btMenu{
         z-index: 9999999999999;
     }
-    #barreH{
-       .nav>li{
-        display: inline-block;
-        } 
-    }
-    .visually-hidden{
-        display: none;
-    }
-    .visually-visible{
-        display:block;
-    }
-    #side-menu{
+    
+    
+    
+    
+
+}
+#side-menu{
         //display: none;
         top:0;
         z-index: 999999;
@@ -68,7 +72,6 @@
         position: absolute;
         width: 100vw;
         background: url(../images/background_red_min.png) repeat-y 5% 0,url(../images/background_red_min.png) repeat-y 95% 0,url(../images/background_red_min.png) repeat-y 50%,#f42534;
-       
         li{
             display: block;
 
@@ -102,7 +105,8 @@
             color: #f42534;
             font-size: 45px!important;
             letter-spacing: 2px;
-            width: 260px;
+            width: auto;
+            display: table;
             -webkit-font-smoothing: antialiased;
             transform: skew(180deg,167deg);
             webkit-transform: skew(180deg, 167deg);
@@ -121,6 +125,12 @@
             }
 
         }
+        #menu-item-147{
+            top:-8px;
+        }
+        #menu-item-154{
+            top:5px;
+        }
         .smaller{
             letter-spacing: 0.05em;
             -webkit-font-smoothing: antialiased;
@@ -137,9 +147,6 @@
             }
         }
     }
-    
-
-}
 h1 {
     font: 0/0 a;
     color: transparent;
@@ -148,28 +155,33 @@ h1 {
     border: 0;
     position: absolute;
 }
-.social {
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-    li {
-        color: #fff;
-        list-style: none;
-        margin-bottom: 40px;
+
+
+#barreV,#pageContact{
+    .social {
+        position: absolute;
+        bottom: 0px;
+        right: 30px;
+        li {
+            color: #fff;
+            list-style: none;
+            margin-bottom: 40px;
+        }
+    }
+    .social img {
+        width: 20px;
+        height: 20px;
+        transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+
+    }
+    .social img:hover {
+        opacity: 0.5;
     }
 }
-.social img {
-    width: 20px;
-    height: 20px;
-    transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
 
-}
-.social img:hover {
-    opacity: 0.5;
-}
 #logo {
     width: 200px;
     position: absolute;
@@ -195,19 +207,15 @@ h1 {
                 color: white;
                 font-family: apercu;
                 letter-spacing: 0.05em;
-                -webkit-font-smoothing: antialiased;
                 font-size: 18px;
                 -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
             }a:hover{
-                background-color: #f42534;
-                color: black;
+
             }
             a:focus{
-                background-color: #f42534;
-                color: black;
-                text-decoration:none;
+
             }
         }
     }
@@ -251,27 +259,29 @@ h1 {
     position: relative;
     margin-top: -80px;
     float: right;
-    z-index: 0;
+    z-index: 999;
     height: 100vh;
     background-color: #f42534;
 }
-#splashTitre {
-    right: 72px;
-    top: 250px;
-    position: absolute;
-    font-family: druk-medium;
-    color: #fff;
-    webkit-transform: skew(180deg, 167deg);
-    ms-transform: skew(180deg, 167deg);
-    -webkit-transform: skew(180deg, 167deg);
-    transform: skew(180deg, 167deg);
-}
-h2 {
-    font-size: 100px!important;
-    width: 468px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
+
+     #splashTitre {
+        right: 75px;
+        top: 280px;
+        position: absolute;
+        font-family: druk-medium;
+        color: #fff;
+        webkit-transform: skew(180deg,167deg);
+        ms-transform: skew(180deg,167deg);
+        -webkit-transform: skew(180deg,167deg);
+        transform: skew(180deg,167deg);
+    }
+    h2 {
+        font-size: 65px!important;
+        width: auto;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }   
+
 .enSavoirPlus {
     background-color: white;
     width: 450px;
@@ -311,14 +321,7 @@ h2 {
 
 
 @media only screen and (max-width: 580px) {
-#splash {
-        #logo {
-            width: 150px;
-            position: absolute;
-            left: 20px;
-        }
-        
-        #barreV {
+    #barreV {
             width: 55px;
             height: 75vh;
             .social {
@@ -326,6 +329,15 @@ h2 {
                 right: 15px;
             }
         }
+
+#splash {
+        #logo {
+            width: 150px;
+            position: absolute;
+            left: 20px;
+        }
+        
+        
         #splashTitre {
             right: 50px;
             top: 220px;
@@ -345,6 +357,14 @@ h2 {
             }
         }
     }
+    #barreV {
+            width: 55px;
+            height: 75vh;
+            .social {
+                bottom: -25px;
+                right: 15px;
+            }
+        }
 }
 @media only screen and (max-width: 360px) {
 
@@ -360,6 +380,8 @@ h2 {
             }
         }
 
+    
+    }
     #barreV {
             width: 55px;
             height: 70vh;
@@ -368,5 +390,4 @@ h2 {
                 right: 15px;
             }
         }
-    }
 }

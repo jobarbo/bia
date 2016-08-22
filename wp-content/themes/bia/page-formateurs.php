@@ -14,12 +14,12 @@
 	        <?php if($listPosts){ 
 	        	foreach($listPosts as $singlePost){ ?>
 	        		
-	        		<div class="row row-post">
+	        		<div id="<?php echo $singlePost->ID; ?>" class="row row-post">
 	        		 <div class="row-sm-height">
 	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
 	        		 		<?php echo get_the_post_thumbnail( $singlePost->ID, 'normal' ); ?>
 	        		 		<div class="formateurs-link">
-	        		 			<a class="bouton" href="<?php echo get_permalink(122); ?>" target="_blank"><?php echo _e('Mes formations','bia'); ?></a>
+	        		 			<a class="bouton" href="<?php echo get_permalink(122); ?>?formateurs=<?php echo $singlePost->ID; ?>"><?php echo _e('Mes formations','bia'); ?></a>
 							<?php if(get_field('site_web',$singlePost->ID)){ ?>
 								<a class="bouton" href="<?php echo get_field('site_web',$singlePost->ID); ?>" target="_blank"><?php echo _e('Site web','bia'); ?></a>
 							<?php } ?>

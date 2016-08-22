@@ -37,24 +37,23 @@
             
         </div>
         <ul id="list-interet">
-              <li><input type="checkbox" value="1" name="group[6841][1]" id="mce-group[6841]-6841-0"><label for="mce-group[6841]-6841-0">Aérobie</label></li>
-              <li><input type="checkbox" value="2" name="group[6841][2]" id="mce-group[6841]-6841-1"><label for="mce-group[6841]-6841-1">Yoga</label></li>
-              <li><input type="checkbox" value="4" name="group[6841][4]" id="mce-group[6841]-6841-2"><label for="mce-group[6841]-6841-2">Pilates</label></li>
-              <li><input type="checkbox" value="8" name="group[6841][8]" id="mce-group[6841]-6841-3"><label for="mce-group[6841]-6841-3">Spinning</label></li>
-              <li><input type="checkbox" value="16" name="group[6841][16]" id="mce-group[6841]-6841-4"><label for="mce-group[6841]-6841-4">Posture et stabilité</label></li>
-              <li><input type="checkbox" value="32" name="group[6841][32]" id="mce-group[6841]-6841-5"><label for="mce-group[6841]-6841-5">Clientèle pédiatrique</label></li>
-              <li><input type="checkbox" value="64" name="group[6841][64]" id="mce-group[6841]-6841-6"><label for="mce-group[6841]-6841-6">Clientèle gériatrique</label></li>
-              <li><input type="checkbox" value="128" name="group[6841][128]" id="mce-group[6841]-6841-7"><label for="mce-group[6841]-6841-7">Entrainement de type crossfit</label></li>
-              <li><input type="checkbox" value="256" name="group[6841][256]" id="mce-group[6841]-6841-8"><label for="mce-group[6841]-6841-8">Bodybuilding</label></li>
-              <li><input type="checkbox" value="512" name="group[6841][512]" id="mce-group[6841]-6841-9"><label for="mce-group[6841]-6841-9">Haltérophilie</label></li>
-              <li><input type="checkbox" value="1024" name="group[6841][1024]" id="mce-group[6841]-6841-10"><label for="mce-group[6841]-6841-10">Musculation</label></li>
-              <li><input type="checkbox" value="2048" name="group[6841][2048]" id="mce-group[6841]-6841-11"><label for="mce-group[6841]-6841-11">Sports d'endurance</label></li>
-              <li><input type="checkbox" value="4096" name="group[6841][4096]" id="mce-group[6841]-6841-12"><label for="mce-group[6841]-6841-12">Cours de groupe</label></li>
-              <li><input type="checkbox" value="8192" name="group[6841][8192]" id="mce-group[6841]-6841-13"><label for="mce-group[6841]-6841-13">Nutrition sportive</label></li>
-              <li><input type="checkbox" value="16384" name="group[6841][16384]" id="mce-group[6841]-6841-14"><label for="mce-group[6841]-6841-14">Psychologie sportive</label></li>
-              <li><input type="checkbox" value="32768" name="group[6841][32768]" id="mce-group[6841]-6841-15"><label for="mce-group[6841]-6841-15">Psychologie de l'exercice</label></li>
-              <li><input type="checkbox" value="65536" name="group[6841][65536]" id="mce-group[6841]-6841-16"><label for="mce-group[6841]-6841-16">Anatomie</label></li>
-              <li><input type="checkbox" value="131072" name="group[6841][131072]" id="mce-group[6841]-6841-17"><label for="mce-group[6841]-6841-17">Autres intérêts</label></li>
+              <li><input type="checkbox" value="2" name="group[6841][2]" id="mce-group[6841]-6841-0"><label for="mce-group[6841]-6841-0">Yoga</label></li>
+              <li><input type="checkbox" value="4" name="group[6841][4]" id="mce-group[6841]-6841-1"><label for="mce-group[6841]-6841-1">Pilates</label></li>
+              <li><input type="checkbox" value="8" name="group[6841][8]" id="mce-group[6841]-6841-2"><label for="mce-group[6841]-6841-2">Course à pied</label></li>
+              <li><input type="checkbox" value="16" name="group[6841][16]" id="mce-group[6841]-6841-3"><label for="mce-group[6841]-6841-3">Cardio-Vélo</label></li>
+              <li><input type="checkbox" value="32" name="group[6841][32]" id="mce-group[6841]-6841-4"><label for="mce-group[6841]-6841-4">Pédagogie</label></li>
+              <li><input type="checkbox" value="64" name="group[6841][64]" id="mce-group[6841]-6841-5"><label for="mce-group[6841]-6841-5">Éducation motrice</label></li>
+              <li><input type="checkbox" value="128" name="group[6841][128]" id="mce-group[6841]-6841-6"><label for="mce-group[6841]-6841-6">Nutrition</label></li>
+              <li><input type="checkbox" value="256" name="group[6841][256]" id="mce-group[6841]-6841-7"><label for="mce-group[6841]-6841-7">Psychologie</label></li>
+              <li><input type="checkbox" value="512" name="group[6841][512]" id="mce-group[6841]-6841-8"><label for="mce-group[6841]-6841-8">Cross training</label></li>
+              <li><input type="checkbox" value="1024" name="group[6841][1024]" id="mce-group[6841]-6841-9"><label for="mce-group[6841]-6841-9">Physiologie de l'exercice</label></li>
+              <li><input type="checkbox" value="2048" name="group[6841][2048]" id="mce-group[6841]-6841-10"><label for="mce-group[6841]-6841-10">Préparation physique</label></li>
+              <li><input type="checkbox" value="4096" name="group[6841][4096]" id="mce-group[6841]-6841-11"><label for="mce-group[6841]-6841-11">Analyse biomécanique</label></li>
+              <li><input type="checkbox" value="8192" name="group[6841][8192]" id="mce-group[6841]-6841-12"><label for="mce-group[6841]-6841-12">Anatomie</label></li>
+              <li><input type="checkbox" value="16384" name="group[6841][16384]" id="mce-group[6841]-6841-13"><label for="mce-group[6841]-6841-13">Haltérophilie</label></li>
+              <li><input type="checkbox" value="32768" name="group[6841][32768]" id="mce-group[6841]-6841-14"><label for="mce-group[6841]-6841-14">Posture</label></li>
+              <li><input type="checkbox" value="65536" name="group[6841][65536]" id="mce-group[6841]-6841-15"><label for="mce-group[6841]-6841-15">Clientèle spécifique</label></li>
+              <li><input type="checkbox" value="131072" name="group[6841][131072]" id="mce-group[6841]-6841-16"><label for="mce-group[6841]-6841-16">Autres intérêts</label></li>
             </ul>
         <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>

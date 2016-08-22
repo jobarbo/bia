@@ -40,6 +40,23 @@
         }
     }
 }
+@media only screen and (min-width: 1500px){
+    #pageContact{
+        .footerBloc{
+            .row{
+                .bg-blanc{
+                    .imgLienDroit{
+                        background-size:125%;
+                        background-position: 50% 38%;
+                        background-repeat:no-repeat;
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
 @media only screen and (max-width: 1345px){
     #pageContact{
         #formulaireInscription{
@@ -202,6 +219,7 @@
 
 
 #listeProfessionel {
+    background-color:white;
     min-height: 100vh;
     position: relative;
     box-shadow: 0px 19px 46px rgba(0, 0, 0, 0.25);
@@ -247,7 +265,7 @@
         color: #f42534;
         font-size: 56px!important;
         width: 463px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     ul {
         font-family: Apercu;
@@ -345,7 +363,7 @@
         color: white;
         font-size: 56px!important;
         width: 463px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     p {
         font-family: apercu;
@@ -363,6 +381,12 @@
     display: table;
 }*/
 .electrocardiogram {
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
+        display: block;
+    }
     margin-left: auto;
     margin-right: auto;
 }
@@ -457,7 +481,7 @@
     font-family: druk-medium;
     color: #f42534;
     font-size: 56px!important;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .leftBox {
     padding-left: 30px;
@@ -562,7 +586,7 @@
     }
     ul {
         list-style: none;
-        padding-left: 42px;
+        padding-left: 40px;
         color: white;
         font-family: apercu;
         font-size: 20px;
@@ -572,7 +596,7 @@
         color: white;
         font-size: 56px!important;
         width: 463px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     p {
         font-family: apercu;
@@ -583,7 +607,7 @@
         /* bottom: 4px; */
         
         margin-top: 10px;
-        padding-left: 45px;
+        padding-left: 40px;
         margin-bottom: 10px;
     }
     .infoFormation {
@@ -613,11 +637,11 @@
         top: 10px;
         float: right;
         text-transform: uppercase;
-        z-index: 2;
+        z-index: 15;
         font-family: druk-medium;
         color: #f42534;
         font-size: 80px!important;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     .containerFeed {
         position: relative;
@@ -626,12 +650,16 @@
     .footerBloc{
         position:relative;
         height: 450px;
+        .row{
+                margin-left:0px;
+                margin-right:0px;
+            }
         .bg-photo{
             padding:0;
             height: 400px;
             .imgLienGauche{
              
-                width: 98%;
+                width: 96%;
                 height: 100%;
                 position: relative;
                 left: 0;
@@ -649,16 +677,10 @@
                 }
                 a{
                         cursor: pointer;
-                        color: white;
-                        font-family: apercu;
-                        letter-spacing: .05em;
                         bottom: 25px;
                         position: absolute;
                         font-size: 20px;
                         float: left;
-                        padding-bottom: 3px;
-                        border-bottom-style: solid;
-                        border-bottom-width: thin;
                         left: 5%;
                         /* text-decoration: underline; */
                     
@@ -673,13 +695,13 @@
             height: 400px;
             .imgLienDroit{
                 float: right;
-                width: 98%;
+                width: 96%;
                 height: 100%;
                 position: relative;
                 right: 0;
-                background-size:cover;
-                background-position:center;
-                background-repeat:no-repeat;
+                background-size: 135%;
+                background-position: 50%;
+                background-repeat: no-repeat;
                  .titreSection{
                     left:5%;
                     float: left;
@@ -691,15 +713,10 @@
                 a{
                     cursor: pointer;
                     color: #000;
-                    font-family: apercu;
-                    letter-spacing: .05em;
-                    bottom: 25px;
                     position: absolute;
+                    bottom: 25px;
                     font-size: 20px;
                     float: left;
-                    padding-bottom: 3px;
-                    border-bottom-style: solid;
-                    border-bottom-width: thin;
                     left: 5%;
                     /* text-decoration: underline; */ 
                 }
@@ -780,13 +797,13 @@
             background: #ffffff;
         }
         p.formText{
-            width: 100%;
+            width: 50%;
             margin-left: auto;
             margin-right: auto;
             padding-left: 20px;
             padding-right: 20px;
             font-family: apercu;
-            font-size: 16px;
+            font-size: 26px;
             margin-bottom: 50px;
         }
         input[type='text'], input[type='email'] {
@@ -1018,6 +1035,7 @@
     }
 }
 @media only screen and (max-width: 1366px) {
+
     #listeProfessionel {
         .leftBox {
             padding-left: 60px;
@@ -1110,6 +1128,27 @@
         }
     }
     #pageContact {
+        .footerBloc{
+            .bg-blanc{
+                height: 300px;
+                .imgLienDroit{
+                    .titreSection{
+                        letter-spacing: 2px;
+                        font-size: 40px!important;
+                    }
+                }
+            }
+            .bg-photo{
+                height: 300px;
+                .imgLienGauche{
+                    .titreSection{
+                        letter-spacing: 2px;
+                        font-size: 40px!important;
+                    }
+                }
+            }
+        }
+        
         .custom-select-trigger{
             width: 235px;
                     }
@@ -1128,8 +1167,11 @@
             padding: 0 10px!important;
         }
         .social {
-            bottom: 70px;
-            right: 15px;
+            bottom: 70px!important;
+            right: 1.8%;
+            img{
+                width: 10px;
+            }
         }
         #formulaireInscription {
             .triangleRouge:before{
@@ -1358,12 +1400,17 @@
     }
     #pageContact {
         .footerBloc{
-            .lienGauche{
+            height: auto;
+            .row{
+                margin-left:0px;
+                margin-right:0px;
+            }
+            .bg-photo{
                 .imgLienGauche{
                     width: 100%;
                 }
             }
-            .lienDroit{
+            .bg-blanc{
                 .imgLienDroit{
                     width: 100%;
                 }
@@ -1408,9 +1455,12 @@
             width: 100%;
             left: 0;
             top: 0;
-            li {
+            li {    
                 margin-bottom: 60px;
-                margin-top: 60px;            
+                margin-top: 60px;  
+                display: table;
+                margin-left: auto;
+                margin-right: auto;       
             }
         }
         .titreSection {

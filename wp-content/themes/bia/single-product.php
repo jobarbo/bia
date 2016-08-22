@@ -35,13 +35,13 @@
 
 				<a class="bouton" href="#" target="_blank"><?php echo _e('Réserver ma place','bia'); ?></a>
 			</div>
-			<div class="col-sm-6 col-sm-height">
+			<div class="content-formation col-sm-6 col-sm-height col-sm-top">
 				<div class="description">
 					<?php the_content(); ?>
 				</div>
-				<div class="date"><?php echo _e('Date','bia'); ?><span><?php echo get_field('date_de_la_formation'); ?></span></div>
-				<div class="heure"><?php echo _e('Heure','bia'); ?><span><?php echo get_field('heure'); ?></span></div>
-				<div class="endroit"><?php echo _e('Endroit','bia'); ?><span><?php echo get_field('location_long'); ?></span></div>
+				<div class="date"><p class="width-fixed" ><?php echo _e('Date','bia'); ?></p><span><?php echo get_field('date_de_la_formation'); ?></span></div>
+				<div class="heure"><p class="width-fixed" ><?php echo _e('Heure','bia'); ?></p><span><?php echo get_field('heure'); ?></span></div>
+				<div class="endroit"><p class="width-fixed" ><?php echo _e('Endroit','bia'); ?></p><span><?php echo get_field('location_long'); ?></span></div>
 				<a class="bouton" href="#" target="_blank"><?php echo _e('Politique de remboursement','bia'); ?></a>
 				<a class="bouton" href="#" target="_blank"><?php echo _e('Crédits HFC','bia'); ?></a>
 			</div>

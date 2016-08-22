@@ -1,37 +1,198 @@
 .bouton{
 	background-color: transparent;
-    border-style: none;
-    border-bottom: #000;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
     color: #000;
     font-family: apercu;
     font-size: 16px;
-    outline: none;
+    position:relative;
+    &:hover{
+    	text-decoration:none;
+		color:black;
+
+		&:after{
+			opacity: 0;
+			transform: translateY(5px);
+		}
+    }
+    &:focus{
+    	text-decoration:none;
+		color:black;
+    }
+    &:after{
+    	transform: translateY(0);
+	   	position:absolute;
+	   	width:100%;
+	   	height:1px;
+	   	content:'';
+	   	left: 0;
+	   	top:100%;
+	   	opacity:1;
+	   	display:block;
+	   	transition:0.15s all ease-in-out;
+	   	background-color:black;
+    }
+
+    &.white{
+    	color:white;
+
+    	&:after{
+    		background-color:white;
+    	}
+    }
 }
-.bouton:hover{
-	text-decoration:none;
-	color:black;
-}
+
+
 main{
 	height: auto;
    	background: url(../images/background_grey_min.png) repeat-y 5% 0,url(../images/background_grey_min.png) repeat-y 95% 0,url(../images/background_grey_min.png) repeat-y 50%,#f2f2f2;
     position: relative;
     z-index: 5;
 }
+p{
+	font-family:apercu;
+	font-size:16px;
+	-webkit-font-smoothing: antialiased;
+}
+ul{
+	-webkit-font-smoothing: antialiased;
+}
+.encadre{
+	padding: 15px 25px;
+    background-color: #fff;
+    color: #000;
+    font-family: apercu;
+    font-size: 16px;
+    display: table;
+    &:after{
+		content:'';
+		width:100%;
+		height:1px;
+		background-color:black;
+		display:block;
+	}
+}
+p.author{
+	font-family: apercu;
+    padding-left: 25px;
+    font-size: 16px;
+
+	img{
+		box-shadow: 0 1px 5px #888;
+	    border-radius: 50%;
+	    height: 50px;
+	    width: 50px;
+	    z-index: 4;
+	    margin-right: 15px;
+	}
+}
+/*--------------------Bia-single formation et single FAQ---------------------------*/
+body.single-post,body.single-faq-article{
+	main{
+		h3{
+			font-family: apercu;
+    		font-size: 30px;
+    		letter-spacing: 1px;
+
+		}
+		article{
+			padding: 70px;
+			.container-single{
+				display: block;
+			    max-width: 75%;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.author{
+				padding-left:0px;
+				margin-top: 40px;
+			}
+			#page-builder{
+				.text{
+					display: block;
+				    margin-left: auto;
+				    margin-right: auto;
+				    max-width: 75%;
+				    p{
+				    	margin-top: 20px;
+    					margin-bottom: 20px;
+				    }p:last-of-type{
+				    	margin-bottom: 50px;
+				    }
+				}
+				.image{
+					img{
+						width:100%;
+						
+
+					}img:last-of-type{
+						margin-bottom: 50px;
+					}
+				}
+				.link{
+					display: block;
+				    margin-left: auto;
+				    margin-right: auto;
+				    max-width: 75%;
+				}
+			}
+		}
+
+	}
+}
+
+
 /*--------------------Bia-single formation---------------------------*/
 body.single-product{
 	main{
+
+		.content-formation .bouton:first-of-type{
+			margin-right:20px;
+		}
+		p.width-fixed{
+			float: left;
+			width: 120px;
+			height: 40px;
+			clear: both;
+			margin-bottom: 0;
+		}
+
+		.col-sm-6{
+			padding:50px;
+		}
 		.description{
-			padding-left:4%;
-			padding-right:4%;
+			font-family: apercu;
+    		font-size: 16px;
 		}
 		.heure{
-			padding-left:4%;
+			font-family: apercu;
+    		font-size: 20px;
+    		letter-spacing: 1px;
+    		margin-top: 15px;
+    		span{
+
+    			font-size: 16px;
+    			p{
+    				display: inherit;
+    				width: auto;
+    			}
+    		}
 		}
 		.endroit{
-			padding-left: 4%;
-    		padding-right: 4%;
+			font-family: apercu;
+    		font-size: 20px;
+    		letter-spacing: 1px;
+    		margin-top: 15px;
+    		margin-bottom: 30px;
+    		p.width-fixed{
+				height: 70px;
+			}
+    		span{
+
+	    		font-size: 16px;
+	    		p{
+	    			display: inherit;
+    				width: auto;
+	    		}
+    		}
 		}
 		.post{
 			background-size:cover;
@@ -39,19 +200,17 @@ body.single-product{
 		}
 		.date{
 			font-family: apercu;
-		    font-size: 16px;
-		    letter-spacing: 1px;
-		    padding-left: 4%;
-		    margin-top: 30px;
+		    font-size: 20px;
+		    span{
+		    	font-size: 16px;
+		    }
 		}
 		h4{
 			font-family: apercu;
 		    font-size: 30px;
 		    letter-spacing: 1px;
-		    padding-left: 4%;
 		}
 		.formateurs-list{
-			padding-left: 4%;
 			h6{
 				font-family: apercu;
 			    font-size: 20px;
@@ -82,20 +241,22 @@ body.single-product{
 			font-family: apercu;
 		    font-size: 25px;
 		    letter-spacing: 1px;
-		    padding-left: 4%;
 		    float: left;
 		    position: absolute;
-		    bottom: 30px;
+		    bottom: 50px;
 		}
-		.bouton{
-			font-family: apercu;
-		    font-size: 20px;
-		    letter-spacing: 1px;
-		    position: absolute;
-		    bottom: 30px;
-		    right: 30px;
+		.post{
+			.bouton{
+				font-family: apercu;
+			    font-size: 20px;
+			    letter-spacing: 1px;
+			    position: absolute;
+			    bottom: 50px;
+			    right: 30px;
 		
+			}			
 		}
+		
 
 	}
 }
@@ -104,6 +265,7 @@ body.blog,body.faq{
 	main{
 		padding-left:3%;
 		padding-right:3%;
+		padding-top: 70px;
 		.content{
 			background-color:white;
 
@@ -120,7 +282,6 @@ body.blog,body.faq{
 				    position: absolute;
 				    background-color: white;
 				    color: #000;
-				    text-decoration: underline;
 				    font-family: apercu;
 				    font-size: 16px;
 				    outline: none;
@@ -128,14 +289,14 @@ body.blog,body.faq{
 			}
 			p{
 				font-family: apercu;
-				padding-left: 25px;
+				padding-left: 35px;
 				font-size: 16px;
 			}
 			h4{
 				font-family: apercu;
 				font-size: 30px;
 				letter-spacing: 1px;
-				padding-left: 25px;					
+				padding-left: 35px;					
 			}
 			.description{
 				padding-right: 25px;
@@ -153,7 +314,7 @@ body.blog,body.faq{
 				    height: 50px;
 				    width: 50px;
 				    z-index: 4;
-				    margin-right: 40px;
+				    margin-right: 15px;
 
 				}
 			}			
@@ -174,7 +335,7 @@ body.commanditaires{
 	    		font-family: druk-medium;
 			    color: #f42534;
 			    font-size: 56px!important;
-			    letter-spacing: 5px;
+			    letter-spacing: 3px;
 			    -webkit-transform: skew(180deg,167deg);
 			    transform: skew(180deg,167deg);
 			    /* position: absolute; */
@@ -208,8 +369,8 @@ body.commanditaires{
 			    margin-left: auto;
 			    margin-right: auto;
 			    position: relative;
-			   	width: 150px;
-			   	height: auto;
+				width: auto;
+				height: 200px;
 
     		}
     	}
@@ -218,7 +379,7 @@ body.commanditaires{
     		font-family: druk-medium;
 		    color: #f42534;
 		    font-size: 56px!important;
-		    letter-spacing: 5px;
+		    letter-spacing: 3px;
 		    -webkit-transform: skew(180deg,167deg);
 		    transform: skew(180deg,167deg);
 		    /* position: absolute; */
@@ -232,7 +393,7 @@ body.commanditaires{
     	}
     	.row-post{
     		background-color: white;
-    		padding: 20px 15px 20px 15px;
+    		padding: 30px 15px 25px 15px;
     		margin-bottom: 25px;
     		font-family: apercu;
 		    font-size: 15px;
@@ -242,25 +403,16 @@ body.commanditaires{
 		    }
 		    button{
 				background-color: #fff;
-			    border-style: none;
-			    border-bottom: #000;
-			    border-bottom-style: solid;
 			    padding-bottom: 3px;
-			    color: #000;
-			    font-family: apercu;
 			    font-size: 18px;
-			    outline: none;
 		    }
 		    a{
 		    	cursor: pointer;
 			    color: #000;
 			    font-family: apercu;
 			    letter-spacing: .05em;
-			    position: relative;
 			    font-size: 18px;
 			    padding-bottom: 3px;
-			    border-bottom-style: solid;
-			    border-bottom-width: thin;
 			    margin-left: auto;
 			    margin-right: auto;
 			    display: block;
@@ -271,8 +423,8 @@ body.commanditaires{
 			    background-size: 100%;
 			    position: relative;
 			    /* float: left; */
-			    height: auto;
-			    width: 200px;
+			    height: 200px;
+    			width: auto;
 			    z-index: 4;
 			    margin-right: 40px;
 			    margin-left: auto;
@@ -321,7 +473,7 @@ body.formateurs,body.a-propos{
 	    		font-family: druk-medium;
 			    color: #f42534;
 			    font-size: 56px!important;
-			    letter-spacing: 5px;
+			    letter-spacing: 3px;
 			    -webkit-transform: skew(180deg,167deg);
 			    transform: skew(180deg,167deg);
 			    /* position: absolute; */
@@ -362,11 +514,11 @@ body.formateurs,body.a-propos{
 				    margin-bottom: 42px;}
 		    	}
 		    .contenu{
-		    	width: 95%;
+		    	width: 100%;
     			margin-bottom: 25px;
 		    }
 		    .post-in-list:last-of-type {
-    			padding-left: 50px;
+    			padding-left: 4%;
 			}
 		    .formateurs-link{
 		    	display: block;
@@ -381,19 +533,10 @@ body.formateurs,body.a-propos{
 				    
 			    }
 			    .bouton{
-				    background-color: #fff;
-				    border-style: none;
-				    border-bottom: #000;
-				    border-bottom-style: solid;
-				    border-bottom-width: 2px;
-				    padding-bottom: 3px;
-				    color: #000;
-				    font-family: apercu;
-				    font-size: 16px;
-				    outline: none;
-				    margin-right: 15px;
-				    margin-top: 30px;
-				    margin-bottom: 25px;
+			    	display:table;
+			    	margin-right: auto;
+			    	margin-left: auto;
+			    	margin-bottom: 10px;
 
 			    	}
 		    }
@@ -446,14 +589,54 @@ body.formations{
     	margin-left: auto;
     	margin-right: auto;
     	position: relative;
-    	margin-top: 20px;;
+    	margin-top: 20px;
+    	.sur-demande{
+    		height: 400px;
+		    background-size: cover;
+		    background-position: center center;
+		    opacity: 1;
+		    transform: translateY(0px);
+		    .col-sm-6{
+		    	height: 400px;
+    			position: relative;
+    			h4{
+    				top: 75px;
+				    font-size: 56px!important;
+				    color: #fff;
+				    text-transform: uppercase;
+				    z-index: 15;
+				    letter-spacing: 3px;
+				    width: 450px;
+				    font-family: druk-medium;
+				    transform: skew(180deg,167deg);
+				    position: relative;
+				    right: -5px;
+				}
+				p{
+				    color: white;
+				    font-family: apercu;
+				    font-size: 18px;
+				    position: absolute;
+				    bottom: 60px;
+				    display: table;
+				}
+				.bouton{
 
+					color: white;
+					/* top: 400px; */
+					position: absolute;
+					bottom: 30px;
+				}
+    		}
+
+		}
+   	
     	.formation{
     		height: auto;
     		margin-bottom: 30px;
 	    	.content{
 	    		background-color: #fff;
-	    		padding:25px;
+	    		padding: 25px 30px 25px 30px;
 	    		.location{
 	    			font-family: apercu;
     				font-size: 16px;
@@ -515,6 +698,7 @@ body.formations{
 	    						font-family: apercu;
 							    font-size: 16px;
 							    outline: none;
+							    color:black;
 							    padding-top: 15px;
 
 	    					}
@@ -522,44 +706,39 @@ body.formations{
 	    			}
 	    		}
 	    		.qty{
-	    			margin-top: 50px;
 				    font-family: apercu;
 				    font-size: 18px;
-				    outline: none;
-				    width: 40%;
-				    position: relative;
-				    display: block;
+				    float: left;
 				    p{
 				    	font-family: apercu;
 					    font-size: 16px;
 					    color: #d3ced2;
 					    outline: none;
+
 				    }
 				   
 	    		}
 	    		 .bouton{
-				    
+				    	margin-top:30px;
 						float: right;
 						font-family: apercu;
 						font-size: 18px;
-						outline: none;
-						top:-30px;
-						position:relative;
-    					display: block;
-				    	
-				    }
+				}
 	    	}
 		}
 
-    }
+    	}
+	}
 }
-}
+	.list-filtre{
+	 display:none;
+	}
 	#filtres{
 	h4{
 		font-family: druk-medium;
     	color: #f42534;
     	font-size: 56px!important;
-    	letter-spacing: 5px;
+    	letter-spacing: 3px;
     	-webkit-transform: skew(180deg,167deg);
 	    transform: skew(180deg,167deg);
 	    position: absolute;
@@ -569,26 +748,37 @@ body.formations{
 	    z-index: 999;
 	    margin-left: 4%;
 	}
-	.row:last-of-type{
+	.white-bloc{
 		background-color: #fff;
+	    padding: 50px 15px 15px;
+	    width: 85%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	    margin-top: 150px;
+	    box-shadow: 3px 2px 12px rgba(0,0,0,.14);
+	}
+	.row:last-of-type{
+		/*background-color: #fff;
     	padding: 50px 15px 15px 15px;
     	width: 85%;
     	margin-left: auto;
     	margin-right: auto;
     	position: relative;
     	margin-top: 150px;
-    	box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.14);
+    	box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.14);*/
     	.section-filtre{
     		button{
     			background-color:white;
-				border-style: none;
-			    border-bottom: #000;
-			    border-bottom-style: solid;
-			    margin-right: 15px;
-			    margin-left: 15px;
+    			border: 3px solid white;
+    			border-bottom: 3px solid black;
+			    margin-right: auto;
+			    margin-left: auto;
 			    text-align: center;
 			    padding-bottom: 7px;
-			    width: 250px;
+			    padding-top: 7px;
+			    width: 75%;
+			    display: block;
 			    margin-bottom: 25px;
 			    font-family: apercu;
 			    font-size: 16px;
@@ -597,12 +787,14 @@ body.formations{
 			    transition: all .5s;
 			    -webkit-appearance: none;
 			    border-radius: 0;
+			    &.active{
+			    	border: 3px solid black;
+			    }
     		}
-    		ul{
+    		.row{
     			display: none;
     			padding-left:0px;
-				li{
-	    			width: 25%;
+				.col-sm-3{
 				    display: inline-block;
 				    border-style: none;
 				    border-bottom: #000;
@@ -610,7 +802,6 @@ body.formations{
 				    margin-left: 15px;
 				    text-align: center;
 				    padding-bottom: 7px;
-				    width: 250px;
 				    font-family: apercu;
 				    font-size: 14px;
 				    outline: none;
@@ -621,6 +812,27 @@ body.formations{
 	    		}
     		}
 
+    	}
+    	.list-filtre{
+    		.row{
+    			padding-left:0px;
+				.col-sm-3{
+				    display: inline-block;
+				    border-style: none;
+				    border-bottom: #000;
+				    text-align: left;
+				    padding-bottom: 7px;
+				    font-family: apercu;
+				    font-size: 14px;
+				    outline: none;
+				    padding-left: 4%;
+				    padding-right: 0px;
+				    -webkit-transition: all .5s;
+				    transition: all .5s;
+				    -webkit-appearance: none;
+				    border-radius: 0;
+	    		}
+    		}
     	}
 	}
 }
