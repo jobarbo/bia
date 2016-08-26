@@ -1,0 +1,73 @@
+
+/*--------------------Bia-blog et faq---------------------------*/
+body.blog,body.faq{
+	#list-post-blog-faq{
+		.row{
+			margin-bottom:45px;
+		}
+	}
+
+	main{
+		padding-left:5%;
+		padding-right:5%;
+		padding-top: 70px;
+
+		.container-fluid{
+			padding-left:0;
+			padding-right:0;
+		}
+
+		.content{
+			background-color:white;
+			padding:25px;
+			.image{
+				height: 400px;
+    			position: relative;
+    			background-size: cover;
+    			background-position: center center;
+    			margin-bottom: 25px;
+    			margin-top:-25px;
+    			margin-left:-25px;
+    			margin-right:-25px;
+    			.encadre{
+    				padding: 15px 25px 15px 25px;
+				    bottom: 20px;
+				    left: 30px;
+				    position: absolute;
+				    background-color: white;
+				    color: #000;
+				    font-family: apercu;
+				    font-size: 16px;
+				    outline: none;
+    			}
+			}
+			p{
+				font-family: apercu;
+				font-size: 16px;
+			}
+			h4{
+				font-family: apercu;
+				font-size: 30px;
+				letter-spacing: 1px;				
+			}
+			.description{
+				
+				a{
+					padding-top: 25px;
+    				display: inline-block;
+				}					
+			}
+			.author{
+				img{
+					box-shadow: 0 1px 5px #888;
+					border-radius: 50%;
+				    height: 50px;
+				    width: 50px;
+				    z-index: 4;
+				    margin-right: 15px;
+
+				}
+			}			
+		}
+	}
+}

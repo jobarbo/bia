@@ -1,0 +1,186 @@
+.form-submit{
+	margin-bottom:0;
+}
+
+#comments-content{
+	background-color:white;
+	box-shadow: rgba(0, 0, 0, 0.137255) 3px 2px 12px;
+	padding:25px;
+	margin-bottom:45px;
+	label{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		color:#a9a9a9;
+		font-family:'apercu';
+		letter-spacing:0.025em;
+		font-size:16px;
+		transition:0.3s transform ease-in-out, 0.3s opacity ease-in-out;
+	}
+}
+
+#comments{
+	.titreSection{
+		position: relative;
+	    top: 0;
+	    display: table;
+	    left: 5%;
+	    margin-left: 15px;
+	    margin-bottom:50px;
+	}
+
+	.comment-list{
+		list-style-type:none;
+		padding-left:0;
+	}
+
+	.comment{
+		article{
+			padding:0;
+		}
+	}
+
+	.comment-form-comment{
+		label{
+			display:none;
+		}
+	}
+
+	.comment-author{
+		img{
+			box-shadow: 0 1px 5px #888;
+		    border-radius: 50%;
+		    height: 50px;
+		    width: 50px;
+		    z-index: 4;
+		    margin-right: 15px;
+		}
+	}
+
+	.says{
+		display:none;
+	}
+
+	#comment{
+		width:100%;
+		resize:none;
+		border: 3px solid black;
+		&:focus{
+			outline:none;
+		}
+	}
+
+	#reply-title{
+		margin-top:30px;
+		&:before{
+			display:block;
+			height:1px;
+			width:100%;
+			background-color:#eee;
+			content:'';
+			margin-bottom:30px;
+		}
+	}
+
+	.cont-field{
+		width:50%;
+		float:left;
+		display: block;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    margin-bottom:45px;
+	    position:relative;
+	    overflow:hidden;
+	    &:first-of-type{
+	    	padding-left:0;
+	    	padding-right:30px;
+	    }
+
+	    &:last-of-type{
+	    	padding-left:30px;
+	    	padding-right:0;
+	    }
+	    
+	    &:after{
+			
+		}
+	}
+
+	.comment-form-comment{
+		margin-bottom:45px;
+	}
+
+	.comment{
+		margin-bottom:45px;
+	}
+
+	.comments-author, .comments-email{
+		display:table;
+		margin-right:30px;
+		border-style: none;
+	    border-bottom: #000;
+	    border-bottom-style: solid;
+	    text-align: center;
+	    padding-bottom: 7px;
+	    width: 100%;
+	    font-family: apercu;
+	    font-size: 16px;
+	    outline: none;
+	    -webkit-transition: all .5s;
+	    transition: all .5s;
+	    -webkit-appearance: none;
+	    border-radius: 0;
+	    position:relative;
+	    z-index: 99;
+    	background-color: transparent;
+	}
+
+	.comment-metadata a{
+		text-decoration:none;
+		cursor:default;
+		pointer-events:none;
+		font-family:'apercu';
+		margin-top:15px;
+		display:block;
+	}
+
+	.comment-from-email{
+		margin-right:0;
+	}
+
+	.comment-notes{
+		display:none;
+	}
+
+	.form-submit{
+		display:table;
+		margin-left:auto;
+		margin-right:auto;
+		.submit{
+			border: none;
+		    background-color: #f42534;
+		    color: #fff;
+		    padding: 10px 20px;
+		    outline: none;
+		    font-family: Apercu;
+		    text-align: center;
+		    position: relative;
+		    transition: all .5s ease;
+		} 
+	    &:before{
+	    	content: "";
+		    display: table;
+		    position: relative;
+		    top: 20px;
+		    margin-top:-20px;
+		    left: 0;
+		    width: 0;
+		    height: 0;
+		    z-index: 9;
+		    border-top: 20px solid #fff;
+		    border-right: 20px solid transparent;
+	    }
+	}
+}
+

@@ -1,7 +1,98 @@
 body{
+	background-color:#f42534;
+	transition:0.5s transform ease-in-out;
 	overflow-x:hidden;
+	width:100%;
+	&#tinymce{
+		background-color:white;
+	}
 }
+
+
+
+//Éléments généraux
+main{
+	height: auto;
+   	background: url(../images/background_grey_min.png) repeat-y 5% 0,url(../images/background_grey_min.png) repeat-y 95% 0,url(../images/background_grey_min.png) repeat-y 50%,#f2f2f2;
+    position: relative;
+    z-index: 5;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li,ul{
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+
+
+h2 {
+    font-size: 65px!important;
+    width: auto;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity:0;
+    transform:translateY(-15px);
+    transition:0.5s opacity ease-in-out, 0.5s transform ease-in-out;
+    &.visually-visible{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+p{
+	font-family:apercu;
+	font-size:16px;
+	-webkit-font-smoothing: antialiased;
+}
+ul{
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+//Classes générales
+.titreSection {
+    transform: skew(180deg, 167deg) translateZ(0);
+    position: absolute;
+    top: 150px;
+    text-transform: uppercase;
+    z-index: 999;
+    font-family: druk-medium;
+    color: #f42534;
+    font-size: 56px!important;
+    letter-spacing: 3px;
+}
+
 .borderBox{
     overflow: hidden;
 }
 
+.no-scroll{
+	overflow:hidden;
+	#splash{
+		transform:translateX(-100px);
+	}
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.encadre{
+	padding: 15px 25px;
+    background-color: #fff;
+    color: #000;
+    font-family: apercu;
+    font-size: 16px;
+    display: table;
+   
+}

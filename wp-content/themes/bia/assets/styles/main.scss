@@ -7,14 +7,16 @@
 
 @import "common/global";
 @import "components/buttons";
-@import "components/comments";
-@import "components/forms";
 @import "components/grid";
-@import "components/wp-classes";
+@import "components/comments";
+@import "components/inputs";
 @import "layouts/header";
 @import "layouts/home";
-@import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import "layouts/single";
+@import "layouts/shop";
+@import "layouts/blog-faq";
+@import "layouts/commanditaires";
+@import "layouts/a-propos";
+@import "layouts/formations";

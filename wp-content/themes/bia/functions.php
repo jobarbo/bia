@@ -39,9 +39,29 @@ if( function_exists('acf_add_options_page') ) {
  
 }
 
+add_filter( 'comment_form_default_fields', 'comment_placeholders' );
+
+/**
+ * Change default fields, add placeholder and change type attributes.
+ *
+ * @param  array $fields
+ * @return array
+ */
+function comment_placeholders( $fields )
+{
+    
+    $fields['author'] = '<div class="cont-field"><input placeholder="'._x('Prénom & Nom','bia').'" type="text" name="author" id="author" class="comments-author"  /></div>';
+
+    $fields['email'] = '<div class="cont-field"><input placeholder="'._x('Adresse courriel','bia').'" type="email" name="email" id="email" class="comments-email"  /></div><span class="clear"></span>';
+    $fields['url'] = '';
+
+    return $fields;
+}
+
 // Replaces the excerpt "Read More" text by a link
 function new_excerpt_more($more) {
        global $post;
   return '</br><a class="bouton" href="'. get_permalink($post->ID) . '"> Lire la suite</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+

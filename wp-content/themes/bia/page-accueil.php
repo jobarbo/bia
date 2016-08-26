@@ -6,7 +6,7 @@
 				<div class="col-md-8 col-md-height imgProfessionel" style="background-image: url(<?php echo get_field('image_section_1'); ?>">
 
 				</div>
-				<div class="col-md-4 col-md-height col-sm-top textProfessionel">
+				<div class="col-md-4 col-md-height col-sm-middle textProfessionel">
 					<div id="proContent">
 						<h3 class="titreSection" "><?php echo get_field('titre_1'); ?></h3>
 						<?php echo get_field('texte_1'); ?>
@@ -17,29 +17,9 @@
 			</div>
 		</div>
 	</div>
-	<div id="approcheScientifique">
-		<div class="container-fluid">
-		<div class="carre" data-bottom-top="opacity:0;margin-top:-150px" data-center="opacity:1;margin-top:0px"><p>1</p></div>
-			<div class="row borderBox">
-				
-				<div class="row-height">
-						<div class="col-md-6 col-md-height col-md-middle leftBox">
-							<div class="electrocardiogram">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/electrocardiogram.png" />
-							</div>
-						</div>
-						<h3 class="titreSection"><?php echo get_field('titre_2'); ?></h3>
-						<div class="col-md-6 col-md-height col-md-middle rightBox">
-							<p><?php echo get_field('texte_2'); ?></p>
-						</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="formateursRenommes">
 		<div class="container-fluid">
-		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>2</p></div>
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>1</p></div>
 			<div class="row borderBox">
 			
 				<div class="row-height">
@@ -70,15 +50,16 @@
 			</div>
 		</div>
 	</div>
+	
 	<div id="formationsVariee">
 		<div class="container-fluid">
-		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>3</p></div>
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>2</p></div>
 			<div class="row borderBox">
 			
 				<div class="row-height">
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="triangle">
-								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/triangle_white.png" />
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/triangle_red.png" />
 							</div>
 						</div>
 						<h3 class="titreSection"><?php echo get_field('titre_4'); ?></h3>
@@ -93,4 +74,25 @@
 		</div>
 	</div>
 	
+
+	<div id="approcheScientifique">
+		<div class="container-fluid">
+		<div class="carre" data-bottom-top="opacity:0;margin-top:-150px" data-center="opacity:1;margin-top:0px"><p>3</p></div>
+			<div class="row borderBox">
+				
+				<div class="row-height">
+						<div class="col-md-6 col-md-height col-md-middle leftBox">
+							<div class="electrocardiogram">
+								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/electrocardiogram.png" />
+							</div>
+						</div>
+						<h3 class="titreSection"><?php echo get_field('titre_2'); ?></h3>
+						<div class="col-md-6 col-md-height col-md-middle rightBox">
+							<p><?php echo get_field('texte_2'); ?></p>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 

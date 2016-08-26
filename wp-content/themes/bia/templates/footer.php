@@ -1,21 +1,8 @@
 <div id="pageContact">
 		<div class="container-fluid">
 			<div class="row borderBox">
-			<ul class="social mobile"> 
-						<?php if(get_field('facebook','option')){ ?>
-							<li><a href="<?php echo get_field('facebook','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
-						<?php } ?>
-						<?php if(get_field('instagram','option')){ ?>
-							<li><a href="<?php echo get_field('instagram','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
-						<?php } ?>
-						<?php if(get_field('twitter','option')){ ?>
-							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
-						<?php } ?>
-						<?php if(get_field('linkedin','option')){ ?>
-							<li><a href="<?php echo get_field('linkedin','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/linkedin.svg" alt="Logo LinkedIn" /></a></li>
-						<?php } ?>
-			</ul>
-				<div class="footerBloc">
+			
+				<div class="footerBloc" data-bottom-top="opacity:0;" data-center="opacity:1;">
 					<div class="row">
 						<?php if(!is_page('122')){ ?>
 							<div class="col-md-6 bg-photo">
@@ -50,7 +37,21 @@
 						<?php } ?>
 					</div>					
 				</div>
-				<div class="containerFeed">
+				<ul class="social mobile"> 
+						<?php if(get_field('facebook','option')){ ?>
+							<li><a href="<?php echo get_field('facebook','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/facebook.svg" alt="Logo Facebook" /></a></li>
+						<?php } ?>
+						<?php if(get_field('instagram','option')){ ?>
+							<li><a href="<?php echo get_field('instagram','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/instagram.svg" alt="Logo Instagram" /></a></li>
+						<?php } ?>
+						<?php if(get_field('twitter','option')){ ?>
+							<li><a href="<?php echo get_field('twitter','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter.svg" alt="Logo Twitter" /></a></li>
+						<?php } ?>
+						<?php if(get_field('linkedin','option')){ ?>
+							<li><a href="<?php echo get_field('linkedin','option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/linkedin.svg" alt="Logo LinkedIn" /></a></li>
+						<?php } ?>
+			</ul>
+				<div class="containerFeed" >
 					<div id="instagramFeed">
 						<div class="instagramImage" >
 							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
@@ -71,7 +72,7 @@
 						<span class="clear"></span>
 					</div>
 				</div>
-				<h3 class="titreSection">#biaformations</h3>
+				<h3 class="titreSection" data-bottom-top="opacity:0;" data-center="opacity:1;">#biaformations</h3>
 				<div class="row-height">
 					
 					<ul class="social desktop"> 
@@ -97,7 +98,7 @@
 <footer class="content-info">
   <div class="container-fluid">
     <div class="row">
-    	<div class="col-sm-6">
+    	<div class="col-sm-6 sub-menu-footer">
     		<?php
 				if (has_nav_menu('top_navigation')) :
 				    wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav']);

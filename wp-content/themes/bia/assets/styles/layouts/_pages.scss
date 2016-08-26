@@ -1,739 +1,5 @@
-.bouton{
-	background-color: transparent;
-    color: #000;
-    font-family: apercu;
-    font-size: 16px;
-    position:relative;
-    &:hover{
-    	text-decoration:none;
-		color:black;
 
-		&:after{
-			opacity: 0;
-			transform: translateY(5px);
-		}
-    }
-    &:focus{
-    	text-decoration:none;
-		color:black;
-    }
-    &:after{
-    	transform: translateY(0);
-	   	position:absolute;
-	   	width:100%;
-	   	height:1px;
-	   	content:'';
-	   	left: 0;
-	   	top:100%;
-	   	opacity:1;
-	   	display:block;
-	   	transition:0.15s all ease-in-out;
-	   	background-color:black;
-    }
-
-    &.white{
-    	color:white;
-
-    	&:after{
-    		background-color:white;
-    	}
-    }
-}
-
-
-main{
-	height: auto;
-   	background: url(../images/background_grey_min.png) repeat-y 5% 0,url(../images/background_grey_min.png) repeat-y 95% 0,url(../images/background_grey_min.png) repeat-y 50%,#f2f2f2;
-    position: relative;
-    z-index: 5;
-}
-p{
-	font-family:apercu;
-	font-size:16px;
-	-webkit-font-smoothing: antialiased;
-}
-ul{
-	-webkit-font-smoothing: antialiased;
-}
-.encadre{
-	padding: 15px 25px;
-    background-color: #fff;
-    color: #000;
-    font-family: apercu;
-    font-size: 16px;
-    display: table;
-    &:after{
-		content:'';
-		width:100%;
-		height:1px;
-		background-color:black;
-		display:block;
-	}
-}
-p.author{
-	font-family: apercu;
-    padding-left: 25px;
-    font-size: 16px;
-
-	img{
-		box-shadow: 0 1px 5px #888;
-	    border-radius: 50%;
-	    height: 50px;
-	    width: 50px;
-	    z-index: 4;
-	    margin-right: 15px;
-	}
-}
-/*--------------------Bia-single formation et single FAQ---------------------------*/
-body.single-post,body.single-faq-article{
-	main{
-		h3{
-			font-family: apercu;
-    		font-size: 30px;
-    		letter-spacing: 1px;
-
-		}
-		article{
-			padding: 70px;
-			.container-single{
-				display: block;
-			    max-width: 75%;
-			    margin-left: auto;
-			    margin-right: auto;
-			}
-			.author{
-				padding-left:0px;
-				margin-top: 40px;
-			}
-			#page-builder{
-				.text{
-					display: block;
-				    margin-left: auto;
-				    margin-right: auto;
-				    max-width: 75%;
-				    p{
-				    	margin-top: 20px;
-    					margin-bottom: 20px;
-				    }p:last-of-type{
-				    	margin-bottom: 50px;
-				    }
-				}
-				.image{
-					img{
-						width:100%;
-						
-
-					}img:last-of-type{
-						margin-bottom: 50px;
-					}
-				}
-				.link{
-					display: block;
-				    margin-left: auto;
-				    margin-right: auto;
-				    max-width: 75%;
-				}
-			}
-		}
-
-	}
-}
-
-
-/*--------------------Bia-single formation---------------------------*/
-body.single-product{
-	main{
-
-		.content-formation .bouton:first-of-type{
-			margin-right:20px;
-		}
-		p.width-fixed{
-			float: left;
-			width: 120px;
-			height: 40px;
-			clear: both;
-			margin-bottom: 0;
-		}
-
-		.col-sm-6{
-			padding:50px;
-		}
-		.description{
-			font-family: apercu;
-    		font-size: 16px;
-		}
-		.heure{
-			font-family: apercu;
-    		font-size: 20px;
-    		letter-spacing: 1px;
-    		margin-top: 15px;
-    		span{
-
-    			font-size: 16px;
-    			p{
-    				display: inherit;
-    				width: auto;
-    			}
-    		}
-		}
-		.endroit{
-			font-family: apercu;
-    		font-size: 20px;
-    		letter-spacing: 1px;
-    		margin-top: 15px;
-    		margin-bottom: 30px;
-    		p.width-fixed{
-				height: 70px;
-			}
-    		span{
-
-	    		font-size: 16px;
-	    		p{
-	    			display: inherit;
-    				width: auto;
-	    		}
-    		}
-		}
-		.post{
-			background-size:cover;
-			background-position: center center;
-		}
-		.date{
-			font-family: apercu;
-		    font-size: 20px;
-		    span{
-		    	font-size: 16px;
-		    }
-		}
-		h4{
-			font-family: apercu;
-		    font-size: 30px;
-		    letter-spacing: 1px;
-		}
-		.formateurs-list{
-			h6{
-				font-family: apercu;
-			    font-size: 20px;
-			    letter-spacing: 1px;
-			}
-			ul{
-				list-style: none;
-			    padding: 0;
-			    font-family: apercu;
-			    font-size: 16px;
-			    letter-spacing: 1px;
-			    li{
-			    	display: inline-block;
-			    	background-color: transparent;
-				    border-style: none;
-				    border-bottom: #000;
-				    border-bottom-style: solid;
-				    border-bottom-width: 2px;
-				    color: #000;
-				    font-family: apercu;
-				    p{
-				    	margin-bottom:0px;
-				    }
-			    }
-			}
-		}
-		.price{
-			font-family: apercu;
-		    font-size: 25px;
-		    letter-spacing: 1px;
-		    float: left;
-		    position: absolute;
-		    bottom: 50px;
-		}
-		.post{
-			.bouton{
-				font-family: apercu;
-			    font-size: 20px;
-			    letter-spacing: 1px;
-			    position: absolute;
-			    bottom: 50px;
-			    right: 30px;
-		
-			}			
-		}
-		
-
-	}
-}
-/*--------------------Bia-blog et faq---------------------------*/
-body.blog,body.faq{
-	main{
-		padding-left:3%;
-		padding-right:3%;
-		padding-top: 70px;
-		.content{
-			background-color:white;
-
-			.image{
-				height: 400px;
-    			position: relative;
-    			background-size: cover;
-    			background-position: center center;
-    			margin-bottom: 25px;
-    			.encadre{
-    				padding: 15px 25px 15px 25px;
-				    bottom: 20px;
-				    left: 30px;
-				    position: absolute;
-				    background-color: white;
-				    color: #000;
-				    font-family: apercu;
-				    font-size: 16px;
-				    outline: none;
-    			}
-			}
-			p{
-				font-family: apercu;
-				padding-left: 35px;
-				font-size: 16px;
-			}
-			h4{
-				font-family: apercu;
-				font-size: 30px;
-				letter-spacing: 1px;
-				padding-left: 35px;					
-			}
-			.description{
-				padding-right: 25px;
-				padding-bottom: 30px;
-				margin-bottom: 40px;
-				a{
-					padding-top: 25px;
-    				display: inline-block;
-				}					
-			}
-			.author{
-				img{
-					box-shadow: 0 1px 5px #888;
-					border-radius: 50%;
-				    height: 50px;
-				    width: 50px;
-				    z-index: 4;
-				    margin-right: 15px;
-
-				}
-			}			
-		}
-	}
-}
-
-/*--------------------Bia-commanditaires---------------------------*/
-body.commanditaires{
-	main{
-		
-    	#list-post-type{
-    		margin-bottom: 50px;
-    		.post-in-list{
-    			margin-top: 50px;
-    		}
-    		h4{
-	    		font-family: druk-medium;
-			    color: #f42534;
-			    font-size: 56px!important;
-			    letter-spacing: 3px;
-			    -webkit-transform: skew(180deg,167deg);
-			    transform: skew(180deg,167deg);
-			    /* position: absolute; */
-			    text-transform: uppercase;
-			    width: 200px;
-			    top: 50px;
-			    z-index: 999;
-			    margin-bottom: 50px;
-			    margin-left: 5%;
-			    margin-top: 75px;
-    		}
-    		a{
-    			cursor: pointer;
-			    letter-spacing: .05em;
-			    position: relative;
-			    border-bottom-width: thin;
-			    margin-left: auto;
-			    margin-right: auto;
-			    display: block;
-			    width: 80px;
-			    text-align: center;
-			    border-bottom-style: solid;
-			    padding-bottom: 3px;
-			    color: #000;
-			    font-family: apercu;
-			    font-size: 18px;
-    		}
-    		img{
-    			border-radius: 50%;
-			    display: block;
-			    margin-left: auto;
-			    margin-right: auto;
-			    position: relative;
-				width: auto;
-				height: 200px;
-
-    		}
-    	}
-    	.row-title{
-    		h4{
-    		font-family: druk-medium;
-		    color: #f42534;
-		    font-size: 56px!important;
-		    letter-spacing: 3px;
-		    -webkit-transform: skew(180deg,167deg);
-		    transform: skew(180deg,167deg);
-		    /* position: absolute; */
-		    text-transform: uppercase;
-		    width: 200px;
-		    top: 50px;
-		    z-index: 999;
-		    margin-bottom: 50px;
-		    margin-left: 5%;
-    		}
-    	}
-    	.row-post{
-    		background-color: white;
-    		padding: 30px 15px 25px 15px;
-    		margin-bottom: 25px;
-    		font-family: apercu;
-		    font-size: 15px;
-		    outline: none;
-		    .post-in-list:last-of-type{
-		    	padding-left:50px;
-		    }
-		    button{
-				background-color: #fff;
-			    padding-bottom: 3px;
-			    font-size: 18px;
-		    }
-		    a{
-		    	cursor: pointer;
-			    color: #000;
-			    font-family: apercu;
-			    letter-spacing: .05em;
-			    font-size: 18px;
-			    padding-bottom: 3px;
-			    margin-left: auto;
-			    margin-right: auto;
-			    display: block;
-			    width: 80px;
-			    text-align: center;
-		    }
-    		img{
-			    background-size: 100%;
-			    position: relative;
-			    /* float: left; */
-			    height: 200px;
-    			width: auto;
-			    z-index: 4;
-			    margin-right: 40px;
-			    margin-left: auto;
-			    margin-right: auto;
-			    display: block;
-    		}
-    		h5{
-    			font-family: druk-medium;
-			    color: #000;
-			    font-size: 36px!important;
-			    letter-spacing: 2px;
-			    -webkit-transform: skew(180deg,167deg);
-			    transform: skew(180deg,167deg);
-			    text-transform: uppercase;
-			    width: 220px;
-			    top: 50px;
-			    z-index: 999;
-			    margin-bottom: 42px;
-    		}
-    		.titre{
-    			font-family: apercu;
-    			font-size: 18px;
-    			outline: none;
-    		}
-    		.contenu{
-    			width: 95%;
-    			margin-bottom: 25px;
-    		}
-    	}
-    	.row-title{
-    		margin-top: 75px;
-    	}
-    	
-	}
-	
-}
-
-
-
-/*--------------------Bia-Formateurs-apropos--------------------------*/
-body.formateurs,body.a-propos{
-	main{
-    	.row-title{
-    		margin-top: 60px;
-    		h4{
-	    		font-family: druk-medium;
-			    color: #f42534;
-			    font-size: 56px!important;
-			    letter-spacing: 3px;
-			    -webkit-transform: skew(180deg,167deg);
-			    transform: skew(180deg,167deg);
-			    /* position: absolute; */
-			    text-transform: uppercase;
-			    width: 200px;
-			    top: 50px;
-			    z-index: 999;
-			    margin-bottom: 50px;
-			    margin-left: 5%;
-    		}
-    	}
-    	.row-post{
-    		background-color: white;
-    		padding: 20px 15px 20px 15px;
-    		margin-bottom: 25px;
-    		font-family: apercu;
-		    font-size: 15px;
-		    outline: none;
-		    .post-right{
-		    	padding-top: 25px;
-			    padding-bottom: 25px;
-			    padding-left: 50px;
-			    padding-right: 15px;
-			    .content{    
-			    	width: 95%;
-			    }
-		    	h4{
-			    	font-family: druk-medium;
-				    color: #000;
-				    font-size: 36px!important;
-				    letter-spacing: 2px;
-				    -webkit-transform: skew(180deg,167deg);
-				    transform: skew(180deg,167deg);
-				    text-transform: uppercase;
-				    width: 220px;
-				    top: 50px;
-				    z-index: 999;
-				    margin-bottom: 42px;}
-		    	}
-		    .contenu{
-		    	width: 100%;
-    			margin-bottom: 25px;
-		    }
-		    .post-in-list:last-of-type {
-    			padding-left: 4%;
-			}
-		    .formateurs-link{
-		    	display: block;
-			    width: auto;
-			    margin-left: auto;
-			    margin-right: auto;
-			    margin-top: 20px;
-    			margin-bottom: 20px;
-    			text-align: center;
-			    a{
-				    text-align: center;
-				    
-			    }
-			    .bouton{
-			    	display:table;
-			    	margin-right: auto;
-			    	margin-left: auto;
-			    	margin-bottom: 10px;
-
-			    	}
-		    }
-		    
-		    
-
-
-    		img{
-			    background-size: 100%;
-			    border-radius: 50%;
-			    position: relative;
-			    height: 200px;
-			    width: 200px;
-			    z-index: 4;
-			    margin-left: auto;
-			    margin-right: auto;
-			    display: block;
-    		}
-    		h5{
-    			font-family: druk-medium;
-			    color: #000;
-			    font-size: 36px!important;
-			    letter-spacing: 2px;
-			    -webkit-transform: skew(180deg,167deg);
-			    transform: skew(180deg,167deg);
-			    text-transform: uppercase;
-			    width: 220px;
-			    top: 50px;
-			    z-index: 999;
-			    margin-bottom: 42px;
-    		}
-    		.titre{
-    			font-family: apercu;
-    			font-size: 18px;
-    			outline: none;
-    		}
-    	}
-    	
-	}
-	
-}
-
-/*--------------------Bia-Formations---------------------------*/
-body.formations{
-	main{
-	
-	#list-formations{
-		padding: 50px 15px 15px;
-    	width: 90%;
-    	margin-left: auto;
-    	margin-right: auto;
-    	position: relative;
-    	margin-top: 20px;
-    	.sur-demande{
-    		height: 400px;
-		    background-size: cover;
-		    background-position: center center;
-		    opacity: 1;
-		    transform: translateY(0px);
-		    .col-sm-6{
-		    	height: 400px;
-    			position: relative;
-    			h4{
-    				top: 75px;
-				    font-size: 56px!important;
-				    color: #fff;
-				    text-transform: uppercase;
-				    z-index: 15;
-				    letter-spacing: 3px;
-				    width: 450px;
-				    font-family: druk-medium;
-				    transform: skew(180deg,167deg);
-				    position: relative;
-				    right: -5px;
-				}
-				p{
-				    color: white;
-				    font-family: apercu;
-				    font-size: 18px;
-				    position: absolute;
-				    bottom: 60px;
-				    display: table;
-				}
-				.bouton{
-
-					color: white;
-					/* top: 400px; */
-					position: absolute;
-					bottom: 30px;
-				}
-    		}
-
-		}
-   	
-    	.formation{
-    		height: auto;
-    		margin-bottom: 30px;
-	    	.content{
-	    		background-color: #fff;
-	    		padding: 25px 30px 25px 30px;
-	    		.location{
-	    			font-family: apercu;
-    				font-size: 16px;
-    				outline: none;
-	    		}
-	    		.date{
-	    			font-family: apercu;
-    				font-size: 18px;
-    				outline: none;
-	    		}
-	    		h5{
-	    			font-family: druk-medium;
-				    color: #000000;
-				    font-size: 36px!important;
-				    letter-spacing: 2px;
-				    -webkit-transform: skew(180deg,167deg);
-				    transform: skew(180deg,167deg);
-				    /* position: absolute; */
-				    text-transform: uppercase;
-				    width: 220px;
-				    top: 50px;
-				    z-index: 999;
-				    /* margin-left: 25px; */
-				    margin-bottom: 42px;
-	    		}
-	    		.formateurs-list{
-	    			h6{
-	    				font-family: apercu;
-					    font-size: 16px;
-					    color: #d3ced2;
-					    outline: none;
-					
-	    			}
-	    			ul{
-	    				padding-left:0px;
-	    				li{
-	    					list-style: none;
-	    					margin-top: 0px;
-    						margin-bottom: 50px;
-    						clear: both;
-	    					img{
-
-	    						
-	    					    background-size: 100%;
-							    border-radius: 50%;
-							    position: relative;
-							    float: left;
-							   	box-shadow: 0px 1px 5px #888;;
-							    height: 60px;
-							    /* left: -36px; */
-							    width: 60px;
-							    /* top: 135px; */
-							    /* right: 345px; */
-							    z-index: 4;
-							    margin-right: 40px;	
-
-	    					}
-	    					p{
-	    						font-family: apercu;
-							    font-size: 16px;
-							    outline: none;
-							    color:black;
-							    padding-top: 15px;
-
-	    					}
-	    				}
-	    			}
-	    		}
-	    		.qty{
-				    font-family: apercu;
-				    font-size: 18px;
-				    float: left;
-				    p{
-				    	font-family: apercu;
-					    font-size: 16px;
-					    color: #d3ced2;
-					    outline: none;
-
-				    }
-				   
-	    		}
-	    		 .bouton{
-				    	margin-top:30px;
-						float: right;
-						font-family: apercu;
-						font-size: 18px;
-				}
-	    	}
-		}
-
-    	}
-	}
-}
-	.list-filtre{
-	 display:none;
-	}
-	#filtres{
+#filtres{
 	h4{
 		font-family: druk-medium;
     	color: #f42534;
@@ -746,7 +12,8 @@ body.formations{
 	    width: 200px;
 	    top: 50px;
 	    z-index: 999;
-	    margin-left: 4%;
+	    padding-left: 5%;
+	    margin-left:-13px;
 	}
 	.white-bloc{
 		background-color: #fff;
@@ -757,21 +24,16 @@ body.formations{
 	    position: relative;
 	    margin-top: 150px;
 	    box-shadow: 3px 2px 12px rgba(0,0,0,.14);
+
+	    hr{
+	    	width:92%;
+	    }
 	}
 	.row:last-of-type{
-		/*background-color: #fff;
-    	padding: 50px 15px 15px 15px;
-    	width: 85%;
-    	margin-left: auto;
-    	margin-right: auto;
-    	position: relative;
-    	margin-top: 150px;
-    	box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.14);*/
     	.section-filtre{
     		button{
     			background-color:white;
     			border: 3px solid white;
-    			border-bottom: 3px solid black;
 			    margin-right: auto;
 			    margin-left: auto;
 			    text-align: center;
@@ -783,12 +45,24 @@ body.formations{
 			    font-family: apercu;
 			    font-size: 16px;
 			    outline: none;
-			    -webkit-transition: all .5s;
 			    transition: all .5s;
 			    -webkit-appearance: none;
 			    border-radius: 0;
+			    position:relative;
 			    &.active{
 			    	border: 3px solid black;
+			    }
+			    &:before{
+			    	content: '';
+				    height: 3px;
+				    width: 100%;
+				    position: absolute;
+				    left: 0;
+				    display: table;
+				    background-color: black;
+				    margin-left: 0;
+				    bottom:-3px;
+
 			    }
     		}
     		.row{
@@ -837,4 +111,98 @@ body.formations{
 	}
 }
 
- 
+.section-filtre button:after{
+	display:inline-block;
+	margin-left:15px;
+	content:'+';
+	font-weight: bolder;
+	font-family: apercu;
+	font-size: larger;
+	transition: all .5;
+	transform-origin: 50% 0;	   
+}
+
+	.list-filtre .list-item:after{
+		display:inline-block;
+		margin-left:15px;
+		content:'+';
+	    font-weight: bolder;
+	    font-family: apercu;
+	    font-size: larger;
+	    -webkit-transition: all .5;
+	}
+
+	.list-filtre .list-item.active:after{
+		content:'-';
+		color:#f42534;
+	}
+
+	.list-item:hover, .list-item.active{
+		color:#f42534;
+	}
+
+	.list-filtre .col-sm-3{
+		cursor:pointer;
+	}
+
+	#form-filtres input[type="text"]{
+		display:none;
+	}
+
+	#btFiltres{
+		margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	    margin-bottom: 15px;
+	    margin-top: 30px;
+	    border: none;
+	    background-color: #f42534;
+	    color: #fff;
+	    padding: 10px 20px;
+	    margin-top: 20px;
+	    outline: none;
+	    font-family: Apercu;
+	    width: 150px;
+	    text-align: center;
+	    margin-bottom: 70px;
+	    position: relative;
+	    -webkit-transition: all .5s ease;
+	    transition: all .5s ease;
+	}
+
+	@media only screen and (max-width: 1500px){
+		#filtres{
+			.row{
+				&:last-of-type{
+					.section-filtre{
+						button{
+							width:100%;
+						}
+					}
+				}
+			}
+
+			.white-bloc{
+				hr{
+					width:97%;
+				}
+			}
+		}
+
+
+	}
+
+	@media only screen and (max-width: 900px){
+		#filtres{
+			.row{
+				&:last-of-type{
+					.section-filtre{
+						button{
+							font-size:14px;
+						}
+					}
+				}
+			}
+		} 
+	}
+

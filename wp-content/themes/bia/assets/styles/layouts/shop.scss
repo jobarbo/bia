@@ -1,0 +1,302 @@
+body.woocommerce-page{
+	.page-header{
+		display:none;
+	}
+
+	main{
+		padding:70px 5% 0;
+	}
+
+	.titreSection{
+		display:table;
+		position:relative;
+		margin-bottom: 0;
+    	top: 25px;
+    	left: 25px;
+	}
+}
+
+body.woocommerce-checkout{
+	#splash{
+		height:80px;
+		min-height:initial;
+	}
+
+	#barreV{
+		display:none;
+	}
+
+	.woocommerce-info{
+		display:none;
+	}
+
+	.woocommerce-billing-fields{
+		label{
+			display:none;
+		}
+	}
+
+	#billing_company_field{
+		display:none;
+	}
+
+	.select2-container .select2-choice{
+		border:0;
+		border-bottom:3px solid black;
+		text-align:center;
+		margin-bottom:15px;
+	}
+
+	.select2-search{
+		input[type="text"]{
+			border:0;
+		}
+	}
+
+	.form-row.notes{
+		margin-top:30px;
+	}
+
+	.woocommerce-billing-fields{
+
+		input[type="text"],input[type="email"],input[type="tel"]{
+			display:table;
+			margin-bottom:15px!important;
+		}
+
+	}
+
+	#payment{
+		margin-top: 25px;
+	    border-radius: 0;
+	    padding: 25px;
+	    background-color:#f2f2f2;
+		div.form-row{
+			margin:0;
+		}
+
+		div{
+			&.form-row{
+				margin:0;
+			}
+			&.payment_box{
+				background-color:white;
+				&:before{
+					border:1em solid #fff;
+					border-right-color: transparent;
+				    border-left-color: transparent;
+				    border-top-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+body.woocommerce-cart{
+	#splash{
+		height:80px;
+		min-height:initial;
+	}
+
+	#barreV{
+		display:none;
+	}
+
+	.cart-empty{
+		margin-bottom:30px;
+	}
+
+	.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+		width:33.33%;
+	}
+
+	.coupon{
+		float:right!important;
+		margin-top:45px;
+		.input-text{
+			width:auto!important;
+			text-align:center;
+		}
+		&:before{
+			content: "";
+		    display: table;
+		    position: relative;
+		    top: 40px;
+		    left: 0;
+		    width: 0;
+		    height: 0;
+		    z-index: 9;
+		    border-top: 20px solid #fff;
+		    border-right: 20px solid transparent;
+		}	
+	}
+
+	table.cart td.actions .coupon .input-text{
+		border:none;
+		border-bottom:3px solid black;
+		padding:7px 6px;
+		margin-right:15px;
+	}
+
+	input[name="update_cart"]{
+		display:none;
+	}
+
+	.product-thumbnail{
+		.circle{
+			width: 70px;
+		    height: 70px;
+		    background-size: cover;
+		    background-position: center center;
+		    border-radius: 200%;
+		    box-shadow: 0 1px 5px #888;
+		    margin-bottom:15px;
+		    margin-top:15px;
+		}
+	}
+
+	.coupon{
+		.triangleRouge{
+			position:relative;
+			&:before{
+				content: "";
+			    display: table;
+			    position: absolute;
+			    top: -8px;
+			    left: 0;
+			    width: 0;
+			    height: 0;
+			    z-index: 9;
+			    border-top: 20px solid #fff;
+			    border-right: 20px solid transparent
+			}
+		}
+	}
+}
+
+body.single-product{
+	.product_meta, .quantity, .stock, .woocommerce-Price-amount{
+		display:none;
+	}
+
+	button.button{
+		float:right;
+		display:block;
+		margin-top:30px;
+	}
+}
+
+.woocommerce{
+	font-family:'apercu';
+
+	table.shop_table{
+		margin-bottom:0;
+		border:0;
+		th{
+			font-family:'apercu';
+			letter-spacing:0.05em;
+		}
+	}
+
+	a.remove{
+		color:$biaRed!important;
+		font-family:'apercu';
+		background-color:white;
+		transition:0.3s all ease-in-out;
+		&:hover{
+			background-color:$biaRed;
+		}
+	}
+}
+
+.woocommerce-message{
+	border-top-color:$biaRed!important;
+	&:before{
+		color:$biaRed;
+	}
+}
+
+.woocommerce a.added_to_cart{
+	position:absolute;
+	right:45px;
+	transform: translateY(-10px);
+}
+
+.cart_item{
+	p{
+		margin-bottom:0;
+	}
+}
+
+.quantity{
+	input{
+		border: 0;
+	    border-bottom: 3px solid black;
+	    text-align: center;
+	    padding: 3px 3px 3px 15px;
+
+	    &:hover, &:focus{
+	    	outline:none;
+	    }
+	}
+}
+
+.wc_payment_method{
+	input[type="radio"]{
+		display:none;
+		&:checked + label{
+			&:before{
+				border:3px solid $biaRed;
+				background-color:white;
+			}
+		}
+	}
+	label{
+		position:relative;
+		padding-left:25px;
+		&:before{
+			content:'';
+			width:15px;
+			height:15px;
+			display:table;
+			border-radius:200%;
+			border:1px solid white;
+			background-color:$biaRed;
+			transition:0.3s all ease-in-out;
+			position:absolute;
+			top: 50%;
+			left:0;
+    		transform: translateY(-50%);
+		}
+	}
+
+	img{
+		mix-blend-mode: darken;
+	}
+}
+
+.place-order{
+	.triangleRouge{
+		display:table;
+		float:right;
+		&:before{
+			content: "";
+		    display: table;
+		    position: relative;
+		    top: 20px;
+		    left: 0;
+		    width: 0;
+		    height: 0;
+		    z-index: 9;
+		    border-top: 20px solid #f2f2f2;
+		    border-right: 20px solid transparent;
+		}
+	}
+}
+
+
+.white-bloc{
+	padding:65px 25px 25px;
+	background-color:white;
+	box-shadow: 3px 2px 12px rgba(0,0,0,.14);
+}

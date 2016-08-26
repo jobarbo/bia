@@ -1,11 +1,11 @@
 <?php /* Template Name: Page Formations */ ?>
-<div id="filtres" class="container-fluid">
+<div id="filtres" class="container-fluid" data-bottom-top="opacity:0;transform:translateY(-30px)" data-center="opacity:1;transform:translateY(0px)">
 	<div class="row">
 		<div class="col-sm-12">
 			<h4><?php echo _e('Filtres','bia'); ?></h4>
 		</div>
 	</div>
-	<div class="row white-bloc">
+	<div class="row white-bloc" data-bottom-top="opacity:0;" data-center="opacity:1;">
 		
 
 		<?php
@@ -150,6 +150,8 @@
 			<?php } ?>
 			</div>
 		</div>
+		<span class="clear"></span>
+		<hr>
 		<button id="btFiltres">Soumettre</button>
 	</div>
 
@@ -207,7 +209,17 @@
 	<?php 
 	global $product;
 
-	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query) ); ?>
+	$meta_query = array(
+	array(
+		'key' => 'date_de_la_formation',
+		'value' => date('Ymd'),
+		'type' => 'DATE',
+		'compare' => '>='
+	)
+);
+
+	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query, 'meta_query' => $meta_query, 'orderby' => 'meta_value_num',
+	'meta_key' => 'date_de_la_formation',) ); ?>
 
 
     <?php // Gestion des rows 
@@ -250,18 +262,18 @@
 			
 		<?php
 			if($cpt == 0){
-				echo '<div class="row" data-bottom-top="opacity:0;transform:translateY(-50px)" data-center="opacity:1;transform:translateY(0px)">';
+				echo '<div class="row" data-bottom-top="opacity:0;transform:translateY(-30px)" data-center="opacity:1;transform:translateY(0px)">';
 			}else{
 				if($cpt%3 == 0){
 					echo "</div>";
-					echo '<div class="row" data-bottom-top="opacity:0;transform:translateY(-50px)" data-center="opacity:1;transform:translateY(0px)">';
+					echo '<div class="row" data-bottom-top="opacity:0;transform:translateY(-30px)" data-center="opacity:1;transform:translateY(0px)">';
 				}
 			}
 
 		?>
 
 
-		<div class="formation col-md-4">
+		<div class="formation col-md-4" onclick="window.location.href='<?php echo get_permalink(); ?>'">
 			<div class="content">
 				<div class="location">
 					<?php $location = get_field('location_short');
@@ -310,7 +322,7 @@
 					if(round($product->stock) == 0){ ?>
 						<a href="mailto:info@biaformations.com" class="bouton"><?php echo _e("Écrivez-nous pour vous</br>inscrire sur la liste d'attente",'bia'); ?></a>
 					<?php }else{ ?>
-						<a class="bouton" href="<?php echo get_permalink(); ?>">S'inscrire</a>
+						<a class="button" href="<?php echo get_permalink(); ?>"><?php echo _e('En savoir plus','bia'); ?></a>
 					<?php }	?>
 				<span class="clear"></span>
 			</div>
@@ -319,21 +331,41 @@
 		<?php $cpt++; ?>
 		<?php } ?>
 
-	<?php endwhile; wp_reset_query(); ?>
+	<?php endwhile;  ?>
 	
 	
 	<?php if($cpt !== 0){ ?>
 		</div>
 	<?php } ?>
 
-	<div class="sur-demande" class="row" style="background-image:url('<?php echo get_field('image_sur_mesure'); ?>')">
-		<div class="col-sm-6 col-sm-push-6">
-		<?php $arrPost = get_field('lien_article'); ?>
-			<h4><?php echo get_field('titre_sur_mesure_1'); ?></h4>
-			<p><?php echo get_field('titre_sur_mesure_2'); ?></p>
-			<a class="bouton white" href="<?php echo get_permalink($arrPost[0]); ?>"><?php echo _e('Proposer votre formation','bia'); ?></a>
+	<?php if(!$loop->have_posts()){ ?>
+		<div class="row">
+			<div class="formation no-formation">
+				<div class="content">
+					<p><?php echo _e("Malheureusement, il n’y a pas de résultat à votre recherche.",'bia'); ?></p>
+					<a href="<?php echo get_permalink(122); ?>" class="bouton"><?php echo _e("< Retour à la liste complète des formations",'bia'); ?></a>
+
+				</div>
+			</div>	
+		</div>		
+	<?php } ?>
+
+	<?php wp_reset_query(); ?>
+
+</div>
+<div class="sur-demande" class="row"  data-bottom-top="opacity:0;transform:translateY(-30px)" data-center="opacity:1;transform:translateY(0px)">
+		<div class="row-sm-height">
+			<div class="col-sm-6 col-sm-height col-sm-middle">
+				<img src="<?php echo get_field('image_sur_mesure'); ?>" alt="Formation sur demande" />
+			</div>
+			<div class="col-sm-6 col-sm-height col-sm-middle">
+			<?php $arrPost = get_field('lien_article'); ?>
+				<div class="content-sur-demande">
+					<h4 class="titreSection"><?php echo get_field('titre_sur_mesure_1'); ?></h4>
+					<p><?php echo get_field('texte_sur_mesure'); ?></p>
+					<a class="bouton white" href="<?php echo get_permalink($arrPost[0]); ?>"><?php echo _e('Proposer votre formation','bia'); ?></a>
+				</div>
+			</div>
 		</div>
 		<span class="clear"></span>
 	</div>
-
-</div>

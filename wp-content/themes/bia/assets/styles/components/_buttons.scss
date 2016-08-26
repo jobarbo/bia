@@ -1,0 +1,87 @@
+.bouton{
+	background-color: transparent;
+    color: #000;
+    font-family: apercu;
+    font-size: 16px;
+    position:relative;
+    -webkit-backface-visibility:hidden;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+    	text-decoration:none;
+		color:black;
+
+		&:after{
+			opacity: 0;
+			transform: translateY(5px);
+		}
+    }
+    &:focus{
+    	text-decoration:none;
+		color:black;
+    }
+    &:after{
+    	transform: translateY(0);
+	   	position:absolute;
+	   	width:100%;
+	   	height:1px;
+	   	content:'';
+	   	left: 0;
+	   	top:100%;
+	   	opacity:1;
+	   	display:block;
+	   	transition:0.15s all ease-in-out;
+	   	background-color:black;
+    }
+
+    &.white{
+    	color:white;
+
+    	&:after{
+    		background-color:white;
+    	}
+    }
+
+    &:after{
+        content:'';
+        width:100%;
+        height:1px;
+        background-color:black;
+        position:relative;
+    }
+
+}
+
+.button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,  .woocommerce a.button.alt{
+    border: none;
+    background-color: #f42534!important;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    font-family: Apercu;
+    border-radius:0;
+    text-align: center;
+    position: relative;
+    transition: all .5s ease;
+    &:before{
+        content: "";
+        display: table;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 0;
+        height: 0;
+        z-index: 9;
+        border-top: 20px solid #fff;
+        border-right: 20px solid transparent;
+    }
+
+    &:hover{
+        color: hsla(0,0%,100%,.5);
+        background-color:$biaRed;
+    }
+}
+
+ .woocommerce a.button.alt{
+    padding:15px 20px;
+    margin-bottom:0;
+ }

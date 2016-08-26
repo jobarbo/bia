@@ -7,7 +7,7 @@
 	if( have_rows('liste_sections') ):
 
 	    while ( have_rows('liste_sections') ) : the_row(); ?>
-			<div class="row row-title">
+			<div class="row row-title" data-bottom-top="opacity:0;transform:translateY(-30px)" data-center="opacity:1;transform:translateY(0px)">
 	        	<h4><?php the_sub_field('titre_section'); ?></h4>
 	        </div>
 	        <?php $listPosts = get_sub_field('content_section'); ?>
@@ -15,7 +15,7 @@
 	        	foreach($listPosts as $singlePost){ ?>
 	        		
 	        		<div id="<?php echo $singlePost->ID; ?>" class="row row-post">
-	        		 <div class="row-sm-height">
+	        		 <div class="row-sm-height" data-bottom-top="opacity:0;" data-center="opacity:1;">
 	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
 	        		 		<?php echo get_the_post_thumbnail( $singlePost->ID, 'normal' ); ?>
 	        		 		<div class="formateurs-link">
@@ -24,7 +24,7 @@
 								<a class="bouton" href="<?php echo get_field('site_web',$singlePost->ID); ?>" target="_blank"><?php echo _e('Site web','bia'); ?></a>
 							<?php } ?>
 							<?php if(get_field('linked_in',$singlePost->ID)){ ?>
-								<a class="bouton" href="<?php echo get_field('linked_in',$singlePost->ID); ?>" target="_blank"><?php echo _e('Linked In','bia'); ?></a>
+								<a class="bouton" href="<?php echo get_field('linked_in',$singlePost->ID); ?>" target="_blank"><?php echo _e('LinkedIn','bia'); ?></a>
 							<?php } ?>	
 							</div>
 	        		 		
