@@ -140,5 +140,18 @@ body.commanditaires{
     	}
     	
 	}
-	
+	@media only screen and (max-width: 1440px) {
+		main{
+			.row-title{
+				h4{
+					font-size:50px!important;
+				}
+			}
+			#list-post-type{
+				 h4{
+				 	font-size:50px!important;
+				 }
+			}
+		}
+	}
 }

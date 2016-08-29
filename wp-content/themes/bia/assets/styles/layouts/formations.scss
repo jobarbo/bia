@@ -257,6 +257,10 @@ p.author{
 			}
 		}
 	}
+
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td{
+		background-color:white;
+	}
 }
 
 
@@ -281,12 +285,36 @@ p.author{
 }
 
 @media only screen and (max-width: 500px) {
+	.white-bloc{
+		
+		 .section-filtre{
+		 	padding-left:0;
+		 	padding-right:0;
+		 }
+	}
+
+	#filtres{
+		.row:last-of-type{
+			 .section-filtre{
+			 	 button:before{
+			 	 	display:block;
+			 	 }
+			 }
+		}
+	} 
+
 	.formation{
 		.content{
 			h5{
 				margin-bottom:60px;
 				max-width:95%;
 			}
+
+			.bouton{
+				float:left;
+			}
 		}
 	}
+
+
 }

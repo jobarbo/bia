@@ -272,8 +272,16 @@
 
 		?>
 
+		<?php
+			if(round($product->stock) == 0){
+				$location = '';
+			}else{				
+				$location = "onclick='window.location.href='". get_permalink()."'";
+			}
 
-		<div class="formation col-md-4" onclick="window.location.href='<?php echo get_permalink(); ?>'">
+		?>
+
+		<div class="formation col-md-4" <?php echo $location; ?>>
 			<div class="content">
 				<div class="location">
 					<?php $location = get_field('location_short');

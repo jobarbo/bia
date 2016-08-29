@@ -56,7 +56,7 @@
 						</div>
 					<?php } ?>
 
-					<div class="price"><?php echo $product->regular_price; ?> $</div>
+					<div class="price"><?php echo $product->price; ?> $</div>
 
 					<button type="submit" data-quantity="1" data-product_id="<?php echo $product->id; ?>" class="button ajax_add_to_cart add_to_cart_button product_type_simple"><?php echo _e('Réserver ma place','bia'); ?></button>
 

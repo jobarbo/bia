@@ -889,6 +889,7 @@
             .bg-blanc{
                 height: 300px;
                 .imgLienDroit{
+                    background-color:white;
                     .titreSection{
                         letter-spacing: 2px;
                         font-size: 40px!important;
@@ -1303,8 +1304,13 @@
                 }
             }
         }
-        #formulaireInscription ul li{
-            width: 98%;
+        #formulaireInscription #mc_embed_signup ul li{
+            width: 80%;
+            margin-left:0px;
+            margin-right:0;
+            label{
+                text-align:left;
+            }
         }       
     }
 
@@ -1374,7 +1380,10 @@
         #F2F2F2;
         #formulaireInscription{
             p{
-                    width: 85%;
+                &.formText{
+                    font-size:16px;
+                    width:85%;
+                }
             }
         }
     }

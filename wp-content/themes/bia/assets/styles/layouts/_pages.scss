@@ -114,12 +114,13 @@
 .section-filtre button:after{
 	display:inline-block;
 	margin-left:15px;
-	content:'+';
+	content:'×';
 	font-weight: bolder;
 	font-family: apercu;
 	font-size: larger;
 	transition: all .5;
-	transform-origin: 50% 0;	   
+	transform:rotate(45deg);
+	transform-origin: center center;	   
 }
 
 	.list-filtre .list-item:after{

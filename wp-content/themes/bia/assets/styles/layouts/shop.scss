@@ -300,3 +300,45 @@ body.single-product{
 	background-color:white;
 	box-shadow: 3px 2px 12px rgba(0,0,0,.14);
 }
+
+@media only screen and (max-width: 768px) {
+	body.woocommerce-cart{
+		.coupon{
+			float:none!important;
+			width:100%;
+			margin-bottom:30px;
+			margin-top:0;
+			&:before{
+				display:none;
+			}
+
+			.input-text{
+				width: 100%!important;
+    			margin-bottom: 15px!important;
+			}
+
+			input[name="apply_coupon"]{
+				width:100%!important;
+			}
+
+			.triangleRouge{
+				&:before{
+					display:none;
+				}
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: 1440px) {
+	body.woocommerce-cart{
+		.woocommerce-page, .woocommerce{
+			.cart-collaterals{
+				.cart_totals{
+					width:100%;
+				}
+			}
+		}
+	}
+
+}
