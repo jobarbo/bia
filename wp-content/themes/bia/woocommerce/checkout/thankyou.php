@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $order ) : ?>
 
-	<?php if ( $order->has_status( 'failed' ) ) : ?>
+	<?php if ( $order->has_status( 'failed' ) ) : ?>	
 
 		<p class="woocommerce-thankyou-order-failed"><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
 
@@ -33,11 +33,40 @@ if ( $order ) : ?>
 			<?php endif; ?>
 		</p>
 
+
+
 	<?php else : ?>
 
-		<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+		<?php 
+ 
+	        $items = $order->get_items(); 
+	 		$hasClubBia = false;
 
-		<ul class="woocommerce-thankyou-order-details order_details">
+	        foreach ( $items as $item ) {
+	            $product_id = $item['product_id'];
+	            
+	            if ( $product_id == 351 ){
+	            	$hasClubBia = true;
+	            }
+	        }
+ 
+        ?>
+
+		<div class="white-bloc thank-you-bloc">
+
+			<h3 class="titreSection"><?php echo _e('Merci!','bia'); ?></h3>
+				<?php if($hasClubBia){ ?>
+	        		<p class="woocommerce-thankyou-order-received">
+	        			<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( "Votre commande a bien été reçue. Vous recevrez prochainement un courriel de confirmation. Celui-ci <strong>contenant votre code promotionnel</strong> lié à votre abonnement au Club Bia (5% sur l'achat de formations).", 'bia' ), $order ); ?>        				
+	        		</p>
+        		<?php }else{ ?>
+        			<p class="woocommerce-thankyou-order-received">
+        				<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( "Votre commande a bien été reçue. ", 'bia' ), $order ); ?>
+        			</p>
+       			<?php } ?>
+		</div>
+
+		<!--ul class="woocommerce-thankyou-order-details order_details">
 			<li class="order">
 				<?php _e( 'Order Number:', 'woocommerce' ); ?>
 				<strong><?php echo $order->get_order_number(); ?></strong>
@@ -56,16 +85,18 @@ if ( $order ) : ?>
 				<strong><?php echo $order->payment_method_title; ?></strong>
 			</li>
 			<?php endif; ?>
-		</ul>
+		</ul-->
 		<div class="clear"></div>
 
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
 	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
+	
 
 <?php else : ?>
 
 	<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
 
 <?php endif; ?>
+

@@ -188,6 +188,7 @@
         li{
             display:inline-block;
             margin-right:22px;
+            text-align:center;
 
             &:last-of-type{
                 margin-right:0;
@@ -361,11 +362,20 @@
     }
 }
 
+#pageContact{
+    ul.social{
+        width:auto;
+    }
+}
+
 #barreV,#pageContact{
     .social {
         position: absolute;
         bottom: 0px;
-        right: 30px;
+        right: 0px;
+        width:100%;
+        padding-left:0;
+        text-align:center;
         li {
             color: #fff;
             list-style: none;
@@ -411,7 +421,7 @@
     height: 100vh;
     background-color: #f42534;
     position: absolute;
-    margin-top: -80px;
+    margin-top: -0px;
     right:0;
     z-index: 999;
     height: 100vh;
@@ -452,6 +462,7 @@
     padding: 20px 30px 20px 30px;
     font-family: apercu;
     font-size: 20px;
+    z-index:9999;
     a {
         color: #f42534;
         opacity:1;
@@ -674,7 +685,7 @@
 @media only screen and (max-width: 580px) {
     #logo {
         width: 150px;
-        position: absolute;
+        position: fixed;
         left: 20px;
         top:15px;
     }
@@ -692,16 +703,20 @@
     #btMenu{
         right:15px;
         top:15px;
+        position:fixed;
     }
 
     .cart-button{
         top:15px;
         right:55px;
+        position:fixed;
     }
 
     #barreH{
         height:50px;
         z-index:9999999;
+        position:fixed;
+        top:0;
     }
 
     #barreV {
@@ -715,7 +730,7 @@
     }
 
     #splash {
-                
+        margin-top:50px;
         #splashTitre {
             right: 50px;
             top: 50%;

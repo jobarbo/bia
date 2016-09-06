@@ -6,9 +6,11 @@
 		</div>
 		<div class="cart-button">
 		    	<a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( "Voir le panier d'achats" ); ?>">
+		    		
 		    		<img width="30px" height="23px" src='<?php echo get_template_directory_uri(); ?>/dist/images/cart.svg' alt="Panier" />
-		    		<span class="qty" data-qty="<?php echo WC()->cart->get_cart_contents_count(); ?>"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+		    		<span class="qty" data-qty="<?php echo WC()->cart->get_cart_contents_count(); ?>"></span>
 		    	</a>
+		    	
 		    </div>
 		<div id="barreH">
 			<!--a href="#" ><button >Menu<!--<?php echo _e('Contact','bia'); ?>--></button></a-->
@@ -23,7 +25,9 @@
 		</div>
 		<h1>Bia</h1>
 		<a href="<?php echo get_home_url(); ?>"><img id="logo" src='<?php echo get_template_directory_uri(); ?>/dist/images/bia_logo.png' alt="Logo Bia" /></a>
-		<?php if(!is_singular('faq-article')){ ?>
+		
+		
+	<header id="splash" style="background-image: url(<?php echo get_field('image_splash'); ?>)">
 		<div id="barreV">
 			<ul class="social"> 
 				<?php if(get_field('facebook','option')){ ?>
@@ -40,8 +44,6 @@
 				<?php } ?>
 			</ul>
 		</div>
-	<header id="splash" style="background-image: url(<?php echo get_field('image_splash'); ?>)">
-		<?php } ?>
 		<div id="splashTitre">
 			<?php if(is_page('2')){ ?>
 				<h2><?php echo _e('Formations en</br> activité physique','bia'); ?></h2>

@@ -19,6 +19,7 @@
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail_size' );?>
 			<div class="formation col-sm-6 col-sm-height">
 				<div class="content">
+					<div>
 					<div class="location">
 						<?php $location = get_field('location_short');
 						echo $location->name; ?>
@@ -62,6 +63,7 @@
 
 						
 					<span class="clear"></span>
+					</div>
 				</div>
 			</div>
 			<div class="content-formation col-sm-6 col-sm-height col-sm-top">

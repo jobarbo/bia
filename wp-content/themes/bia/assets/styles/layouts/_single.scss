@@ -78,6 +78,29 @@ body.single-post,body.single-faq-article{
 		}
 
 	}
+
+	@media only screen and (max-width: 768px) {
+		main article{
+			.container-single, #page-builder .text, #page-builder .link{
+				max-width:100%;
+				padding-left:10px;
+				padding-right:10px;
+			}
+		} 
+	}
+
+	@media only screen and (max-width: 580px) {
+	   #splash{
+	   	margin-top:0;
+	   	height:50px;
+	   }
+
+	   main{
+	   		article{
+	   			padding:80px 5%;
+	   		}
+	   }
+	}
 }
 
 
@@ -97,8 +120,8 @@ body.single-product{
 	}
 
 	.container-single-product{
-		padding-left:5%;
-		padding-right:5%;
+		padding-left:0%;
+		padding-right:0%;
 	}
 
 	.formation{
@@ -162,6 +185,10 @@ body.single-product{
 					margin-bottom:60px;
 				}
 			}
+		}
+
+		.container-fluid{
+			padding-top:20px;
 		}
 	}
 

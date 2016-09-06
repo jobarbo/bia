@@ -225,7 +225,7 @@
         float: right;
         height: 250px;
         width: 250px;
-        box-shadow: 2px 2px 12px #888888;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
     }
     .bulle2 {
         float: right;
@@ -236,7 +236,7 @@
         position: relative;
         top: 135px;
         right: 345px;
-        box-shadow: 2px 2px 12px #888888;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
         z-index: 4;
     }
     .bulle3 {
@@ -249,7 +249,7 @@
         top: 70px;
         right: -290px;
         z-index: 2;
-        box-shadow: 2px 2px 12px #888888;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
     }
     .bulle4 {
         float: right;
@@ -261,7 +261,7 @@
         right: -340px;
         top: -110px;
         z-index: 2;
-        box-shadow: 2px 2px 12px #888888;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
     }
 }
 
@@ -927,9 +927,7 @@
         .social {
             bottom: 70px!important;
             right: 1.8%;
-            img{
-                width: 10px;
-            }
+            
         }
         #formulaireInscription {
             .triangleRouge:before{
@@ -1312,6 +1310,12 @@
                 text-align:left;
             }
         }       
+    }
+
+    #formateursRenommes{
+        .borderBox{
+            padding:130px 0 25px;
+        }
     }
 
 }

@@ -91,6 +91,28 @@
     }
   });
 
+  function resizePartenaires(){
+    if($('body').hasClass('club-bia')){
+      var maxHeight = 0;
+
+      $('#list-partenaires .post-in-list').each(function(){
+        $(this).outerHeight('auto');
+      });
+
+      $('#list-partenaires .post-in-list').each(function(){
+        if($(this).outerHeight() > maxHeight){
+          maxHeight = $(this).outerHeight();
+        }
+      });
+
+      $('#list-partenaires .post-in-list').each(function(){
+        $(this).outerHeight(maxHeight);
+      });
+
+      $('#list-partenaires').css('opacity','1'); 
+    }
+  }
+
   function configurer() {
 
     $('#listInterets').on('click', function(event){
@@ -104,6 +126,9 @@
     });
 
 
+    window.onresize = function(){
+      resizePartenaires();
+    }
 
 
   //------- ANCHOR ANIMATION -------
@@ -122,6 +147,7 @@ $("#btMenu").click(function () {
   
   
   if($(this).hasClass('open-menu')){
+    window.scrollTo(0, 0);
     $('#p-gauche').removeClass('open-menu');
     $('#p-droite').removeClass('open-menu');
     $('.background-menu').removeClass('open-menu');
@@ -212,6 +238,8 @@ $("#btMenu").click(function () {
         $('#form-filtres').submit();
       });
     }
+
+    resizePartenaires();
 
     //Filtres page formations
     $('#filtres .section-filtre button').click(function(e){

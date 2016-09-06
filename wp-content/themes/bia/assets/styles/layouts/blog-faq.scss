@@ -70,4 +70,13 @@ body.blog,body.faq{
 			}			
 		}
 	}
+
+	@media only screen and (max-width: 768px) {
+	    main{
+	    	.post{
+	    		margin-bottom:45px;
+	    	}
+	    }
+	}
+
 }

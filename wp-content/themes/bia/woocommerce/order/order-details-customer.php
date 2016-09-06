@@ -20,7 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<header><h2><?php _e( 'Customer Details', 'woocommerce' ); ?></h2></header>
+<div class="col-sm-6">
+<div class="white-bloc">
+<header><h3 class="titreSection"><?php _e( 'Customer Details', 'woocommerce' ); ?></h3></header>
 
 <table class="shop_table customer_details">
 	<?php if ( $order->customer_note ) : ?>
@@ -46,6 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php do_action( 'woocommerce_order_details_after_customer_details', $order ); ?>
 </table>
+
 
 <?php if ( ! wc_ship_to_billing_address_only() && $order->needs_shipping_address() ) : ?>
 
@@ -75,3 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- /.col2-set -->
 
 <?php endif; ?>
+</div>
+</div>
+</div>
+<span class="clear"></span>

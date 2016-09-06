@@ -28,6 +28,25 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 	<h2><a class="link" href="<?php echo esc_url( admin_url( 'post.php?post=' . $order->id . '&action=edit' ) ); ?>"><?php printf( __( 'Order #%s', 'woocommerce'), $order->get_order_number() ); ?></a> (<?php printf( '<time datetime="%s">%s</time>', date_i18n( 'c', strtotime( $order->order_date ) ), date_i18n( wc_date_format(), strtotime( $order->order_date ) ) ); ?>)</h2>
 <?php endif; ?>
 
+	<?php 
+ 
+		        $items = $order->get_items(); 
+		 		$hasClubBia = false;
+
+		        foreach ( $items as $item ) {
+		            $product_id = $item['product_id'];
+		            
+		            if ( $product_id == 351 ){
+		            	$hasClubBia = true;
+		            }
+		        }
+	 
+	        ?>
+
+	        <?php if($hasClubBia){ ?>
+	        	<p><?php echo _e('Votre code promotionnel vous donnant 5% sur les formations : ','bia'); ?><strong>club-bia-<?php echo $order->get_order_number(); ?></strong></p>
+	        <?php } ?>
+
 <table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
 	<thead>
 		<tr>

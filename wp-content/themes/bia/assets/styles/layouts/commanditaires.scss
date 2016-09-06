@@ -154,4 +154,14 @@ body.commanditaires{
 			}
 		}
 	}
+
+	@media only screen and (max-width: 768px) {
+		main{
+			.row-post{
+				.post-in-list:last-of-type{
+					padding-left:15px;
+				}
+			}
+		}
+	}
 }

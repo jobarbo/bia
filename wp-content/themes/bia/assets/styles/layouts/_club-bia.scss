@@ -1,0 +1,229 @@
+body.page-template-page-club-bia{
+	#splash{
+		min-height:50px;
+	}
+
+	#barreV{
+		display:none;
+	}
+
+	#header-club-bia{
+		 background:url(../images/background_red_min.png) repeat-y 5% 0,  
+	    url(../images/background_red_min.png) repeat-y 95% 0,
+	    url(../images/background_red_min.png) repeat-y center,
+	    #f42534;
+	    margin-top:30px;
+	    padding:100px 0;
+
+	    #splashTitre{
+	    	bottom: 5%;
+		    top: initial;
+		    left: 5%;
+		    margin-left: 65px;
+		    display: table;
+		    h2{
+		    	font-size:85px!important;
+		    }
+	    }
+
+	    .image-header{
+	    	padding-right:5%;
+	    	padding-left:0;
+	    }
+
+	    img{
+	    	max-width: 75%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: table;
+		    border-radius: 200%;
+		    transform: translateX(-15px);
+	    }
+	}
+
+	#section-product{
+		padding-top:100px;
+		
+		h4{
+			max-width:200px;
+		}
+
+		.gauche{
+			padding-left:5%;
+			padding-right:20px;
+			text-align:center;
+			
+			img{
+				margin-left:17px;
+				max-width:75%;
+			}
+		}
+
+		.droite{
+			padding-right:5%;
+			.bouton{
+				float:left;
+			}
+
+			.clear{
+				margin-bottom:15px;
+			}
+
+			.price{
+				font-family: apercu;
+			    font-size: 25px;
+			    letter-spacing: 1px;
+			    float: right;
+			}
+
+			p, ul, li{
+				font-family: apercu;
+    			font-size: 16px;
+			}
+
+			ul{
+				padding-left: 15px;
+    			list-style-type: none;
+
+    			li{
+    				&:before{
+    					content:'-';
+    					position:relative;
+    					left:0;
+    				}
+    			}
+			}
+
+			.button{
+				margin-top:50px;
+				&:before{
+					border-top:20px solid #f2f2f2;
+				}
+			}
+
+			.content{
+				width:85%;
+				margin-left:auto;
+				margin-right:auto;
+				transform:translateX(-15px);
+			}
+		}
+
+		img{
+			max-width:100%;
+			height:auto;
+		}
+
+		a.added_to_cart{
+			left:0;
+			bottom:30px;
+		}
+	}
+
+	#partenaires{
+		padding-top:100px;
+		padding-bottom:15px;
+		.container-fluid{
+			padding-left:5%;
+			padding-right:5%;
+		}
+
+		.titreSection{
+			display:table;
+			position:relative;
+			top:0;
+		}
+
+		#list-partenaires{
+			padding:50px;
+			opacity:0;
+			transition:0.5s opacity ease-in-out;
+			.post-in-list{
+				text-align:center;
+				margin-bottom:60px;
+				img{
+					margin-bottom:35px;
+					max-width:100%;
+					height:auto;
+				}
+
+				.titre-partenaire{
+					font-size:18px;
+					margin-bottom:0;
+				}
+
+				.avantage{
+					max-width:50%;
+					margin-left:auto;
+					margin-right:auto;
+				}
+			}
+
+			.bouton{
+				display:table;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:35px;
+			}
+		}
+	}
+
+	#disclaimer{
+		background-color:white;
+		padding:75px 0px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		#header-club-bia{
+			 #splashTitre{
+			 	h2{
+			 		font-size:56px!important;
+			 	}
+			 }
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		#header-club-bia{
+			 #splashTitre{
+			 	margin-left:0;
+			 	position:relative;
+			 }
+
+			 .image-header{
+			 	padding-left:5%;
+			 }
+
+			 img{
+			 	max-width:50%;
+			 	transform:translateX(0);
+			 }
+		}
+
+		#section-product{
+			.row{
+				margin-left:0;
+				margin-right:0;
+			}
+			.gauche{
+				padding-right:5%;
+				margin-bottom:30px;
+				img{
+					margin-left:0;
+				}
+			}
+
+			.droite{
+				padding-left:5%;
+				padding-right:5%;
+				.content{
+					transform:translateX(0);
+					width:95%;
+				}
+			}
+		}
+	}
+
+
+}
+
