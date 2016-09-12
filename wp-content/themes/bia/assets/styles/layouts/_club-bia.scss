@@ -11,7 +11,7 @@ body.page-template-page-club-bia{
 		 background:url(../images/background_red_min.png) repeat-y 5% 0,  
 	    url(../images/background_red_min.png) repeat-y 95% 0,
 	    url(../images/background_red_min.png) repeat-y center,
-	    #f42534;
+	    $biaRed;
 	    margin-top:30px;
 	    padding:100px 0;
 
@@ -123,15 +123,15 @@ body.page-template-page-club-bia{
 	#partenaires{
 		padding-top:100px;
 		padding-bottom:15px;
-		.container-fluid{
-			padding-left:5%;
-			padding-right:5%;
-		}
+		
+
 
 		.titreSection{
 			display:table;
 			position:relative;
 			top:0;
+			left:5%;
+			margin-bottom:45px;
 		}
 
 		#list-partenaires{

@@ -17,7 +17,7 @@
     width: 100%;
     max-height:100vh;
     overflow-y:auto;
-    background:#f42534;        
+    background:$biaRed;        
     position:fixed;
     transform:translateX(0%);
     transition:0.65s all;
@@ -68,7 +68,7 @@
 
 
     .background-menu{
-        background: url(../images/background_red_min.png) repeat-y 5% 0,url(../images/background_red_min.png) repeat-y 95% 0,url(../images/background_red_min.png) repeat-y 50%,#f42534;
+        background: url(../images/background_red_min.png) repeat-y 5% 0,url(../images/background_red_min.png) repeat-y 95% 0,url(../images/background_red_min.png) repeat-y 50%,$biaRed;
         position:absolute;
         top:0;
         left:0;
@@ -83,7 +83,7 @@
 
     .bold{
         font-family: druk-medium;
-        color: #f42534;
+        color: $biaRed;
         font-size: 45px!important;
         letter-spacing: 2px;
         width: auto;
@@ -123,13 +123,13 @@
             }
 
             &:hover{
-                color:#f42534;
-                background-color:#f42534;
+                color:$biaRed;
+                background-color:$biaRed;
                 span{
                     width:100%;
                     &.title-menu{
                         width:auto;
-                        color:#f42534;
+                        color:$biaRed;
                     }
                 }
             }
@@ -292,7 +292,7 @@
         &:before{
             content: attr(data-qty);
             left:50%;
-            color:#f42534;
+            color:$biaRed;
             font-size:14px;
             transform:translate(-50%,0%);
             position:absolute;
@@ -343,7 +343,7 @@
         }
 
         &:focus, &:hover{
-            background-color:#f42534;
+            background-color:$biaRed;
             &:after{
                 opacity:1;
                 top:2px;
@@ -396,7 +396,7 @@
     width: 100%;
     z-index: 99999;
     height: 80px;
-    background-color: #f42534;
+    background-color: $biaRed;
     position: relative;
   
     .nav{
@@ -419,13 +419,13 @@
 #barreV {
     width: 80px;
     height: 100vh;
-    background-color: #f42534;
+    background-color: $biaRed;
     position: absolute;
     margin-top: -0px;
     right:0;
     z-index: 999;
     height: 100vh;
-    background-color: #f42534;
+    background-color: $biaRed;
 }
 
 
@@ -464,7 +464,7 @@
     font-size: 20px;
     z-index:9999;
     a {
-        color: #f42534;
+        color: $biaRed;
         opacity:1;
         display:table;
         transition:0.5s opacity ease-in-out;

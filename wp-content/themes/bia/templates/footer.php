@@ -53,22 +53,7 @@
 			</ul>
 				<div class="containerFeed" >
 					<div id="instagramFeed">
-						<div class="instagramImage" >
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram1.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram2.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram3.jpg);">
-							</div>
-						</div>
-						<div class="instagramImage">
-							<div class="image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/images/instagram4.jpg);">	
-							</div>
-						</div>
+						
 						<span class="clear"></span>
 					</div>
 				</div>
@@ -106,7 +91,12 @@
 			?>
     	</div>
     	<div class="col-sm-6 information-contact">
-    		<a href="tel:+14388816353" class="tel">438 881-6353</a>
+    		<?php
+    			$tel = get_field('tel','option');
+    			$formattedTel = str_replace('-','',$tel);
+    			$formattedTel = str_replace(' ','',$formattedTel);
+    		?>
+    		<a href="tel:+1<?php echo $formattedTel; ?>" class="tel"><?php echo get_field('tel','option'); ?></a>
     		<a href="mailto:info@biaformations.com" class="email">info@biaformations.com</a>
     	</div>
     </div>

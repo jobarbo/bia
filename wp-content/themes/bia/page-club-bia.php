@@ -48,21 +48,27 @@
 				<h4 class="titreSection"><?php echo _e('Partenaires</br>participants','bia'); ?></h4>
 			</div>
 		</div>
-		<div id="list-partenaires" class="row">
+		
 		<?php $arrPosts = get_field('partenaires', false, false); ?>
 		<?php $loop = new WP_Query( array( 'post_type' => 'commanditaire', 'posts_per_page' => -1, 'post__in' => $arrPosts ) ); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="post-in-list col-sm-4 col-lg-3">
-						<?php the_post_thumbnail( ); ?>
-						</br>
-						<p class="titre-partenaire"><?php the_title(); ?></p>
-						<div class="avantage">
-							<?php echo get_field('avantages'); ?>
-						</div>
-						<a class="bouton" target="_blank" href="<?php echo get_field('site_web', $singlePost->ID) ?>"><?php echo _e('Site web','bia'); ?></a>
-					</div>
+					<div class="row row-post" data-bottom-top="opacity:0;" data-center="opacity:1;">
+	        		 <div class="row-sm-height">
+	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
+	        		 		<?php echo get_the_post_thumbnail(); ?>
+	        		 		</br>
+	        		 		<a class="bouton"  target="_blank" href="<?php echo get_field('site_web') ?>"><?php echo _e('Site web','bia'); ?></a>
+	        		 	</div>
+	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
+	        		 		<h5><?php echo get_the_title(); ?></h5>
+	        		 		<div class="contenu">
+								<?php echo get_field('avantages'); ?>
+							</div>
+	        		 	</div>
+	        		 </div>
+	        		</div>
 		<?php endwhile; wp_reset_query(); ?>
-		</div>
+		
 	</div>
 </div>
 

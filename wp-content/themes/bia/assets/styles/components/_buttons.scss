@@ -53,7 +53,7 @@
 
 .button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,  .woocommerce a.button.alt{
     border: none;
-    background-color: #f42534!important;
+    background-color: $biaRed!important;
     color: #fff;
     padding: 10px 20px;
     outline: none;
@@ -78,6 +78,7 @@
     &:hover{
         color: hsla(0,0%,100%,.5);
         background-color:$biaRed;
+        text-decoration:none;
     }
 }
 

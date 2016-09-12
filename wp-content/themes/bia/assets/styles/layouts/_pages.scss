@@ -2,7 +2,7 @@
 #filtres{
 	h4{
 		font-family: druk-medium;
-    	color: #f42534;
+    	color: $biaRed;
     	font-size: 56px!important;
     	letter-spacing: 3px;
     	-webkit-transform: skew(180deg,167deg);
@@ -135,11 +135,11 @@
 
 	.list-filtre .list-item.active:after{
 		content:'-';
-		color:#f42534;
+		color:$biaRed;
 	}
 
 	.list-item:hover, .list-item.active{
-		color:#f42534;
+		color:$biaRed;
 	}
 
 	.list-filtre .col-sm-3{
@@ -157,7 +157,7 @@
 	    margin-bottom: 15px;
 	    margin-top: 30px;
 	    border: none;
-	    background-color: #f42534;
+	    background-color: $biaRed;
 	    color: #fff;
 	    padding: 10px 20px;
 	    margin-top: 20px;

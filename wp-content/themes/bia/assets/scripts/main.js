@@ -196,21 +196,42 @@ $("#btMenu").click(function () {
 
 
     if($(window).width() > 768){
-      $('#instagramFeed .instagramImage .image').each(function(){
-          var width = $(this).width();
-          $(this).height(width);
-      });
-
       $(window).on('resize',function(){
-        $('#instagramFeed .instagramImage .image').each(function(){
+        $('#instagramFeed .image').each(function(){
             var width = $(this).width();
             $(this).height(width);
         });
-      });  
-
-      
-
+      });
     }
+
+      $.ajax({
+      type: "GET",
+      dataType: "jsonp",
+      url: "https://api.instagram.com/v1/users/3447817271/media/recent/?access_token=3447817271.1677ed0.bf0236ef472546348b31d902a48ce06c&count=4",
+
+      success: function(res) {
+        for (i = 0; i < 4; i++) {
+          var imgUrl = res.data[i].images.thumbnail.url;
+          if(imgUrl.indexOf('/s150x150') !== -1){ 
+            imgUrl = imgUrl.replace('/s150x150','/s640x640');
+          }                        
+                            
+          var imageInta = "<div class='instagramImage'><a target='_blank' class='image-cont' href='" + res.data[i].link + "'><div class='image' style='background-image:url(" + imgUrl + ");'><div class='content-background'><div class='content'></div></div></div></a></div>";
+            $('#instagramFeed').prepend(imageInta);
+          }
+
+
+          $('#instagramFeed .image').each(function(){
+            var currentWidth = $(this).width();
+            $(this).height(currentWidth);
+          })
+      }
+
+
+                
+    });
+
+
     if($(window).width() > 1025){
       var s = skrollr.init({
           forceHeight: false,

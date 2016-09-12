@@ -1,5 +1,5 @@
 body{
-	background-color:#f42534;
+	background-color:$biaRed;
 	transition:0.5s transform ease-in-out;
 	overflow-x:hidden;
 	width:100%;
@@ -71,7 +71,7 @@ img{
     text-transform: uppercase;
     z-index: 999;
     font-family: druk-medium;
-    color: #f42534;
+    color: $biaRed;
     font-size: 56px!important;
     letter-spacing: 3px;
 }

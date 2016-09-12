@@ -65,8 +65,8 @@
 		<div id="ville" class="col-sm-12 list-filtre">
 		<?php
 				$terms = get_terms( array(
-				    'taxonomy' => 'pa_ville',
-				    'hide_empty' => false,
+				    'taxonomy' => 'pa_ville'
+				    
 				) );
 
 				?>
@@ -107,8 +107,8 @@
 		<div id="interets" class="col-sm-12 list-filtre">
 		<?php
 				$terms = get_terms( array(
-				    'taxonomy' => 'pa_interets',
-				    'hide_empty' => false,
+				    'taxonomy' => 'pa_interets'
+				    
 				) );
 
 				?>
@@ -130,8 +130,8 @@
 		<div id="type" class="col-sm-12 list-filtre">			
 			<?php
 				$terms = get_terms( array(
-				    'taxonomy' => 'pa_type-de-formation',
-				    'hide_empty' => false,
+				    'taxonomy' => 'pa_type-de-formation'
+				    
 				) );
 
 				?>
@@ -371,7 +371,8 @@
 				<div class="content-sur-demande">
 					<h4 class="titreSection"><?php echo get_field('titre_sur_mesure_1'); ?></h4>
 					<p><?php echo get_field('texte_sur_mesure'); ?></p>
-					<a class="bouton white" href="<?php echo get_permalink($arrPost[0]); ?>"><?php echo _e('Proposer votre formation','bia'); ?></a>
+					<!--a class="bouton white" href="<?php echo get_permalink($arrPost[0]); ?>"><?php echo _e('Proposer votre formation','bia'); ?></a-->
+					<a class="bouton white" href="mailto:info@biaformations.com"><?php echo _e('Proposer votre formation','bia'); ?></a>
 				</div>
 			</div>
 		</div>

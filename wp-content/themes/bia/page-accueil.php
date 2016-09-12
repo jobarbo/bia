@@ -22,8 +22,7 @@
 		<div class="carre" data-bottom-top="opacity:0;margin-top:-250px" data-center="opacity:1;margin-top:0px"><p>1</p></div>
 			<div class="row borderBox">
 			
-				<div class="row-height">
-					
+				<div class="row-height">					
 						
 						<div class="col-md-6 col-md-height col-md-middle leftBox">
 							<div class="imgBulle">
@@ -66,6 +65,10 @@
 						<div class="col-md-6 col-md-height col-md-middle rightBox">
 							<div class="infoFormation">
 								<?php echo get_field('texte_4'); ?>
+								<br/><br/>
+								<ul>
+									<a class="button" href="<?php echo get_permalink(122); ?>"><?php echo _e('Liste des formations','bia'); ?></a>
+								</ul>
 							</div>
 						</div>
 					

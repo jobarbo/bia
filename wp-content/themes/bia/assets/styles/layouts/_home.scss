@@ -14,7 +14,7 @@
         left: 20px;        
         font-family: apercu;
         font-size: 20px;
-        color: #f42534;
+        color: $biaRed;
        
     }
 
@@ -68,7 +68,7 @@
     #triangle-bottomright1 {
         width: 0;
         height: 0;
-        border-bottom: 150px solid #f42534;
+        border-bottom: 150px solid $biaRed;
         right: 0;
         bottom: 0px;
         position: absolute;
@@ -77,7 +77,7 @@
     #triangle-bottomright2 {
         width: 0;
         height: 0;
-        border-bottom: 100px solid #f42534;
+        border-bottom: 100px solid $biaRed;
         right: 77px;
         bottom: 0px;
         position: absolute;
@@ -116,12 +116,12 @@
     background:url(../images/background_red_min.png) repeat-y 5% 0,  
     url(../images/background_red_min.png) repeat-y 95% 0,
     url(../images/background_red_min.png) repeat-y center,
-    #f42534; 
+    $biaRed; 
     z-index: 6;
     .carre {
         background-color: white;
         &:before{
-            border-top: 20px solid #f42534;
+            border-top: 20px solid $biaRed;
         }
     }
     .titreSection {
@@ -172,10 +172,10 @@
     .carre {
         background-color: white;
         p {
-            color: #f42534;
+            color: $biaRed;
         }
         &:before{
-            border-top: 20px solid #f42534;
+            border-top: 20px solid $biaRed;
         }
     }
     .titreSection {
@@ -199,7 +199,7 @@
         }
         ul {
             font-family: apercu;
-            color: #f42534;
+            color: $biaRed;
             font-size: 20px;
             width: 75%;
             list-style: none;
@@ -339,7 +339,7 @@
         right: -5px;
         top: 10px;
         float: right;
-        color: #f42534;
+        color: $biaRed;
         font-size: 80px!important;
         letter-spacing: 3px;
     }
@@ -404,7 +404,7 @@
                  .titreSection{
                     left:5%;
                     float: left;
-                    color:#f42534;
+                    color:$biaRed;
                     width: 40%;
                     top: 75px;
                     font-size: 56px!important;
@@ -520,7 +520,7 @@
             display: none;
         }
         input:checked + label {
-            color: #f42534!important;
+            color: $biaRed!important;
             &:after{
                 content: '-';
             }
@@ -659,7 +659,7 @@
         }
         .submit {
             border: none;
-            background-color: #f42534;
+            background-color: $biaRed;
             color: rgba(255, 255, 255, 1);
             padding: 10px 20px 10px 20px;
             margin-top: 20px;
@@ -692,11 +692,11 @@
        font-weight:bold;
     }
     .mce_inline_error{
-        border-bottom: 3px solid #f42534 !important;
+        border-bottom: 3px solid $biaRed !important;
     }
  
     #mce-error-response{
-        color: #f42534;
+        color: $biaRed;
         font-weight:bold;
     }
 }

@@ -24,8 +24,7 @@
 	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
 	        		 		<h5><?php echo get_the_title($singlePost->ID); ?></h5>
 	        		 		<div class="contenu">
-								<?php $content_post = get_post($singlePost->ID);
-								echo $content_post->post_content; ?>
+								<?php echo get_field('avantages', $singlePost->ID); ?>
 							</div>
 	        		 	</div>
 	        		 </div>
