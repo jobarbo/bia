@@ -25,7 +25,7 @@ $order = wc_get_order( $order_id );
 $show_purchase_note    = $order->has_status( apply_filters( 'woocommerce_purchase_note_order_statuses', array( 'completed', 'processing' ) ) );
 $show_customer_details = is_user_logged_in() && $order->get_user_id() === get_current_user_id();
 ?>
-<div class="row">
+<div class="row row-bottom">
 <div class="col-sm-6 order_details-container">
 <div class="white-bloc">
 <h3 class="titreSection"><?php _e( 'Détails de la </br> commande', 'bia' ); ?></h3>

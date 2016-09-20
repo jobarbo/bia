@@ -17,6 +17,10 @@ body.blog,body.faq{
 			padding-right:0;
 		}
 
+		.post{
+			cursor:pointer;
+		}
+
 		.content{
 			background-color:white;
 			padding:25px;
@@ -44,20 +48,24 @@ body.blog,body.faq{
 			p{
 				font-family: apercu;
 				font-size: 16px;
+				color:black;
 			}
 			h4{
 				font-family: apercu;
 				font-size: 30px;
-				letter-spacing: 1px;				
+				letter-spacing: 1px;
+				color:black;
+				margin-bottom:15px;			
 			}
 			.description{
-				
+				color:black;
 				a{
 					padding-top: 25px;
     				display: inline-block;
 				}					
 			}
 			.author{
+				color:black;
 				img{
 					box-shadow: 0 1px 5px #888;
 					border-radius: 50%;

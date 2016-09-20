@@ -23,7 +23,7 @@
 						</div-->
 
 <div id="formulaireInscription">
-  <p class="formText">Pour rester à l'affut de nos offres et de nos formations à venir.</p>
+  <p class="formText"><?php echo get_field('intro_formulaire',2); ?></p>
   <div id="mc_embed_signup">
     <form action="//biaformations.us13.list-manage.com/subscribe/post?u=5651c764d0b83a317b47e6201&amp;id=44a1134806" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -51,9 +51,11 @@
               <li><input type="checkbox" value="4096" name="group[6841][4096]" id="mce-group[6841]-6841-11"><label for="mce-group[6841]-6841-11">Analyse biomécanique</label></li>
               <li><input type="checkbox" value="8192" name="group[6841][8192]" id="mce-group[6841]-6841-12"><label for="mce-group[6841]-6841-12">Anatomie</label></li>
               <li><input type="checkbox" value="16384" name="group[6841][16384]" id="mce-group[6841]-6841-13"><label for="mce-group[6841]-6841-13">Haltérophilie</label></li>
-              <li><input type="checkbox" value="32768" name="group[6841][32768]" id="mce-group[6841]-6841-14"><label for="mce-group[6841]-6841-14">Posture</label></li>
+              <li><input type="checkbox" value="32768" name="group[6841][32768]" id="mce-group[6841]-6841-14"><label for="mce-group[6841]-6841-14">Posture</label></li>           
               <li><input type="checkbox" value="65536" name="group[6841][65536]" id="mce-group[6841]-6841-15"><label for="mce-group[6841]-6841-15">Clientèle spécifique</label></li>
-              <li><input type="checkbox" value="131072" name="group[6841][131072]" id="mce-group[6841]-6841-16"><label for="mce-group[6841]-6841-16">Autres intérêts</label></li>
+              <li><input type="checkbox" value="131072" name="group[6841][131072]" id="mce-group[6841]-131072-16"><label for="mce-group[6841]-131072-16">Sport d'endurance</label></li>
+              <li><input type="checkbox" value="262144" name="group[6841][262144]" id="mce-group[6841]-262144-17"><label for="mce-group[6841]-262144-17">Littératie Physique</label></li>
+              <li><input type="checkbox" value="524288" name="group[6841][524288]" id="mce-group[6841]-524288-18"><label for="mce-group[6841]-524288-18">Autres intérêts</label></li>
             </ul>
         <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>

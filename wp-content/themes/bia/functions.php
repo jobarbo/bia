@@ -42,6 +42,12 @@ if( function_exists('acf_add_options_page') ) {
 
 add_filter( 'comment_form_default_fields', 'comment_placeholders' );
 
+add_filter( 'woocommerce_add_error', function( $message ) {
+    $message = str_replace("is a required field","est un champ requis",$message );
+    $message = str_replace("Billing","",$message );
+    return $message;
+});
+
 /**
  * Change default fields, add placeholder and change type attributes.
  *

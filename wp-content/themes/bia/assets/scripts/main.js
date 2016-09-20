@@ -193,6 +193,9 @@ $("#btMenu").click(function () {
   
 });
 
+  function replaceAll(str, find, replace) {
+    return str.replace(new RegExp(find, 'g'), replace);
+  }
 
 
     if($(window).width() > 768){
@@ -308,8 +311,11 @@ $("#btMenu").click(function () {
               }
             }
             if(already){
+              
               arrValues.splice(arrValues.indexOf(id),1);
-              $('#'+input).val(arrValues);
+              arrValuesString = arrValues.toString();
+              arrValuesTiret = replaceAll(arrValuesString,',','-');
+              $('#'+input).val(arrValuesTiret);
             }else{
               $('#'+input).val(currentValue+'-'+id);
             }

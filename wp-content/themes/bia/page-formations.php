@@ -66,7 +66,6 @@
 		<?php
 				$terms = get_terms( array(
 				    'taxonomy' => 'pa_ville'
-				    
 				) );
 
 				?>
@@ -241,9 +240,10 @@
 					if($visible == false){
 
 						$currentFormateur = $_GET['formateurs'];
+						$arrFormateurs = explode('-',$_GET['formateurs']);
 						
-						if($p->ID == $currentFormateur){
-							$visible = true;							
+						if(in_array($p->ID,$arrFormateurs)){
+							$visible = true;						
 						}
 
 					}
@@ -275,13 +275,14 @@
 		<?php
 			if(round($product->stock) == 0){
 				$location = '';
-			}else{				
-				$location = "onclick='window.location.href='". get_permalink()."'";
+			}else{
+				$url =  "'".get_permalink()."'";
+				$location = "onclick='window.location.href=$url'";
 			}
 
 		?>
 
-		<div class="formation col-md-4" <?php echo $location; ?>>
+		<div class="formation col-md-4" <?php if($location !== ''){ ?> onclick="window.location.href=<?php echo $url; ?>"	<?php } ?>>
 			<div class="content">
 				<div class="location">
 					<?php $location = get_field('location_short');

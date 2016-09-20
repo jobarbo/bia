@@ -30,25 +30,27 @@
 			}
 
 		?>
-	<div class="col-sm-6 post">
-		<div class="content">
-			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' ); ?>
-			<div class="image" style="background-image:url('<?php echo $thumb['0']; ?>');">
-			<?php if(get_field('nouvelles_ou_article')){
-				if(get_field('nouvelles_ou_article') == 'nouvelles'){ ?>
-					<span class="encadre"><?php echo _e('Nouvelles','bia'); ?></span>
-				<?php }else{ ?>
-					<span class="encadre"><?php echo _e('Articles','bia'); ?></span>
-				<?php }
-			} ?>
+	<div class="col-sm-6 post" onclick="window.location.href='<?php echo get_permalink($post->ID); ?>'">
+		
+			<div class="content">
+				<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' ); ?>
+				<div class="image" style="background-image:url('<?php echo $thumb['0']; ?>');">
+				<?php if(get_field('nouvelles_ou_article')){
+					if(get_field('nouvelles_ou_article') == 'nouvelles'){ ?>
+						<span class="encadre"><?php echo _e('Nouvelles','bia'); ?></span>
+					<?php }else{ ?>
+						<span class="encadre"><?php echo _e('Articles','bia'); ?></span>
+					<?php }
+				} ?>
+				</div>
+				
+				<p class="author"><? echo get_avatar($post->post_author); ?><?php echo _e('Par ','bia'); ?><?php echo get_the_author(); ?></p>
+				<h4><?php the_title(); ?></h4>
+				<div class="description">
+					<?php the_excerpt(); ?>
+				</div>
 			</div>
-			
-			<p class="author"><? echo get_avatar($post->post_author); ?><?php echo _e('Par ','bia'); ?><?php echo get_the_author(); ?></p>
-			<h4><?php the_title(); ?></h4>
-			<div class="description">
-				<?php the_excerpt(); ?>
-			</div>
-		</div>
+		
 	</div>
 
 	<?php

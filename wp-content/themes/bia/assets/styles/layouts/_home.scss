@@ -87,20 +87,19 @@
     #proContent {
         .titreSection {
             margin-top: 0px;
-            margin-left: -15px;
+            margin-left: 40px;
             position: relative;
-            margin-bottom:200px;
+            margin-bottom:230px;
         }
         h3 {
             width: 463px;
         }
         ul {
             font-family: Apercu;
-            font-size: 22px;
+            font-size: 20px;
             list-style: none;
             margin-top: 65px;
             margin-bottom: 65px;
-            margin-left: 30px;
             li {
                 margin-bottom: 10px;
             }
@@ -336,7 +335,7 @@
     z-index: 10;
     .titreSection {
         position: relative;
-        right: -5px;
+        right: 30px;
         top: 10px;
         float: right;
         color: $biaRed;
@@ -920,6 +919,7 @@
         #instagramFeed {
             margin-left: 0%;
             margin-right: 0%;
+            margin-top:0;
         }
         .instagramImage {
             padding: 0 10px!important;
@@ -1009,7 +1009,7 @@
             width: 100%;
         }
         #proContent {
-            width: 300px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 80px;

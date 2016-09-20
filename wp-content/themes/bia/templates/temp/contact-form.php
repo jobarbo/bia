@@ -23,7 +23,7 @@
 						</div-->
 
 <div id="formulaireInscription">
-  <p>Pour rester à l'affut de nos offres et de nos formations à venir.</p>
+  <p><?php echo get_field('intro_formulaire',2); ?></p>
   <div id="mc_embed_signup">
     <form action="//biaformations.us13.list-manage.com/subscribe/post?u=5651c764d0b83a317b47e6201&amp;id=44a1134806" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">

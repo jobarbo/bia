@@ -59,7 +59,7 @@
 
 					<div class="price"><?php echo $product->price; ?> $</div>
 
-					<button type="submit" data-quantity="1" data-product_id="<?php echo $product->id; ?>" class="button ajax_add_to_cart add_to_cart_button product_type_simple"><?php echo _e('Réserver ma place','bia'); ?></button>
+					<button type="submit" data-quantity="1" data-product_id="<?php echo $product->id; ?>" class="button ajax_add_to_cart add_to_cart_button product_type_simple"><?php echo _e('Ajouter au panier','bia'); ?></button>
 
 						
 					<span class="clear"></span>
@@ -73,8 +73,8 @@
 				<div class="date"><p class="width-fixed" ><?php echo _e('Date','bia'); ?></p><p><?php echo get_field('date_de_la_formation'); ?></p></div>
 				<div class="heure"><p class="width-fixed" ><?php echo _e('Heure','bia'); ?></p><span><?php echo get_field('heure'); ?></span></div>
 				<div class="endroit"><p class="width-fixed" ><?php echo _e('Endroit','bia'); ?></p><span><?php echo get_field('location_long'); ?></span></div>
-				<a class="bouton" href="#" target="_blank"><?php echo _e('Politique de remboursement','bia'); ?></a>
-				<a class="bouton" href="#" target="_blank"><?php echo _e('Crédits HFC','bia'); ?></a>
+				<a class="bouton" href="<?php echo get_permalink(237); ?>" target="_blank"><?php echo _e('Politique de remboursement','bia'); ?></a>
+				<a class="bouton" href="<?php echo get_permalink(238); ?>" target="_blank"><?php echo _e('Crédits HFC','bia'); ?></a>
 			</div>
 		</div>
 	</div>

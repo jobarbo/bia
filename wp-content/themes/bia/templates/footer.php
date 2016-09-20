@@ -2,7 +2,7 @@
 		<div class="container-fluid">
 			<div class="row borderBox">
 			
-				<div class="footerBloc" data-bottom-top="opacity:0;" data-center="opacity:1;">
+				<div class="footerBloc" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
 					<div class="row">
 						<?php if(!is_page('122')){ ?>
 							<div class="col-md-6 bg-photo">
@@ -57,7 +57,7 @@
 						<span class="clear"></span>
 					</div>
 				</div>
-				<h3 class="titreSection" data-bottom-top="opacity:0;" data-center="opacity:1;">#biaformations</h3>
+				<a href="https://www.instagram.com/explore/tags/biaformations/" target="_blank"><h3 class="titreSection" data-bottom-top="opacity:0;" data-center="opacity:1;">#biaformations</h3></a>
 				<div class="row-height">
 					
 					<ul class="social desktop"> 

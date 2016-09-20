@@ -30,15 +30,16 @@
 			}
 
 		?>
-	<div class="col-sm-6 post">
+	<div class="col-sm-6 post" onclick="window.location.href='<?php echo get_permalink($post->ID); ?>'">
 		<div class="content">
 			<!--?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' ); ?>
 			<div class="image" style="background-image:url('<?php echo $thumb['0']; ?>');">
-			</div-->
+			</div--> 
 			<!--p class="author"><? echo get_avatar($post->post_author); ?><?php echo _e('Par ','bia'); ?><?php echo get_the_author(); ?></p-->
 			<h4><?php the_title(); ?></h4>
 			<div class="description">
 				<?php the_excerpt(); ?>
+				<a class="bouton" href="<?php echo get_the_permalink(); ?>">Lire la suite</a>
 			</div>
 		</div>
 	</div>

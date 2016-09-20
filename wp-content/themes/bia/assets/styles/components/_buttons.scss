@@ -62,6 +62,7 @@
     text-align: center;
     position: relative;
     transition: all .5s ease;
+    -webkit-font-smoothing: antialiased;
     &:before{
         content: "";
         display: table;
