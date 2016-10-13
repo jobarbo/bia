@@ -101,3 +101,30 @@ img{
     display: table;
    
 }
+
+body.error404{
+    main{
+        padding: 70px 5% 70px;
+    }
+
+    #splash{
+        height: 80px;
+        min-height: 0;
+    }
+
+    .error{
+        .white-bloc{
+            position:relative;
+
+            .button{
+                display:table;
+                margin-top:15px;
+            }
+        }
+
+        .titreSection{
+            top:-50px;
+        }
+
+    }
+}

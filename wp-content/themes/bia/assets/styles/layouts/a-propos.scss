@@ -148,12 +148,23 @@ body.formateurs,body.a-propos{
 	    		.post-right{
 	    			padding:25px 15px;
 	    		}
+
+	    			img{
+	    				height:auto;
+	    			}
+	    	}
+
+	    	.row-title{
+	    		h4{
+	    			width:290px;
+	    		}
 	    	}
 
 	    	.texte-intro{
 	    		width:100%;
 	    		margin-left:5%;
 	    		margin-right:5%;
+	    		padding-right:30px;
 	    	}
 
 	    	.bouton{
@@ -173,4 +184,5 @@ body.a-propos{
 			}
 		}
 	}
+
 }

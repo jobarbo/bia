@@ -96,22 +96,34 @@ body.commanditaires{
 			padding-bottom: 3px;
 			font-size: 18px;
 		}
-		a{
-			cursor: pointer;
-			letter-spacing: .05em;
-			font-size: 16px;
-			padding-bottom: 3px;
-			margin-left: auto;
-			margin-right: auto;
-			width: auto;
-			display:table;
-			text-align: center;
+		
+		.col-sm-6{
+			&:first-of-type{
+				a{
+					cursor: pointer;
+					letter-spacing: .05em;
+					font-size: 16px;
+					padding-bottom: 3px;
+					margin-left: auto;
+					margin-right: auto;
+					width: auto;
+					display:table;
+					text-align: center;
 
-			&.bouton{
-				&:after{
-					height:2px;
+					&.bouton{
+						&:after{
+							height:2px;
+						}
+				    }
 				}
-		    }
+			}
+
+			&:last-of-type{
+				a.button{
+					margin-top:30px;
+					display:table;
+				}
+			}
 		}
 	    
 	    img{
@@ -173,6 +185,12 @@ body.commanditaires{
 			.row-post{
 				.post-in-list:last-of-type{
 					padding-left:15px;
+				}
+			}
+
+			.row-title{
+				h4{
+					width: 290px;
 				}
 			}
 		}

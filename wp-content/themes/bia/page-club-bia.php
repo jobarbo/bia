@@ -63,6 +63,11 @@
 	        		 		<h5><?php echo get_the_title(); ?></h5>
 	        		 		<div class="contenu">
 								<?php echo get_field('avantages'); ?>
+								<?php
+									if(get_field('bouton') == 'oui'){ ?>
+										<a class="button" href="<?php echo get_permalink(152); ?>"><?php echo _e('Inscrivez-vous au Club Bia','bia'); ?></a>
+									<?php }
+								?>
 							</div>
 	        		 	</div>
 	        		 </div>

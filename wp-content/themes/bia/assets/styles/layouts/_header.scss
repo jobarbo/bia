@@ -445,13 +445,12 @@
 
 #splashTitre {
     right: 150px;
-    top: 280px;
+    top: 60%;
     position: absolute;
     font-family: druk-medium;
     color: #fff;
     transform: skew(180deg,167deg);
 }
-
 
 .enSavoirPlus {
     background-color: white;
@@ -541,7 +540,7 @@
 @media only screen and (min-width: 1441px) {
     #splash{
         #splashTitre{
-                top: 400px;
+                top: 60%;
             }
             .enSavoirPlus {
             background-color: #fff;
@@ -626,7 +625,7 @@
         }
         #splashTitre {
             right: 50px;
-            top: 50%;
+            top: 60%;
             transform: skew(180deg,167deg) translateY(-50%);
             h2 {
                 width: 372px;
@@ -722,18 +721,19 @@
     #barreV {
     width: 55px;
     height: 100vh;
-    margin-top:-80px;
+    margin-top:0px;
         .social {
             bottom: -25px;
-            right: 15px;
+            right: 0px;
         }
     }
 
     #splash {
-        margin-top:50px;
+        overflow:hidden;
+        margin-top:0;
         #splashTitre {
-            right: 50px;
-            top: 50%;
+            right: 80px;
+            top: 70%;
             h2 {
                 width: auto;
                 font-size: 42px!important;
@@ -746,6 +746,8 @@
             font-size: 13px;
             width: 100%;
             padding-right: 70px;
+            margin-left: -55px;
+            padding-left: 75px;
             #logoEncadre{
                 width: 150px;
                 padding-bottom: 10px;
@@ -756,7 +758,8 @@
     body.home{
         #splash{
             #splashTitre{
-                top:33%;
+                top:40%;
+                right:60px;
             }
         }
     }

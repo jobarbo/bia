@@ -1,0 +1,6080 @@
+08-30-2016 @ 10:49:27 - Info: Begin processing payment for order 356 for the amount of 60.07
+08-30-2016 @ 10:49:27 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6007
+    [description] => Bia - Order 356
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDYGK1ar5GSXtsnDMZvGcE
+)
+
+08-30-2016 @ 10:49:28 - Processing response: stdClass Object
+(
+    [id] => ch_18oDYKK1ar5GSXtsK6ZmXnBi
+    [object] => charge
+    [amount] => 6007
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDYKK1ar5GSXtspXFN41Hu
+            [object] => balance_transaction
+            [amount] => 6007
+            [available_on] => 1473120000
+            [created] => 1472568568
+            [currency] => cad
+            [description] => Bia - Order 356
+            [fee] => 204
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 204
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 5803
+            [source] => ch_18oDYKK1ar5GSXtsK6ZmXnBi
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDYKK1ar5GSXtsK6ZmXnBi
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472568568
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 356
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDYKK1ar5GSXtsK6ZmXnBi/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDYGK1ar5GSXtsRbj03oAc
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2017
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => franperreault@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 10:49:28 - Successful charge: ch_18oDYKK1ar5GSXtsK6ZmXnBi
+08-30-2016 @ 10:52:37 - Info: Begin processing payment for order 357 for the amount of 38.23
+08-30-2016 @ 10:52:37 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 3823
+    [description] => Bia - Order 357
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDbKK1ar5GSXtsIg9vvPba
+)
+
+08-30-2016 @ 10:52:38 - Processing response: stdClass Object
+(
+    [id] => ch_18oDbOK1ar5GSXtsIsFq7XBe
+    [object] => charge
+    [amount] => 3823
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDbOK1ar5GSXtsapZgx0wv
+            [object] => balance_transaction
+            [amount] => 3823
+            [available_on] => 1473120000
+            [created] => 1472568758
+            [currency] => cad
+            [description] => Bia - Order 357
+            [fee] => 141
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 141
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 3682
+            [source] => ch_18oDbOK1ar5GSXtsIsFq7XBe
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDbOK1ar5GSXtsIsFq7XBe
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472568758
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 357
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDbOK1ar5GSXtsIsFq7XBe/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDbKK1ar5GSXtskjWBuYm9
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2017
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 10:52:38 - Successful charge: ch_18oDbOK1ar5GSXtsIsFq7XBe
+08-30-2016 @ 10:56:49 - Info: Begin processing payment for order 358 for the amount of 60.07
+08-30-2016 @ 10:56:49 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6007
+    [description] => Bia - Order 358
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDfOK1ar5GSXts9gKsBeT1
+)
+
+08-30-2016 @ 10:56:49 - Processing response: stdClass Object
+(
+    [id] => ch_18oDfSK1ar5GSXtsUWaCjLPv
+    [object] => charge
+    [amount] => 6007
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDfSK1ar5GSXtspQuP2G7q
+            [object] => balance_transaction
+            [amount] => 6007
+            [available_on] => 1473120000
+            [created] => 1472569010
+            [currency] => cad
+            [description] => Bia - Order 358
+            [fee] => 204
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 204
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 5803
+            [source] => ch_18oDfSK1ar5GSXtsUWaCjLPv
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDfSK1ar5GSXtsUWaCjLPv
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472569010
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 358
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDfSK1ar5GSXtsUWaCjLPv/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDfNK1ar5GSXtsXnHz0LRP
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 10:56:49 - Successful charge: ch_18oDfSK1ar5GSXtsUWaCjLPv
+08-30-2016 @ 10:59:17 - Info: Begin processing payment for order 359 for the amount of 40.24
+08-30-2016 @ 10:59:17 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 4024
+    [description] => Bia - Order 359
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDhmK1ar5GSXts3VR8i2PG
+)
+
+08-30-2016 @ 10:59:17 - Processing response: stdClass Object
+(
+    [id] => ch_18oDhqK1ar5GSXtsXLTW3Zjn
+    [object] => charge
+    [amount] => 4024
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDhqK1ar5GSXtstzwrapBP
+            [object] => balance_transaction
+            [amount] => 4024
+            [available_on] => 1473120000
+            [created] => 1472569158
+            [currency] => cad
+            [description] => Bia - Order 359
+            [fee] => 147
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 147
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 3877
+            [source] => ch_18oDhqK1ar5GSXtsXLTW3Zjn
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDhqK1ar5GSXtsXLTW3Zjn
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472569158
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 359
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDhqK1ar5GSXtsXLTW3Zjn/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDhmK1ar5GSXtsyPPKdwq1
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 10:59:17 - Successful charge: ch_18oDhqK1ar5GSXtsXLTW3Zjn
+08-30-2016 @ 11:02:46 - Info: Begin processing payment for order 360 for the amount of 40.24
+08-30-2016 @ 11:02:46 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 4024
+    [description] => Bia - Order 360
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDlAK1ar5GSXtsNxDw1Wwa
+)
+
+08-30-2016 @ 11:02:48 - Processing response: stdClass Object
+(
+    [id] => ch_18oDlEK1ar5GSXts7hJZh5zq
+    [object] => charge
+    [amount] => 4024
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDlFK1ar5GSXtsz8DmAmgq
+            [object] => balance_transaction
+            [amount] => 4024
+            [available_on] => 1473120000
+            [created] => 1472569368
+            [currency] => cad
+            [description] => Bia - Order 360
+            [fee] => 147
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 147
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 3877
+            [source] => ch_18oDlEK1ar5GSXts7hJZh5zq
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDlEK1ar5GSXts7hJZh5zq
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472569368
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 360
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDlEK1ar5GSXts7hJZh5zq/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDlAK1ar5GSXtspmDsDRbu
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2017
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 11:02:48 - Successful charge: ch_18oDlEK1ar5GSXts7hJZh5zq
+08-30-2016 @ 11:06:36 - Info: Begin processing payment for order 361 for the amount of 40.24
+08-30-2016 @ 11:06:36 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 4024
+    [description] => Bia - Order 361
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDorK1ar5GSXtszPLJsI09
+)
+
+08-30-2016 @ 11:06:37 - Processing response: stdClass Object
+(
+    [id] => ch_18oDovK1ar5GSXtsLbgjWVUG
+    [object] => charge
+    [amount] => 4024
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDovK1ar5GSXtsYlcQPV4I
+            [object] => balance_transaction
+            [amount] => 4024
+            [available_on] => 1473120000
+            [created] => 1472569597
+            [currency] => cad
+            [description] => Bia - Order 361
+            [fee] => 147
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 147
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 3877
+            [source] => ch_18oDovK1ar5GSXtsLbgjWVUG
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDovK1ar5GSXtsLbgjWVUG
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472569597
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 361
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDovK1ar5GSXtsLbgjWVUG/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDorK1ar5GSXtsilkOJINI
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 11:06:37 - Successful charge: ch_18oDovK1ar5GSXtsLbgjWVUG
+08-30-2016 @ 11:10:58 - Info: Begin processing payment for order 362 for the amount of 40.24
+08-30-2016 @ 11:10:58 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 4024
+    [description] => Bia - Order 362
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oDt6K1ar5GSXtstGZ7i7TB
+)
+
+08-30-2016 @ 11:10:59 - Processing response: stdClass Object
+(
+    [id] => ch_18oDtAK1ar5GSXtsm7crZ0Lg
+    [object] => charge
+    [amount] => 4024
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oDtAK1ar5GSXtsq1FLGnoa
+            [object] => balance_transaction
+            [amount] => 4024
+            [available_on] => 1473120000
+            [created] => 1472569860
+            [currency] => cad
+            [description] => Bia - Order 362
+            [fee] => 147
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 147
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 3877
+            [source] => ch_18oDtAK1ar5GSXtsm7crZ0Lg
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oDtAK1ar5GSXtsm7crZ0Lg
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472569860
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 362
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oDtAK1ar5GSXtsm7crZ0Lg/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oDt5K1ar5GSXtsBghqTX41
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 11:11:00 - Successful charge: ch_18oDtAK1ar5GSXtsm7crZ0Lg
+08-30-2016 @ 11:55:13 - Info: Begin processing payment for order 363 for the amount of 63.24
+08-30-2016 @ 11:55:13 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 363
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oEZvK1ar5GSXtsvWowYuaZ
+)
+
+08-30-2016 @ 11:55:16 - Processing response: stdClass Object
+(
+    [id] => ch_18oEZzK1ar5GSXtsfJpv2jb8
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oEa0K1ar5GSXtsXPdJTEDl
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472572515
+            [currency] => cad
+            [description] => Bia - Order 363
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oEZzK1ar5GSXtsfJpv2jb8
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oEZzK1ar5GSXtsfJpv2jb8
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472572515
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 363
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oEZzK1ar5GSXtsfJpv2jb8/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oEZvK1ar5GSXtskc5ssJcO
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 1
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 11:55:16 - Successful charge: ch_18oEZzK1ar5GSXtsfJpv2jb8
+08-30-2016 @ 12:33:33 - Info: Begin processing payment for order 364 for the amount of 63.24
+08-30-2016 @ 12:33:33 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 364
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFB0K1ar5GSXtsEihExqXI
+)
+
+08-30-2016 @ 12:33:34 - Processing response: stdClass Object
+(
+    [id] => ch_18oFB4K1ar5GSXts0t0fB5yT
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFB4K1ar5GSXts0GJDvy3V
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472574814
+            [currency] => cad
+            [description] => Bia - Order 364
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFB4K1ar5GSXts0t0fB5yT
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFB4K1ar5GSXts0t0fB5yT
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472574814
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 364
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFB4K1ar5GSXts0t0fB5yT/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFB0K1ar5GSXtsOIqL8XoH
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 12:34:32 - Info: Begin processing payment for order 365 for the amount of 63.24
+08-30-2016 @ 12:34:32 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 365
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFB0K1ar5GSXtsEihExqXI
+)
+
+08-30-2016 @ 12:34:33 - Error: stripe_error: You cannot use a Stripe token more than once: tok_18oFB0K1ar5GSXtsEihExqXI.
+08-30-2016 @ 12:34:55 - Info: Begin processing payment for order 365 for the amount of 63.24
+08-30-2016 @ 12:34:55 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 365
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFCLK1ar5GSXtsAvXdbIJs
+)
+
+08-30-2016 @ 12:34:56 - Processing response: stdClass Object
+(
+    [id] => ch_18oFCOK1ar5GSXtsS59em9sV
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFCOK1ar5GSXtseczA9QMU
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472574896
+            [currency] => cad
+            [description] => Bia - Order 365
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFCOK1ar5GSXtsS59em9sV
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFCOK1ar5GSXtsS59em9sV
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472574896
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 365
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFCOK1ar5GSXtsS59em9sV/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFCKK1ar5GSXtsmK15NMIt
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 12:35:20 - Info: Begin processing payment for order 366 for the amount of 63.24
+08-30-2016 @ 12:35:20 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 366
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFCjK1ar5GSXtsn3hn0kos
+)
+
+08-30-2016 @ 12:35:20 - Processing response: stdClass Object
+(
+    [id] => ch_18oFCnK1ar5GSXtshJEFeRws
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFCnK1ar5GSXtsHbJ6gFdt
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472574921
+            [currency] => cad
+            [description] => Bia - Order 366
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFCnK1ar5GSXtshJEFeRws
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFCnK1ar5GSXtshJEFeRws
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472574921
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 366
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFCnK1ar5GSXtshJEFeRws/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFCjK1ar5GSXtsdynNQ4A8
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 12:35:57 - Info: Begin processing payment for order 367 for the amount of 63.24
+08-30-2016 @ 12:35:57 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 367
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFDLK1ar5GSXtsk2cWgprG
+)
+
+08-30-2016 @ 12:35:58 - Processing response: stdClass Object
+(
+    [id] => ch_18oFDPK1ar5GSXtsMdA39K1Y
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFDPK1ar5GSXtsfo2E0pMd
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472574959
+            [currency] => cad
+            [description] => Bia - Order 367
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFDPK1ar5GSXtsMdA39K1Y
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFDPK1ar5GSXtsMdA39K1Y
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472574959
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 367
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFDPK1ar5GSXtsMdA39K1Y/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFDLK1ar5GSXtsUEwKL6Re
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 12:37:54 - Info: Begin processing payment for order 368 for the amount of 63.24
+08-30-2016 @ 12:37:54 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 368
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFFDK1ar5GSXtsaQB0ZnAN
+)
+
+08-30-2016 @ 12:37:55 - Processing response: stdClass Object
+(
+    [id] => ch_18oFFHK1ar5GSXtsqyhyfcvB
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFFIK1ar5GSXts1IGicuAy
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472575075
+            [currency] => cad
+            [description] => Bia - Order 368
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFFHK1ar5GSXtsqyhyfcvB
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFFHK1ar5GSXtsqyhyfcvB
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472575075
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 368
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFFHK1ar5GSXtsqyhyfcvB/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFFDK1ar5GSXtsTeJHBNIc
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 12:37:56 - Successful charge: ch_18oFFHK1ar5GSXtsqyhyfcvB
+08-30-2016 @ 13:08:41 - Info: Begin processing payment for order 369 for the amount of 63.24
+08-30-2016 @ 13:08:41 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 369
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFj0K1ar5GSXts7CTgKGB7
+)
+
+08-30-2016 @ 13:08:42 - Processing response: stdClass Object
+(
+    [id] => ch_18oFj5K1ar5GSXtsh9iXZkPy
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFj5K1ar5GSXtsqf2vRGrh
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472576923
+            [currency] => cad
+            [description] => Bia - Order 369
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFj5K1ar5GSXtsh9iXZkPy
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFj5K1ar5GSXtsh9iXZkPy
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472576923
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 369
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFj5K1ar5GSXtsh9iXZkPy/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFj0K1ar5GSXtsz8fi6exi
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 1
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:08:43 - Successful charge: ch_18oFj5K1ar5GSXtsh9iXZkPy
+08-30-2016 @ 13:11:07 - Info: Begin processing payment for order 372 for the amount of 63.24
+08-30-2016 @ 13:11:07 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 372
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFlMK1ar5GSXtsx1r41ELm
+)
+
+08-30-2016 @ 13:11:08 - Processing response: stdClass Object
+(
+    [id] => ch_18oFlQK1ar5GSXtsQ0ULLnUo
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFlQK1ar5GSXtsB0zll5GQ
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472577068
+            [currency] => cad
+            [description] => Bia - Order 372
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFlQK1ar5GSXtsQ0ULLnUo
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFlQK1ar5GSXtsQ0ULLnUo
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472577068
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 372
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFlQK1ar5GSXtsQ0ULLnUo/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFlMK1ar5GSXtsWSNJ8ysj
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:11:08 - Successful charge: ch_18oFlQK1ar5GSXtsQ0ULLnUo
+08-30-2016 @ 13:13:10 - Info: Begin processing payment for order 373 for the amount of 63.24
+08-30-2016 @ 13:13:10 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 373
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFnMK1ar5GSXtsj04b5nw6
+)
+
+08-30-2016 @ 13:13:12 - Processing response: stdClass Object
+(
+    [id] => ch_18oFnQK1ar5GSXtsOq2PniuQ
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFnQK1ar5GSXts2uafOkFK
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472577192
+            [currency] => cad
+            [description] => Bia - Order 373
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFnQK1ar5GSXtsOq2PniuQ
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFnQK1ar5GSXtsOq2PniuQ
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472577192
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 373
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFnQK1ar5GSXtsOq2PniuQ/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFnMK1ar5GSXtsRhgiDZjw
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:13:12 - Successful charge: ch_18oFnQK1ar5GSXtsOq2PniuQ
+08-30-2016 @ 13:22:11 - Info: Begin processing payment for order 381 for the amount of 63.24
+08-30-2016 @ 13:22:11 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 381
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oFw4K1ar5GSXtsf41c4M9o
+)
+
+08-30-2016 @ 13:22:11 - Processing response: stdClass Object
+(
+    [id] => ch_18oFw8K1ar5GSXtsbnyVe6jw
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oFw8K1ar5GSXtsBjTVpI84
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472577732
+            [currency] => cad
+            [description] => Bia - Order 381
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oFw8K1ar5GSXtsbnyVe6jw
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oFw8K1ar5GSXtsbnyVe6jw
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472577732
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 381
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oFw8K1ar5GSXtsbnyVe6jw/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oFw4K1ar5GSXtsB0E2cfju
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 8
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:22:12 - Successful charge: ch_18oFw8K1ar5GSXtsbnyVe6jw
+08-30-2016 @ 13:32:06 - Info: Begin processing payment for order 388 for the amount of 63.24
+08-30-2016 @ 13:32:06 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 388
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oG5fK1ar5GSXtsjnYZmMrU
+)
+
+08-30-2016 @ 13:32:07 - Processing response: stdClass Object
+(
+    [id] => ch_18oG5jK1ar5GSXtsZbtLK6Mq
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oG5kK1ar5GSXtsUkblSAqC
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472578327
+            [currency] => cad
+            [description] => Bia - Order 388
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oG5jK1ar5GSXtsZbtLK6Mq
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oG5jK1ar5GSXtsZbtLK6Mq
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472578327
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 388
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oG5jK1ar5GSXtsZbtLK6Mq/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oG5fK1ar5GSXtsp1Tf6wjh
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:32:07 - Successful charge: ch_18oG5jK1ar5GSXtsZbtLK6Mq
+08-30-2016 @ 13:37:49 - Info: Begin processing payment for order 397 for the amount of 63.24
+08-30-2016 @ 13:37:49 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 397
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGBCK1ar5GSXtszx0zv2vB
+)
+
+08-30-2016 @ 13:37:49 - Processing response: stdClass Object
+(
+    [id] => ch_18oGBGK1ar5GSXtsjv1S9scc
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGBGK1ar5GSXtsKOMjm2XS
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472578670
+            [currency] => cad
+            [description] => Bia - Order 397
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGBGK1ar5GSXtsjv1S9scc
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGBGK1ar5GSXtsjv1S9scc
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472578670
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 397
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGBGK1ar5GSXtsjv1S9scc/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGBCK1ar5GSXtsjgLUVSMf
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:37:50 - Successful charge: ch_18oGBGK1ar5GSXtsjv1S9scc
+08-30-2016 @ 13:43:58 - Info: Begin processing payment for order 400 for the amount of 63.24
+08-30-2016 @ 13:43:58 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 400
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGH9K1ar5GSXtszQavTxOM
+)
+
+08-30-2016 @ 13:43:59 - Processing response: stdClass Object
+(
+    [id] => ch_18oGHEK1ar5GSXtsiNoGEmAv
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGHEK1ar5GSXtsil21aKkw
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579040
+            [currency] => cad
+            [description] => Bia - Order 400
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGHEK1ar5GSXtsiNoGEmAv
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGHEK1ar5GSXtsiNoGEmAv
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579040
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 400
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGHEK1ar5GSXtsiNoGEmAv/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGH9K1ar5GSXtsYRojf8SV
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:44:00 - Successful charge: ch_18oGHEK1ar5GSXtsiNoGEmAv
+08-30-2016 @ 13:47:20 - Info: Begin processing payment for order 403 for the amount of 63.24
+08-30-2016 @ 13:47:20 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 403
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGKPK1ar5GSXtskec7MjgC
+)
+
+08-30-2016 @ 13:47:20 - Processing response: stdClass Object
+(
+    [id] => ch_18oGKTK1ar5GSXtsn3BNQeDe
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGKTK1ar5GSXtsrqTNdu2m
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579241
+            [currency] => cad
+            [description] => Bia - Order 403
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGKTK1ar5GSXtsn3BNQeDe
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGKTK1ar5GSXtsn3BNQeDe
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579241
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 403
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGKTK1ar5GSXtsn3BNQeDe/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGKPK1ar5GSXtsa8aC9eVS
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:47:21 - Successful charge: ch_18oGKTK1ar5GSXtsn3BNQeDe
+08-30-2016 @ 13:51:33 - Info: Begin processing payment for order 408 for the amount of 63.24
+08-30-2016 @ 13:51:33 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 408
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGOVK1ar5GSXtswCYEiEP5
+)
+
+08-30-2016 @ 13:51:35 - Processing response: stdClass Object
+(
+    [id] => ch_18oGOZK1ar5GSXtsqGQGWyAG
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGOZK1ar5GSXtsf3DNZ8wV
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579495
+            [currency] => cad
+            [description] => Bia - Order 408
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGOZK1ar5GSXtsqGQGWyAG
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGOZK1ar5GSXtsqGQGWyAG
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579495
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 408
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGOZK1ar5GSXtsqGQGWyAG/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGOVK1ar5GSXtsVio32rYW
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:51:35 - Successful charge: ch_18oGOZK1ar5GSXtsqGQGWyAG
+08-30-2016 @ 13:54:02 - Info: Begin processing payment for order 413 for the amount of 63.24
+08-30-2016 @ 13:54:02 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 413
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGQtK1ar5GSXtsqfOfEFhH
+)
+
+08-30-2016 @ 13:54:03 - Processing response: stdClass Object
+(
+    [id] => ch_18oGQxK1ar5GSXtsGCGweujj
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGQxK1ar5GSXtsYZmy20fF
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579643
+            [currency] => cad
+            [description] => Bia - Order 413
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGQxK1ar5GSXtsGCGweujj
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGQxK1ar5GSXtsGCGweujj
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579643
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 413
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGQxK1ar5GSXtsGCGweujj/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGQtK1ar5GSXtsS1BCMpxd
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:54:03 - Successful charge: ch_18oGQxK1ar5GSXtsGCGweujj
+08-30-2016 @ 13:56:11 - Info: Begin processing payment for order 418 for the amount of 63.24
+08-30-2016 @ 13:56:11 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 418
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGSzK1ar5GSXtsf91pOZYg
+)
+
+08-30-2016 @ 13:56:13 - Processing response: stdClass Object
+(
+    [id] => ch_18oGT3K1ar5GSXtsLx1HJyxn
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGT3K1ar5GSXtsM4Hw5X85
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579773
+            [currency] => cad
+            [description] => Bia - Order 418
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGT3K1ar5GSXtsLx1HJyxn
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGT3K1ar5GSXtsLx1HJyxn
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579773
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 418
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGT3K1ar5GSXtsLx1HJyxn/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGSyK1ar5GSXtsxji9bkQs
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:56:13 - Successful charge: ch_18oGT3K1ar5GSXtsLx1HJyxn
+08-30-2016 @ 13:58:16 - Info: Begin processing payment for order 421 for the amount of 63.24
+08-30-2016 @ 13:58:16 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 421
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGV0K1ar5GSXts2Rm6wo77
+)
+
+08-30-2016 @ 13:58:17 - Processing response: stdClass Object
+(
+    [id] => ch_18oGV4K1ar5GSXtsgeBOafGj
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGV4K1ar5GSXtsgaLoc35e
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472579898
+            [currency] => cad
+            [description] => Bia - Order 421
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGV4K1ar5GSXtsgeBOafGj
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGV4K1ar5GSXtsgeBOafGj
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472579898
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 421
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGV4K1ar5GSXtsgeBOafGj/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGV0K1ar5GSXtsWJZu0f3S
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 13:58:18 - Successful charge: ch_18oGV4K1ar5GSXtsgeBOafGj
+08-30-2016 @ 14:00:13 - Info: Begin processing payment for order 424 for the amount of 63.24
+08-30-2016 @ 14:00:13 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 424
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGWsK1ar5GSXtsNLljDgJe
+)
+
+08-30-2016 @ 14:00:13 - Processing response: stdClass Object
+(
+    [id] => ch_18oGWwK1ar5GSXtsZYfdU8j1
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGWwK1ar5GSXtsWUc8g3TW
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472580014
+            [currency] => cad
+            [description] => Bia - Order 424
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGWwK1ar5GSXtsZYfdU8j1
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGWwK1ar5GSXtsZYfdU8j1
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472580014
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 424
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGWwK1ar5GSXtsZYfdU8j1/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGWsK1ar5GSXtsaPXrXMH9
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 14:00:14 - Successful charge: ch_18oGWwK1ar5GSXtsZYfdU8j1
+08-30-2016 @ 14:02:17 - Info: Begin processing payment for order 425 for the amount of 63.24
+08-30-2016 @ 14:02:17 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 425
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGYtK1ar5GSXtsdItk1M9g
+)
+
+08-30-2016 @ 14:02:18 - Processing response: stdClass Object
+(
+    [id] => ch_18oGYwK1ar5GSXts2FJmr6Nn
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGYxK1ar5GSXts2QV7YxTD
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472580138
+            [currency] => cad
+            [description] => Bia - Order 425
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGYwK1ar5GSXts2FJmr6Nn
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGYwK1ar5GSXts2FJmr6Nn
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472580138
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 425
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGYwK1ar5GSXts2FJmr6Nn/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGYsK1ar5GSXtsIXKZLjN4
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 14:02:19 - Successful charge: ch_18oGYwK1ar5GSXts2FJmr6Nn
+08-30-2016 @ 14:08:11 - Info: Begin processing payment for order 426 for the amount of 63.24
+08-30-2016 @ 14:08:11 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 426
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGebK1ar5GSXtsIDDvxdT5
+)
+
+08-30-2016 @ 14:08:12 - Processing response: stdClass Object
+(
+    [id] => ch_18oGefK1ar5GSXtsHtTmH7Qb
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGefK1ar5GSXtsDfL3vGXo
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472580493
+            [currency] => cad
+            [description] => Bia - Order 426
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGefK1ar5GSXtsHtTmH7Qb
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGefK1ar5GSXtsHtTmH7Qb
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472580493
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 426
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGefK1ar5GSXtsHtTmH7Qb/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGeaK1ar5GSXtskpjpUruP
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 14:08:13 - Successful charge: ch_18oGefK1ar5GSXtsHtTmH7Qb
+08-30-2016 @ 14:08:53 - Info: Begin processing payment for order 427 for the amount of 63.24
+08-30-2016 @ 14:08:53 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 427
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oGfHK1ar5GSXtsuZMbOvyH
+)
+
+08-30-2016 @ 14:08:54 - Processing response: stdClass Object
+(
+    [id] => ch_18oGfLK1ar5GSXts1yxHkbqp
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oGfLK1ar5GSXtsMzv7wVR9
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472580535
+            [currency] => cad
+            [description] => Bia - Order 427
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oGfLK1ar5GSXts1yxHkbqp
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oGfLK1ar5GSXts1yxHkbqp
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472580535
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 427
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oGfLK1ar5GSXts1yxHkbqp/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oGfHK1ar5GSXtsloOQp9A6
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 14:08:55 - Successful charge: ch_18oGfLK1ar5GSXts1yxHkbqp
+08-30-2016 @ 14:54:05 - Info: Begin processing payment for order 430 for the amount of 63.24
+08-30-2016 @ 14:54:05 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 430
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oHN1K1ar5GSXtsqvveX6Rn
+)
+
+08-30-2016 @ 14:54:07 - Processing response: stdClass Object
+(
+    [id] => ch_18oHN5K1ar5GSXtsISWAKgK4
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oHN6K1ar5GSXtsHf7JmvyS
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472583247
+            [currency] => cad
+            [description] => Bia - Order 430
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oHN5K1ar5GSXtsISWAKgK4
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oHN5K1ar5GSXtsISWAKgK4
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472583247
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 430
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oHN5K1ar5GSXtsISWAKgK4/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oHN1K1ar5GSXtstRox55J7
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 1
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => alexis@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 14:54:08 - Successful charge: ch_18oHN5K1ar5GSXtsISWAKgK4
+08-30-2016 @ 15:34:06 - Info: Begin processing payment for order 433 for the amount of 63.24
+08-30-2016 @ 15:34:06 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 433
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oHzkK1ar5GSXtsZcIpwj7F
+)
+
+08-30-2016 @ 15:34:07 - Processing response: stdClass Object
+(
+    [id] => ch_18oHzoK1ar5GSXts9kWA4zRV
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oHzoK1ar5GSXts81N0NOrL
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472585648
+            [currency] => cad
+            [description] => Bia - Order 433
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oHzoK1ar5GSXts9kWA4zRV
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oHzoK1ar5GSXts9kWA4zRV
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472585648
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 433
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oHzoK1ar5GSXts9kWA4zRV/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oHzkK1ar5GSXtsCRNiOXsd
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:34:08 - Successful charge: ch_18oHzoK1ar5GSXts9kWA4zRV
+08-30-2016 @ 15:36:03 - Info: Begin processing payment for order 434 for the amount of 63.24
+08-30-2016 @ 15:36:03 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 434
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oI1dK1ar5GSXts9J4Xi5EE
+)
+
+08-30-2016 @ 15:36:04 - Processing response: stdClass Object
+(
+    [id] => ch_18oI1hK1ar5GSXtsaCfdBrCM
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oI1hK1ar5GSXts80g1d3P1
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472585765
+            [currency] => cad
+            [description] => Bia - Order 434
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oI1hK1ar5GSXtsaCfdBrCM
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oI1hK1ar5GSXtsaCfdBrCM
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472585765
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 434
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oI1hK1ar5GSXtsaCfdBrCM/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oI1dK1ar5GSXtseFoF8FS8
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:36:05 - Successful charge: ch_18oI1hK1ar5GSXtsaCfdBrCM
+08-30-2016 @ 15:40:40 - Info: Begin processing payment for order 435 for the amount of 63.24
+08-30-2016 @ 15:40:40 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 435
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oI65K1ar5GSXtsoRBWgWAt
+)
+
+08-30-2016 @ 15:40:41 - Processing response: stdClass Object
+(
+    [id] => ch_18oI69K1ar5GSXtsj0gXbrV6
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oI6AK1ar5GSXts7u73jrHi
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472586041
+            [currency] => cad
+            [description] => Bia - Order 435
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oI69K1ar5GSXtsj0gXbrV6
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oI69K1ar5GSXtsj0gXbrV6
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472586041
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 435
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oI69K1ar5GSXtsj0gXbrV6/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oI65K1ar5GSXtsUROvMM5W
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:40:41 - Successful charge: ch_18oI69K1ar5GSXtsj0gXbrV6
+08-30-2016 @ 15:46:39 - Info: Begin processing payment for order 436 for the amount of 63.24
+08-30-2016 @ 15:46:39 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 436
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIBsK1ar5GSXtsTWTqOi6j
+)
+
+08-30-2016 @ 15:46:40 - Processing response: stdClass Object
+(
+    [id] => ch_18oIBwK1ar5GSXtsCwpmMV3D
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIBwK1ar5GSXtsT7omAyOk
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472586400
+            [currency] => cad
+            [description] => Bia - Order 436
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIBwK1ar5GSXtsCwpmMV3D
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIBwK1ar5GSXtsCwpmMV3D
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472586400
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 436
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIBwK1ar5GSXtsCwpmMV3D/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIBrK1ar5GSXts0LxbmFyb
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:46:41 - Successful charge: ch_18oIBwK1ar5GSXtsCwpmMV3D
+08-30-2016 @ 15:50:36 - Info: Begin processing payment for order 437 for the amount of 63.24
+08-30-2016 @ 15:50:36 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 437
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIFhK1ar5GSXts2SUPRSau
+)
+
+08-30-2016 @ 15:50:37 - Processing response: stdClass Object
+(
+    [id] => ch_18oIFlK1ar5GSXtsFKFZ89Q9
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIFlK1ar5GSXtsRnhSuPXj
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472586637
+            [currency] => cad
+            [description] => Bia - Order 437
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIFlK1ar5GSXtsFKFZ89Q9
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIFlK1ar5GSXtsFKFZ89Q9
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472586637
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 437
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIFlK1ar5GSXtsFKFZ89Q9/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIFhK1ar5GSXtsQtlVMJub
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:50:37 - Successful charge: ch_18oIFlK1ar5GSXtsFKFZ89Q9
+08-30-2016 @ 15:52:01 - Info: Begin processing payment for order 438 for the amount of 63.24
+08-30-2016 @ 15:52:01 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 438
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIH4K1ar5GSXtsFMlMGmBN
+)
+
+08-30-2016 @ 15:52:02 - Processing response: stdClass Object
+(
+    [id] => ch_18oIH8K1ar5GSXts2ftPC0PM
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIH8K1ar5GSXtsdeBqjKNN
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472586722
+            [currency] => cad
+            [description] => Bia - Order 438
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIH8K1ar5GSXts2ftPC0PM
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIH8K1ar5GSXts2ftPC0PM
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472586722
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 438
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIH8K1ar5GSXts2ftPC0PM/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIH4K1ar5GSXts9nc8Xr5q
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:52:02 - Successful charge: ch_18oIH8K1ar5GSXts2ftPC0PM
+08-30-2016 @ 15:53:59 - Info: Begin processing payment for order 439 for the amount of 63.24
+08-30-2016 @ 15:53:59 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 439
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIIzK1ar5GSXtse1QMua6U
+)
+
+08-30-2016 @ 15:54:00 - Processing response: stdClass Object
+(
+    [id] => ch_18oIJ2K1ar5GSXtsI6lJHfg2
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIJ3K1ar5GSXtsSfK3XMlK
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472586840
+            [currency] => cad
+            [description] => Bia - Order 439
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIJ2K1ar5GSXtsI6lJHfg2
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIJ2K1ar5GSXtsI6lJHfg2
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472586840
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 439
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIJ2K1ar5GSXtsI6lJHfg2/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIIyK1ar5GSXtsHPBNXoiG
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:54:01 - Successful charge: ch_18oIJ2K1ar5GSXtsI6lJHfg2
+08-30-2016 @ 15:57:15 - Info: Begin processing payment for order 440 for the amount of 63.24
+08-30-2016 @ 15:57:15 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 440
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIM8K1ar5GSXtsppZ0ETHF
+)
+
+08-30-2016 @ 15:57:16 - Processing response: stdClass Object
+(
+    [id] => ch_18oIMCK1ar5GSXts0K2Z7uOL
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIMCK1ar5GSXtskcHa5faG
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472587036
+            [currency] => cad
+            [description] => Bia - Order 440
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIMCK1ar5GSXts0K2Z7uOL
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIMCK1ar5GSXts0K2Z7uOL
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472587036
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 440
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIMCK1ar5GSXts0K2Z7uOL/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIM8K1ar5GSXtsTuS9dhk8
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 15:57:16 - Successful charge: ch_18oIMCK1ar5GSXts0K2Z7uOL
+08-30-2016 @ 16:01:57 - Info: Begin processing payment for order 441 for the amount of 63.24
+08-30-2016 @ 16:01:57 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 441
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIQhK1ar5GSXtsVgVN4bLI
+)
+
+08-30-2016 @ 16:01:59 - Processing response: stdClass Object
+(
+    [id] => ch_18oIQlK1ar5GSXtsov5pKO5V
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIQlK1ar5GSXtst47JdXJp
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472587319
+            [currency] => cad
+            [description] => Bia - Order 441
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIQlK1ar5GSXtsov5pKO5V
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIQlK1ar5GSXtsov5pKO5V
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472587319
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 441
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIQlK1ar5GSXtsov5pKO5V/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIQhK1ar5GSXtsPNwPKzV8
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 16:01:59 - Successful charge: ch_18oIQlK1ar5GSXtsov5pKO5V
+08-30-2016 @ 16:03:15 - Info: Begin processing payment for order 442 for the amount of 63.24
+08-30-2016 @ 16:03:15 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 442
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18oIRxK1ar5GSXtsRD794tey
+)
+
+08-30-2016 @ 16:03:16 - Processing response: stdClass Object
+(
+    [id] => ch_18oIS0K1ar5GSXtsuSM6YX0f
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18oIS1K1ar5GSXtsj59j9O3n
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473120000
+            [created] => 1472587396
+            [currency] => cad
+            [description] => Bia - Order 442
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18oIS0K1ar5GSXtsuSM6YX0f
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18oIS0K1ar5GSXtsuSM6YX0f
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472587396
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 442
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18oIS0K1ar5GSXtsuSM6YX0f/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18oIRxK1ar5GSXtsGCaXRvVM
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+08-30-2016 @ 16:03:17 - Successful charge: ch_18oIS0K1ar5GSXtsuSM6YX0f
+09-01-2016 @ 09:34:14 - Info: Begin processing payment for order 448 for the amount of 63.24
+09-01-2016 @ 09:34:14 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 448
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18ovKZK1ar5GSXtsSFpVVOnw
+)
+
+09-01-2016 @ 09:34:15 - Processing response: stdClass Object
+(
+    [id] => ch_18ovKdK1ar5GSXts2hg318Ut
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18ovKeK1ar5GSXtsny75yFMH
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473292800
+            [created] => 1472736855
+            [currency] => cad
+            [description] => Bia - Order 448
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18ovKdK1ar5GSXts2hg318Ut
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18ovKdK1ar5GSXts2hg318Ut
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472736855
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 448
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18ovKdK1ar5GSXts2hg318Ut/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18ovKZK1ar5GSXts9BHdBzGP
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-01-2016 @ 09:34:16 - Successful charge: ch_18ovKdK1ar5GSXts2hg318Ut
+09-01-2016 @ 09:37:12 - Info: Begin processing payment for order 450 for the amount of 63.24
+09-01-2016 @ 09:37:12 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 450
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18ovNRK1ar5GSXtsy7q0GbL0
+)
+
+09-01-2016 @ 09:37:13 - Processing response: stdClass Object
+(
+    [id] => ch_18ovNVK1ar5GSXts1B7pOlVW
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18ovNVK1ar5GSXtsAlz7sbFt
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473292800
+            [created] => 1472737033
+            [currency] => cad
+            [description] => Bia - Order 450
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18ovNVK1ar5GSXts1B7pOlVW
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18ovNVK1ar5GSXts1B7pOlVW
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472737033
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 450
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18ovNVK1ar5GSXts1B7pOlVW/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18ovNRK1ar5GSXtsXGIPU8LL
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 2
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-01-2016 @ 09:37:15 - Successful charge: ch_18ovNVK1ar5GSXts1B7pOlVW
+09-01-2016 @ 09:41:08 - Info: Begin processing payment for order 452 for the amount of 63.24
+09-01-2016 @ 09:41:08 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 6324
+    [description] => Bia - Order 452
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18ovRFK1ar5GSXtsCfZ2nCQ0
+)
+
+09-01-2016 @ 09:41:09 - Processing response: stdClass Object
+(
+    [id] => ch_18ovRJK1ar5GSXtsK8q0STrE
+    [object] => charge
+    [amount] => 6324
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18ovRJK1ar5GSXtsrXOzealc
+            [object] => balance_transaction
+            [amount] => 6324
+            [available_on] => 1473292800
+            [created] => 1472737269
+            [currency] => cad
+            [description] => Bia - Order 452
+            [fee] => 213
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 213
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 6111
+            [source] => ch_18ovRJK1ar5GSXtsK8q0STrE
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18ovRJK1ar5GSXtsK8q0STrE
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1472737269
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 452
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18ovRJK1ar5GSXtsK8q0STrE/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18ovRFK1ar5GSXts3Aha2qt6
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 11
+            [exp_year] => 2018
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-01-2016 @ 09:41:09 - Successful charge: ch_18ovRJK1ar5GSXtsK8q0STrE
+09-21-2016 @ 13:55:15 - Info: Begin processing payment for order 759 for the amount of 55
+09-21-2016 @ 13:55:15 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 5500
+    [description] => Bia - Order 759
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18wEw3K1ar5GSXtsla0up4Cg
+)
+
+09-21-2016 @ 13:55:16 - Processing response: stdClass Object
+(
+    [id] => ch_18wEwCK1ar5GSXtsc7nwQLAe
+    [object] => charge
+    [amount] => 5500
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18wEwCK1ar5GSXtszIBtnNmS
+            [object] => balance_transaction
+            [amount] => 5500
+            [available_on] => 1475020800
+            [created] => 1474480516
+            [currency] => cad
+            [description] => Bia - Order 759
+            [fee] => 190
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 190
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 5310
+            [source] => ch_18wEwCK1ar5GSXtsc7nwQLAe
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18wEwCK1ar5GSXtsc7nwQLAe
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1474480516
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 759
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18wEwCK1ar5GSXtsc7nwQLAe/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18wEw2K1ar5GSXts0BG0Yg8O
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 4
+            [exp_year] => 2019
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => fp@mambomambo.ca
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-21-2016 @ 13:55:17 - Successful charge: ch_18wEwCK1ar5GSXtsc7nwQLAe
+09-21-2016 @ 13:59:12 - Info: Begin processing payment for order 761 for the amount of 55
+09-21-2016 @ 13:59:12 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 5500
+    [description] => Bia - Order 761
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18wEzyK1ar5GSXtsfuCha36J
+)
+
+09-21-2016 @ 13:59:13 - Processing response: stdClass Object
+(
+    [id] => ch_18wF02K1ar5GSXtsd2dtA2Ls
+    [object] => charge
+    [amount] => 5500
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18wF02K1ar5GSXtslfxJH2zI
+            [object] => balance_transaction
+            [amount] => 5500
+            [available_on] => 1475020800
+            [created] => 1474480754
+            [currency] => cad
+            [description] => Bia - Order 761
+            [fee] => 190
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 190
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 5310
+            [source] => ch_18wF02K1ar5GSXtsd2dtA2Ls
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18wF02K1ar5GSXtsd2dtA2Ls
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1474480754
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 761
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18wF02K1ar5GSXtsd2dtA2Ls/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18wEzyK1ar5GSXtsFlUniqdz
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 4
+            [exp_year] => 2019
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => franperreault@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-21-2016 @ 13:59:14 - Successful charge: ch_18wF02K1ar5GSXtsd2dtA2Ls
+09-21-2016 @ 14:07:17 - Info: Begin processing payment for order 763 for the amount of 55
+09-21-2016 @ 14:07:17 - charges request: Array
+(
+    [currency] => cad
+    [amount] => 5500
+    [description] => Bia - Order 763
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_18wF7mK1ar5GSXtsAm1MXmBh
+)
+
+09-21-2016 @ 14:07:19 - Processing response: stdClass Object
+(
+    [id] => ch_18wF7rK1ar5GSXtsP20QF6RZ
+    [object] => charge
+    [amount] => 5500
+    [amount_refunded] => 0
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_18wF7rK1ar5GSXtsk7WsqUxI
+            [object] => balance_transaction
+            [amount] => 5500
+            [available_on] => 1475020800
+            [created] => 1474481239
+            [currency] => cad
+            [description] => Bia - Order 763
+            [fee] => 190
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 190
+                            [application] => 
+                            [currency] => cad
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 5310
+            [source] => ch_18wF7rK1ar5GSXtsP20QF6RZ
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_18wF7rK1ar5GSXtsP20QF6RZ
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1474481239
+    [currency] => cad
+    [customer] => 
+    [description] => Bia - Order 763
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+        )
+
+    [order] => 
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_18wF7rK1ar5GSXtsP20QF6RZ/refunds
+        )
+
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_18wF7mK1ar5GSXtsYatCUTIU
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 4
+            [exp_year] => 2019
+            [fingerprint] => F3DBmuhVHcCWYngb
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => franperreault@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+)
+
+09-21-2016 @ 14:07:20 - Successful charge: ch_18wF7rK1ar5GSXtsP20QF6RZ

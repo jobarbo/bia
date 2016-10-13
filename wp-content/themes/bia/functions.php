@@ -48,6 +48,19 @@ add_filter( 'woocommerce_add_error', function( $message ) {
     return $message;
 });
 
+add_filter( 'woocommerce_checkout_fields', 'webendev_woocommerce_checkout_fields' );
+/**
+ * Change Order Notes Placeholder Text - WooCommerce
+ * 
+ */
+function webendev_woocommerce_checkout_fields( $fields ) {
+
+  $fields['order']['order_comments']['placeholder'] = 'N\'hésitez pas à entrer d\'autres informations au sujet de la commande si nécessaire';
+  $fields['order']['order_comments']['required'] = true;
+  $fields['order']['order_comments']['label'] = 'Information sur le participant (profession employeur allergies)';
+  return $fields;
+}
+
 /**
  * Change default fields, add placeholder and change type attributes.
  *
@@ -156,16 +169,15 @@ function generate_promo_code( $order_id ) {
                                                 array('email'=>$order->billing_email),
                                                 $merge_vars,
                                                 false,
-                                                false,
+                                                true,
                                                 false,
                                                 false
                                                );
       } catch(Mailchimp_Error $e) {
-      
+         error_log($e);
       }
 
 
     }
 }
-add_action( 'woocommerce_payment_complete',
-'generate_promo_code' );
+add_action( 'woocommerce_payment_complete', 'generate_promo_code' );

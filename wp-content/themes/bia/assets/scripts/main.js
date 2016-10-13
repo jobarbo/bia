@@ -158,7 +158,7 @@ $("#btMenu").click(function () {
       $('#side-menu').toggleClass('visually-hidden');
       setTimeout(function(){
         $('#side-menu').css('display','none');
-      },500);
+      },800);
     },500);
   }else{
       $('#side-menu').css('display','block');

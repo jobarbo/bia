@@ -38,7 +38,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<th class="product-remove">&nbsp;</th>
 			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<th class="product-subtotal"><?php _e( 'Total (Taxes incluses)', 'woocommerce' ); ?></th>
 			<th class="product-remove">&nbsp;</th>
 		</tr>
 	</thead>

@@ -487,6 +487,7 @@
             border-radius: 0px;
             box-sizing: border-box;
             background: #ffffff;
+            text-align:left;
         }
         p.formText{
             width: 50%;
@@ -780,9 +781,14 @@
                 }
                 ul{
                     li{
-                        width: 95%;
+                        width: 80%;
                         margin-right: 20px;
                         margin-left: 20px;
+                        label{
+                            &:after{
+                                right:10px;
+                            }
+                        }
                     }
                 } 
             }
@@ -790,6 +796,18 @@
         }
     }
 }
+
+@media only screen and (max-width: 1630px) {
+    #listeProfessionel{
+        #proContent{
+            h3{
+                font-size:42px!important;
+                width:250px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1366px) {
 
     #listeProfessionel {
@@ -799,7 +817,7 @@
         #proContent {
             h3 {
                 font-size: 42px!important;
-                width: 300px;
+                width: 270px;
             }
             ul {
                 margin-left: 0px;
@@ -913,9 +931,6 @@
             margin-left: 20px;
             margin-right: 20px;
         }
-        .titreSection {
-            right: 0px;
-        }
         #instagramFeed {
             margin-left: 0%;
             margin-right: 0%;
@@ -1020,6 +1035,10 @@
                 margin-top: 50px;
                 transform: translateY(-127px) skew(180deg,167deg) translateZ(0);
                 margin-bottom:0;
+            }
+
+            h3{
+                width:300px;
             }
         }
     }
@@ -1279,10 +1298,10 @@
 
 @media only screen and (max-width: 768px) {
     #listeProfessionel .imgProfessionel {
-    height: 250px;
-    width: 100%;
-    background-position: 50% 40%;
-}
+        height: 250px;
+        width: 100%;
+        background-position: 50% 40%;
+    }
     #pageContact {
         .containerFeed {
             overflow-x: scroll;
@@ -1325,7 +1344,12 @@
         background:url(../images/background_red_min1.png) repeat-y 5% 0,  
         url(../images/background_red_min1.png) repeat-y 95% 0,
         url(../images/background_red_min1.png) repeat-y center,
-        $biaRed; 
+        $biaRed;
+
+        .titreSection{
+            margin-left:15px;
+        }
+
         .leftBox {
             padding: 0;
             .imgBulle {
@@ -1343,8 +1367,8 @@
                 }
                 .bulle1 {
                     position: absolute;
-                    height: 210px;
-                    width: 210px;
+                    height: 180px;
+                    width: 180px;
                     top: 0;
                     left: 30px;
                     float: none;
@@ -1355,7 +1379,7 @@
                     height: 100px;
                     width: 100px;
                     top: 55px;
-                    left: 180px;
+                    left: 140px;
                     float: none;
                     z-index: 4;
                 }
@@ -1364,18 +1388,42 @@
                     height: 80px;
                     width: 80px;
                     top: 25px;
-                    left: 240px;
+                    left: 200px;
                     z-index: 4;
                     float: none;
                 }
             }
         }
     }
+    #listeProfessionel{
+         #proContent{
+             .titreSection{
+                max-width:90%;
+                margin-left:15px;
+             }
+
+             ul{
+                padding-left:15px;
+                font-size:16px;
+                margin-top:90px;
+                li{
+                    margin-bottom:0;
+                }
+             }
+         }
+    }
+
     #formationsVariee {
         background:url(../images/background_grey_min1.png) repeat-y 5% 0,  
         url(../images/background_grey_min1.png) repeat-y 95% 0,
         url(../images/background_grey_min1.png) repeat-y center,
         #fff; 
+
+        .borderBox{
+            .titreSection{
+                margin-left:15px;
+            }
+        }
     }
     #pageContact {
         background:url(../images/background_grey_min1.png) repeat-y 5% 0,  
@@ -1389,6 +1437,12 @@
                     width:85%;
                 }
             }
+        }
+    }
+
+    #approcheScientifique{
+        .titreSection{
+            margin-left:15px;
         }
     }
 }

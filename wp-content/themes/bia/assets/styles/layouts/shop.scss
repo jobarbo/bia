@@ -223,9 +223,9 @@ body.woocommerce-order-received{
 		position:relative;
 	}
 
-	h3.titreSection{
-		top:-50px;
-		position:absolute;
+	.woocommerce h3.titreSection{
+		top:-50px!important;
+		position:absolute!important;
 	}
 
 	.shop_table{
@@ -370,6 +370,17 @@ body.single-product{
 	box-shadow: 3px 2px 12px rgba(0,0,0,.14);
 }
 
+@media only screen and (max-width: 580px) {
+	.woocommerce table.shop_table{
+		margin-left:-20px;
+	}
+
+	body.woocommerce-page{
+ 		.titreSection{
+			font-size:40px!important;
+		 }
+	}
+}	
 @media only screen and (max-width: 768px) {
 	body.woocommerce-cart{
 		.coupon{

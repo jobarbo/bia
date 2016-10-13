@@ -208,16 +208,8 @@
 	<?php 
 	global $product;
 
-	$meta_query = array(
-	array(
-		'key' => 'date_de_la_formation',
-		'value' => date('Ymd'),
-		'type' => 'DATE',
-		'compare' => '>='
-	)
-);
 
-	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query, 'meta_query' => $meta_query, 'orderby' => 'meta_value_num',
+	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query,  'orderby' => 'meta_value_num',
 	'meta_key' => 'date_de_la_formation',) ); ?>
 
 
