@@ -3,7 +3,7 @@
 	<div id="listeProfessionel" >
 		<div class="row borderBox">
 			<div class="row-height">
-				<div class="col-md-8 col-md-height imgProfessionel" style="background-image: url(<?php echo get_field('image_section_1'); ?>">
+				<div class="col-md-8 col-md-height imgProfessionel" style="background-image: url('<?php echo get_field('image_section_1'); ?>')">
 
 				</div>
 				<div class="col-md-4 col-md-height col-sm-middle textProfessionel">
