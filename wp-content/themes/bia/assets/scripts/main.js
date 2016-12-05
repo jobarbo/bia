@@ -130,6 +130,28 @@
       resizePartenaires();
     }
 
+    var isIOS7 = function() {
+      var deviceAgent = navigator.userAgent.toLowerCase();
+      return /(iphone|ipod|ipad).* os 7_/.test(deviceAgent);
+    }
+
+    var isIOS8 = function() {
+      var deviceAgent = navigator.userAgent.toLowerCase();
+      return /(iphone|ipod|ipad).* os 8_/.test(deviceAgent);
+    }
+
+   if(isIOS7() || isIOS8()){
+      var windowHeight = $(window).height();
+      $('#splash').css('height','768px');
+      $('#barreV').css('height','768px');
+      $('#listeProfessionel .imgProfessionel').css('height','1024px');
+      $('#listeProfessionel').css('height','1024px');
+      $('#splash').css('min-height','initial');
+      $('#listeProfessionel').css('min-height','initial');
+      $('#barreV').css('min-height','initial');
+      //alert(windowHeight)
+   }
+
 
   //------- ANCHOR ANIMATION -------
   $('a[href^="#"]').on('click touchend', function() {
