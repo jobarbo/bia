@@ -152,6 +152,8 @@ body.woocommerce-cart{
 		border-bottom:3px solid black;
 		padding:7px 6px;
 		margin-right:15px;
+		z-index:9;
+		position:relative;
 	}
 
 	#update_cart_section{

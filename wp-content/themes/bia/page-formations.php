@@ -312,13 +312,16 @@
 					<?php endif; ?>					
 					</div>
 				<?php } ?>
-
+				
+				<?php
+					if(round($product->stock) <= 3){ ?>
 				<div class="qty">
 					<p><?php echo _e('Places restantes','bia'); ?></p>
 					<?php
 						echo round($product->stock);
 					?>
 				</div>
+				<?php } ?>
 				<?php
 					if(round($product->stock) == 0){ ?>
 						<a href="mailto:info@biaformations.com" class="bouton"><?php echo _e("Écrivez-nous pour vous</br>inscrire sur la liste d'attente",'bia'); ?></a>

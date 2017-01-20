@@ -57,7 +57,7 @@ function webendev_woocommerce_checkout_fields( $fields ) {
 
   $fields['order']['order_comments']['placeholder'] = 'N\'hésitez pas à entrer d\'autres informations au sujet de la commande si nécessaire';
   $fields['order']['order_comments']['required'] = true;
-  $fields['order']['order_comments']['label'] = 'Information sur le participant (profession employeur allergies)';
+  $fields['order']['order_comments']['label'] = 'Information sur le participant (profession, employeur, allergies, taille de chandail)';
   return $fields;
 }
 
