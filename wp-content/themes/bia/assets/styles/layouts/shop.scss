@@ -46,8 +46,51 @@ body.woocommerce-checkout{
 		display:none;
 	}
 
+	#allergies-section{
+		display:table;
+		margin-top:30px;
+		width:100%;
+		background-color: #f2f2f2;
+		padding:15px 25px 20px;
+
+		h4{
+			display:block;
+			clear:both;	
+			font-family: apercu;
+    		font-size: 16px;
+		}
+
+		.checkbox-container{
+			margin-left:-15px;
+			margin-right:-15px;
+			display:flex;
+			flex-wrap:wrap;
+		}
+
+		.allergies-checkbox{
+			width:33.33%;
+			padding:0 15px;
+			display:flex;
+			flex-wrap:wrap;
+		}
+
+	}
+
 	.woocommerce-info{
 		display:none;
+	}
+
+	.allergies-checkbox{
+		max-width:33.33%;
+
+	}
+
+	.comments-section{
+		margin-top:30px;
+		margin-bottom:30px;
+		textarea{
+			min-height:150px;
+		}
 	}
 
 	.woocommerce-billing-fields{
@@ -70,6 +113,61 @@ body.woocommerce-checkout{
 	.select2-search{
 		input[type="text"]{
 			border:0;
+		}
+	}
+
+	.woocommerce-shipping-fields{		
+
+		label.checkbox{
+			margin-top:0;
+
+			#photo{
+				margin-left:0;
+			}
+		}
+
+		.auth-photo{
+			margin-top:10px;
+		}
+
+		.newsletter{
+			margin-left: -5px;
+		    margin-top: 10px;
+		    border-top: 1px solid lightgray;
+		    padding-top: 10px;
+		    margin-bottom: 0;
+		}
+
+		input[type="checkbox"]{
+			margin:0 5px 0;
+			position:relative;
+			-webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		    border:0;
+		    display: block;
+    		float: left;
+
+
+			&:before{
+				content:'';
+				width:15px;
+				height:15px;
+				display:table;
+				border-radius:0px;
+				border:3px solid $biaRed;
+				background-color:white;
+				transition:0.3s all ease-in-out;
+				top: 10px;
+    			position: relative;
+			}
+
+			&:checked{
+				&:before{				
+					border:1px solid transparent;
+					background-color:$biaRed;
+				}
+			}
 		}
 	}
 
@@ -382,7 +480,32 @@ body.single-product{
 			font-size:40px!important;
 		 }
 	}
-}	
+}
+
+@media only screen and (max-width: 1300px) {
+	body.woocommerce-checkout{
+		 #allergies-section{
+		 	 .allergies-checkbox{
+		 	 	width:50%;
+		 	 	max-width:50%;
+		 	 }
+		 }
+
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	body.woocommerce-checkout{
+		 #allergies-section{
+		 	 .allergies-checkbox{
+		 	 	width:100%;
+		 	 	max-width:100%;
+		 	 }
+		 }
+
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	body.woocommerce-cart{
 		.coupon{
@@ -408,6 +531,19 @@ body.single-product{
 					display:none;
 				}
 			}
+		}
+	}
+
+	body.woocommerce-checkout{
+		 #allergies-section{
+		 	 .allergies-checkbox{
+		 	 	width:100%;
+		 	 	max-width:100%;
+		 	 }
+		 }
+
+		#size_shirt_field{
+			width:100%;
 		}
 	}
 

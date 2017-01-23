@@ -48,17 +48,11 @@ add_filter( 'woocommerce_add_error', function( $message ) {
     return $message;
 });
 
-add_filter( 'woocommerce_checkout_fields', 'webendev_woocommerce_checkout_fields' );
-/**
- * Change Order Notes Placeholder Text - WooCommerce
- * 
- */
-function webendev_woocommerce_checkout_fields( $fields ) {
-
-  $fields['order']['order_comments']['placeholder'] = 'N\'hésitez pas à entrer d\'autres informations au sujet de la commande si nécessaire';
-  $fields['order']['order_comments']['required'] = true;
-  $fields['order']['order_comments']['label'] = 'Information sur le participant (profession, employeur, allergies, taille de chandail)';
-  return $fields;
+// remove Order Notes from checkout field in Woocommerce
+add_filter( 'woocommerce_checkout_fields' , 'alter_woocommerce_checkout_fields' );
+function alter_woocommerce_checkout_fields( $fields ) {
+     unset($fields['order']['order_comments']);
+     return $fields;
 }
 
 /**
@@ -113,9 +107,189 @@ function wp_exist_post_by_title( $title ) {
 }
 
 
+/**
+ * Add the field to the checkout
+ */
+add_action( 'woocommerce_after_order_notes', 'my_custom_checkout_field' );
+
+function my_custom_checkout_field( $checkout ) {
+
+    echo '<h3 class="titreSection">' . __('Information<br/>complementaire') . '</h3><div class="white-bloc">';
+
+    woocommerce_form_field( 'profession', array(
+        'type'          => 'text',
+        'label'         => __(''),
+        'placeholder'   => __('Profession *'),
+        'class' => array('form-row-first'),
+        'required'  => true,
+        ), $checkout->get_value( 'profession' ));
+
+    woocommerce_form_field( 'employeur', array(
+        'type'          => 'text',
+        'label'         => __(''),
+        'placeholder'   => __('Employeur'),
+        'class' => array('form-row-last'),
+        'required'  => false,
+        ), $checkout->get_value( 'employeur' ));
+
+    woocommerce_form_field( 'size_shirt', array(
+        'type'          => 'text',
+        'label'         => __(''),
+        'placeholder'   => __('Grandeur de chandail*'),
+        'class' => array('form-row-first'),
+        'required'  => true,
+        ), $checkout->get_value( 'size_shirt' ));
+
+    echo "<br/>";
+    echo '<span class="clear"></span>';
+    echo "<div id='allergies-section'>";
+    echo "<h4>".__('Allergies et préférences alimentaire:')."</h4>";
+      echo "<div class='checkbox-container'>";
+    woocommerce_form_field( 'lactose', array(
+        'type'          => 'checkbox',
+        'label'         => __('Sans lactose'),
+        'class' => array('allergies-checkbox'),
+        'required'  => false,
+        ), $checkout->get_value( 'lactose' ));
+
+    woocommerce_form_field( 'gluten', array(
+        'type'          => 'checkbox',
+        'label'         => __('Sans gluten'),
+        'class' => array('allergies-checkbox'),
+        'required'  => false,
+        ), $checkout->get_value( 'gluten' ));
+
+    woocommerce_form_field( 'vege', array(
+        'type'          => 'checkbox',
+        'label'         => __('Végétarien'),
+        'class' => array('allergies-checkbox'),
+        'required'  => false,
+        ), $checkout->get_value( 'vege' ));
+
+    echo '</div>';
+    
+
+    woocommerce_form_field( 'other', array(
+        'type'          => 'text',
+        'label'         => __(''),
+        'placeholder'   => __('Autres'),
+        'class' => array('form-row-first'),
+        ), $checkout->get_value( 'other' ));
+
+    echo '</div>';
+    echo '<span class="clear"></span>';
+
+    woocommerce_form_field( 'comments', array(
+        'type'          => 'textarea',
+        'label'         => __(''),
+        'placeholder'   => __('Questions / Commentaires'),
+        'class' => array('comments-section'),
+        ), $checkout->get_value( 'comments' ));
+
+    echo "J’autorise, par la présente, la diffusion de toute image ou vidéo de ma personne, en tout ou en partie, individuellement ou avec d’autres images ou vidéos sur le site Web de biaformations.com et sur d’autres sites officiels, ainsi qu’à des fins médiatiques et commerciales, y compris lors de présentations promotionnelles, de campagnes de publicité et de formations en ligne. J’autorise également la publication diffusion de toute image ou vidéo de ma personne, en tout ou en partie, individuellement ou avec d’autres images ou vidéos sur les réseaux sociaux.";
+
+    woocommerce_form_field( 'photo', array(
+        'type'          => 'checkbox',
+        'label'         => __('Autorisation photo'),        
+        'class' => array('auth-photo'),
+        'required'  => true,
+        ), $checkout->get_value( 'photo' ));
+
+    woocommerce_form_field( 'newsletter', array(
+        'type'          => 'checkbox',
+        'label'         => __("Inscription à l'infolettre"),        
+        'class' => array('newsletter'),
+        'required'  => false,
+        ), $checkout->get_value( 'newsletter' ));    
+
+    echo '</div>';
+
+}
+
+
+/**
+ * Process the checkout
+ */
+add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');
+
+function my_custom_checkout_field_process() {
+    // Check if set, if its not set add an error.
+    if ( ! $_POST['profession'] )
+        wc_add_notice( __( 'Vous devez ajouter une profession.' ), 'error' );
+
+    if ( ! $_POST['size_shirt'] )
+      wc_add_notice( __( 'Vous devez saisir une grandeur de chandail.' ), 'error' );
+
+    if ( ! $_POST['photo'] )
+      wc_add_notice( __( 'Vous devez autoriser de vous faire prendre en photo.' ), 'error' );
+}
+
+
+/**
+ * Update the order meta with field value
+ */
+add_action( 'woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_update_order_meta' );
+
+function my_custom_checkout_field_update_order_meta( $order_id ) {
+    if ( ! empty( $_POST['profession'] ) ) {
+        update_post_meta( $order_id, 'Profession', sanitize_text_field( $_POST['profession'] ) );
+    }
+    if ( ! empty( $_POST['employeur'] ) ) {
+        update_post_meta( $order_id, 'Employeur', sanitize_text_field( $_POST['employeur'] ) );
+    }
+    if ( ! empty( $_POST['size_shirt'] ) ) {
+        update_post_meta( $order_id, 'Grandeur chandail', sanitize_text_field( $_POST['size_shirt'] ) );
+    }
+    if ( ! empty( $_POST['other'] ) ) {
+        update_post_meta( $order_id, 'Autres', sanitize_text_field( $_POST['other'] ) );
+    }
+    if ( ! empty( $_POST['comments'] ) ) {
+        update_post_meta( $order_id, 'Commentaires', sanitize_text_field( $_POST['comments'] ) );
+    }
+    if ( ! empty( $_POST['lactose'] ) ) {
+        update_post_meta( $order_id, 'Lactose', sanitize_text_field( $_POST['lactose'] ) );
+    }
+    if ( ! empty( $_POST['gluten'] ) ) {
+        update_post_meta( $order_id, 'Gluten', sanitize_text_field( $_POST['gluten'] ) );
+    }
+    if ( ! empty( $_POST['vege'] ) ) {
+        update_post_meta( $order_id, 'Végétarien', sanitize_text_field( $_POST['vege'] ) );
+    }
+    if ( ! empty( $_POST['photo'] ) ) {
+        update_post_meta( $order_id, 'Autorisation photo', sanitize_text_field( $_POST['photo'] ) );
+    }
+    if ( ! empty( $_POST['newsletter'] ) ) {
+        update_post_meta( $order_id, "Inscription à l'infolettre", sanitize_text_field( $_POST['newsletter'] ) );
+    }
+}
+
+
+/**
+ * Display field value on the order edit page
+ */
+add_action( 'woocommerce_admin_order_data_after_billing_address', 'my_custom_checkout_field_display_admin_order_meta', 10, 1 );
+
+function my_custom_checkout_field_display_admin_order_meta($order){
+    echo "<hr>";
+    echo '<p><strong>'.__('Profession').':</strong> ' . get_post_meta( $order->id, 'Profession', true ) . '</p>';
+    echo '<p><strong>'.__('Employeur').':</strong> ' . get_post_meta( $order->id, 'Employeur', true ) . '</p>';
+    echo '<p><strong>'.__('Grandeur Chandail').':</strong> ' . get_post_meta( $order->id, 'Grandeur chandail', true ) . '</p>';
+    echo "<hr>";
+    echo '<p><strong>'.__('Allergies et préférences alimentaire : ').'</strong></p>';
+    echo '<p><strong>'.__('Lactose').':</strong> ' . get_post_meta( $order->id, 'Lactose', true ) . '</p>';
+    echo '<p><strong>'.__('Gluten').':</strong> ' . get_post_meta( $order->id, 'Gluten', true ) . '</p>';
+    echo '<p><strong>'.__('Végétarien').':</strong> ' . get_post_meta( $order->id, 'Végétarien', true ) . '</p>';
+    echo '<p><strong>'.__('Autres').':</strong> ' . get_post_meta( $order->id, 'Autres', true ) . '</p>';
+    echo "<hr>";
+    echo '<p><strong>'.__('Commentaires').':</strong> ' . get_post_meta( $order->id, 'Commentaires', true ) . '</p>';
+    echo '<p><strong>'.__('Infolettre ?').':</strong> ' . get_post_meta( $order->id, "Inscription à l'infolettre", true ) . '</p>';
+}
+
+
+
 
 /* Create coupon programatically */
-function generate_promo_code( $order_id ) {
+function after_order_paid( $order_id ) {
    $order = new WC_Order( $order_id );
     $items = $order->get_items(); 
     foreach ( $items as $item ) {
@@ -125,9 +299,7 @@ function generate_promo_code( $order_id ) {
         $hasClubBia = true;
       }
     }
-   
-    
-    
+      
     // execute code here
    if($hasClubBia){
       $coupon_code = 'club-bia-'.$order_id; // Code
@@ -179,5 +351,34 @@ function generate_promo_code( $order_id ) {
 
 
     }
+
+
+    //Newsletter aggreement
+    $newsletterAgreement = get_post_meta( $order_id, "Inscription à l'infolettre", true );
+   
+    if($newsletterAgreement == '1' || $newsletterAgreement == 1 || $newsletterAgreement == true){
+      try {
+      
+          $apikey = '7c4ae8f6c5f3ae101a5e88514817ff06-us13';
+          $listid = '44a1134806';
+          
+          $profession = get_post_meta( $order_id, "Profession", true );
+          $merge_vars = array("FNAME"=>$order->billing_first_name,"LNAME"=>$order->billing_last_name,"PROFFES"=>$profession,'VILLE'=>$order->billing_city);
+          $MailChimp = new Mailchimp($apikey);
+          $result = $MailChimp->lists->subscribe($listid,
+                                                  array('email'=>$order->billing_email),
+                                                  $merge_vars,
+                                                  false,
+                                                  true,
+                                                  false,
+                                                  false
+                                                 );
+        } catch(Mailchimp_Error $e) {
+           error_log($e);
+        }
+    }
+  
+
+
 }
-add_action( 'woocommerce_payment_complete', 'generate_promo_code' );
+add_action( 'woocommerce_payment_complete', 'after_order_paid' );

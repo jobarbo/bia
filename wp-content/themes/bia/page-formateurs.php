@@ -30,14 +30,15 @@
 	        		 		
 	        		 	</div>
 	        		 	<div class="col-sm-6 col-sm-height col-middle post-in-list">
-	        		 		<h5><?php echo get_the_title($singlePost->ID); ?></h5>
-	        		 		<p class="titre"><?php echo get_field('titre',$singlePost->ID); ?></p>
-	        		 		
-	        		 		<?php $content_post = get_post($singlePost->ID); ?>
-							<div class="contenu">
-								<?php echo $content_post->post_content; ?>
-							</div>							
-							
+	        		 		<div class="text-section">
+		        		 		<h5><?php echo get_the_title($singlePost->ID); ?></h5>
+		        		 		<p class="titre"><?php echo get_field('titre',$singlePost->ID); ?></p>
+		        		 		
+		        		 		<?php $content_post = get_post($singlePost->ID); ?>
+								<div class="contenu">
+									<?php echo $content_post->post_content; ?>
+								</div>							
+							</div>
 	        		 	</div>
 	        		 </div>
 	        		</div>

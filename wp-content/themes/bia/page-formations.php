@@ -282,6 +282,13 @@
 				</div>
 				<div class="date">
 					<?php echo get_field('date_de_la_formation'); ?>
+					<?php
+						
+						if(get_field('date_fin_formation')){
+							echo '<br/>au '.get_field('date_fin_formation');
+						}
+						
+					?>
 				</div>
 				<h5><?php echo get_the_title(); ?></h5>
 

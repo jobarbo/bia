@@ -125,6 +125,33 @@
       $(this).addClass('visually-visible');
     });
 
+    if($('body').hasClass('formateurs')){
+      
+      /*$('.text-section').each(function(){
+        var currentContent = $(this);
+        var currentHeight = currentContent.outerHeight();
+        currentContent.attr('data-height', currentHeight);
+        if(currentHeight > 100){
+         currentContent.addClass('max-height');
+      }
+      });
+
+      $('.text-section').click(function(){
+          var maxHeight = $(this).attr('data-height');
+
+          if($(this).hasClass('max-height')){
+            
+            
+            $(this).css('height', maxHeight+'px');
+            $(this).removeClass('max-height');
+          }else{
+            $(this).removeAttr('style');
+            $(this).addClass('max-height');
+          }
+      });*/
+
+    }
+
 
     window.onresize = function(){
       resizePartenaires();
