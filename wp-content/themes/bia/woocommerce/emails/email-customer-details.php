@@ -23,9 +23,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<h2><?php _e( 'Customer details', 'woocommerce' ); ?></h2>
-<ul>
-    <?php foreach ( $fields as $field ) : ?>
-        <li><strong><?php echo wp_kses_post( $field['label'] ); ?>:</strong> <span class="text"><?php echo wp_kses_post( $field['value'] ); ?></span></li>
-    <?php endforeach; ?>
-</ul>
+<div style="width:50%; float:left;">
+	<h2><?php _e( 'Customer details', 'woocommerce' ); ?></h2>
+	
+	    <?php foreach ( $fields as $field ) : ?>
+	        <p><strong><?php echo wp_kses_post( $field['label'] ); ?>:</strong> <span class="text"><?php echo wp_kses_post( $field['value'] ); ?></span></p>
+	    <?php endforeach; ?>
+</div>
+<div style="width:50%;  float:left;">
+	<h2><?php _e( 'Détails du vendeur', 'bia' ); ?></h2>
+	<p>Bia Formations<br/>389 ch. du Tour-du-Lac · Lac-Beauport,<br/>Qc G3B0T8 · Canada</p>
+</div>

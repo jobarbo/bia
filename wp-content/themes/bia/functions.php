@@ -19,6 +19,19 @@ $sage_includes = [
   'lib/mailchimp.php' // Mailchimp
 ];
 
+
+//Send copy of invoice to admin
+add_filter( 'woocommerce_email_headers', 'mycustom_headers_filter_function', 10, 2);
+
+function mycustom_headers_filter_function( $headers, $object ) {
+    if ($object == 'customer_completed_order') {
+        $headers .= 'BCC: Bia Formations <mmd@biaformations.com>' . "\r\n";
+    }
+
+    return $headers;
+}
+
+
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
@@ -192,7 +205,7 @@ function my_custom_checkout_field( $checkout ) {
         'type'          => 'checkbox',
         'label'         => __('Autorisation photo'),        
         'class' => array('auth-photo'),
-        'required'  => true,
+        'required'  => false,
         ), $checkout->get_value( 'photo' ));
 
     woocommerce_form_field( 'newsletter', array(
@@ -220,8 +233,6 @@ function my_custom_checkout_field_process() {
     if ( ! $_POST['size_shirt'] )
       wc_add_notice( __( 'Vous devez saisir une grandeur de chandail.' ), 'error' );
 
-    if ( ! $_POST['photo'] )
-      wc_add_notice( __( 'Vous devez autoriser de vous faire prendre en photo.' ), 'error' );
 }
 
 

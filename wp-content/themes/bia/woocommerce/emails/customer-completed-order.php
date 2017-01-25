@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php printf( __( "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
+<p>Bonjour. Votre commande récente sur Bia Formations a été complétée. Le récapitulatif de votre commande est affiché ci-dessous :</p>
 
 <?php
 
