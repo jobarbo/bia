@@ -275,6 +275,17 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
 }
 
 
+function returnTextMeta($meta, $order){
+  
+  $val = get_post_meta( $order->id, $meta, true );
+  if($val == 1 || $val == '1' || $val == true){
+    return 'oui';
+  }else{
+    return 'non';
+  }
+
+}
+
 /**
  * Display field value on the order edit page
  */
@@ -287,17 +298,65 @@ function my_custom_checkout_field_display_admin_order_meta($order){
     echo '<p><strong>'.__('Grandeur Chandail').':</strong> ' . get_post_meta( $order->id, 'Grandeur chandail', true ) . '</p>';
     echo "<hr>";
     echo '<p><strong>'.__('Allergies et préférences alimentaire : ').'</strong></p>';
-    echo '<p><strong>'.__('Lactose').':</strong> ' . get_post_meta( $order->id, 'Lactose', true ) . '</p>';
-    echo '<p><strong>'.__('Gluten').':</strong> ' . get_post_meta( $order->id, 'Gluten', true ) . '</p>';
-    echo '<p><strong>'.__('Végétarien').':</strong> ' . get_post_meta( $order->id, 'Végétarien', true ) . '</p>';
+    echo '<p><strong>'.__('Lactose').':</strong> ' . returnTextMeta('Lactose',$order) . '</p>';
+    echo '<p><strong>'.__('Gluten').':</strong> ' . returnTextMeta('Gluten',$order) . '</p>';
+    echo '<p><strong>'.__('Végétarien').':</strong> ' . returnTextMeta('Végétarien',$order) . '</p>';
     echo '<p><strong>'.__('Autres').':</strong> ' . get_post_meta( $order->id, 'Autres', true ) . '</p>';
     echo "<hr>";
+    echo '<p><strong>'.__('Infolettre ?').':</strong> ' . returnTextMeta("Inscription à l'infolettre",$order). '</p>';
+    echo '<p><strong>'.__('Autorisation photo ?').':</strong> ' . returnTextMeta("Autorisation photo",$order). '</p>';
+    echo "<hr>";    
     echo '<p><strong>'.__('Commentaires').':</strong> ' . get_post_meta( $order->id, 'Commentaires', true ) . '</p>';
-    echo '<p><strong>'.__('Infolettre ?').':</strong> ' . get_post_meta( $order->id, "Inscription à l'infolettre", true ) . '</p>';
 }
 
 
+add_action('manage_product_posts_columns', 'manage_product_posts_columns');
+ 
+function manage_product_posts_columns($post_columns) {
+    $post_columns = array(
+        'cb' => $post_columns['cb'],
+        'date_de_la_formation' => 'Date de la formation',
+        );
+    return $post_columns;
+}
 
+add_filter( 'manage_edit-product_sortable_columns', 'product_column_register_sortable' );
+ 
+function product_column_register_sortable( $post_columns ) {
+    $post_columns = array(
+        'date_de_la_formation' => 'date_de_la_formation'
+        );
+ 
+    return $post_columns;
+}
+
+add_filter( 'parse_query', 'sort_posts_by_meta_value' );
+ 
+function sort_posts_by_meta_value($query) {
+    global $pagenow;
+    if (is_admin() && $pagenow=='edit.php' &&
+        isset($_GET['post_type']) && $_GET['post_type']=='product' &&
+        isset($_GET['orderby'])  && $_GET['orderby'] !='None')  {
+        $query->query_vars['orderby'] = 'meta_value';
+        $query->query_vars['meta_key'] = $_GET['orderby'];
+    }
+}
+
+add_action('manage_posts_custom_column', 'manage_product_custom_column',10,2);
+ 
+function manage_product_custom_column($column_key,$post_id) {
+    global $pagenow;
+    $post = get_post($post_id);
+    if ($post->post_type=='product' && is_admin() && $pagenow=='edit.php')  {
+        if($column_key == 'date_de_la_formation'){
+          $value = get_post_meta($post_id,$column_key, true);
+          $arr_value = str_split($value, 2);
+          $value_formatted = $arr_value[3]."/".$arr_value[2]."/".$arr_value[0].$arr_value[1];
+
+        echo ( $value ) ? $value_formatted : "";
+        }
+    }
+}
 
 /* Create coupon programatically */
 function after_order_paid( $order_id ) {

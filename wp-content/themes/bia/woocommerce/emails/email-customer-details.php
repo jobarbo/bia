@@ -22,6 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+global $woocommerce, $post;
+$order = new WC_Order($post->ID);
+
+
 ?>
 <div style="width:50%; float:left;">
 	<h2><?php _e( 'Customer details', 'woocommerce' ); ?></h2>
@@ -29,8 +33,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 	    <?php foreach ( $fields as $field ) : ?>
 	        <p><strong><?php echo wp_kses_post( $field['label'] ); ?>:</strong> <span class="text"><?php echo wp_kses_post( $field['value'] ); ?></span></p>
 	    <?php endforeach; ?>
+
+	    <?php
+
+	    	echo 'Profession : '. get_post_meta( $order->id, 'Profession', true )."<br/>";
+	    	echo 'Employeur : '. get_post_meta( $order->id, 'Employeur', true )."<br/>";
+	    	echo 'Grandeur Chandail : '. get_post_meta( $order->id, 'Grandeur chandail', true )."<br/>";
+	    	echo 'Allergie au lactose : '. returnTextMeta('Lactose', $order)."<br/>";
+	    	echo 'Allergie au gluten : '. returnTextMeta('Gluten', $order)."<br/>";
+	    	echo 'Végétarien : '. returnTextMeta('Végétarien', $order) ."<br/>";
+	    	echo 'Autres : '. get_post_meta( $order->id, 'Autres', true )."<br/>";
+	    	echo "<hr>";
+	    	echo "Inscription à l'infolettre : ". returnTextMeta("Inscription à l'infolettre", $order) ."<br/>";
+	    	echo 'Autorisation photo : '. returnTextMeta("Autorisation photo", $order) ."<br/>";
+	    ?>
+
 </div>
 <div style="width:50%;  float:left;">
 	<h2><?php _e( 'Détails du vendeur', 'bia' ); ?></h2>
 	<p>Bia Formations<br/>389 ch. du Tour-du-Lac · Lac-Beauport,<br/>Qc G3B0T8 · Canada</p>
+	<?php echo 'Commentaires : '. get_post_meta( $order->id, 'Commentaires', true ); ?>
 </div>

@@ -397,6 +397,21 @@ body.single-product{
 	}
 }
 
+#wc-stripe-cc-form{
+	input{
+		width: 100%!important;
+    	text-align: left;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#wc-stripe-cc-form{
+		.form-row{
+			width:100%!important;
+		}
+	}
+}
+
 .quantity{
 	input{
 		border: 0;
@@ -420,7 +435,7 @@ body.single-product{
 			}
 		}
 	}
-	label{
+	>label{
 		position:relative;
 		padding-left:25px;
 		&:before{

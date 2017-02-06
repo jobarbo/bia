@@ -1,5 +1,8 @@
 input{
     border-radius:0;
+    &:focus{
+        outline:none!important;
+    }
 }
 
 input[type="text"],input[type="email"],input[type="tel"]{

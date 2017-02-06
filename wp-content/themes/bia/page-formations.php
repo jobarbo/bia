@@ -209,8 +209,8 @@
 	global $product;
 
 
-	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query,  'orderby' => 'meta_value_num',
-	'meta_key' => 'date_de_la_formation',) ); ?>
+	$loop = new WP_Query( array( 'post_type' => 'product', 'posts_per_page' => -1, 'order'=>'ASC', 'tax_query' =>  $tax_query,  'orderby' => 'meta_value',
+	'meta_key' => 'date_de_la_formation') ); ?>
 
 
     <?php // Gestion des rows 
@@ -277,17 +277,25 @@
 		<div class="formation col-md-4" <?php if($location !== ''){ ?> onclick="window.location.href=<?php echo $url; ?>"	<?php } ?>>
 			<div class="content">
 				<div class="location">
-					<?php $location = get_field('location_short');
-					echo $location->name; ?>
+					<?php  
+
+							global $product;
+							$ville_name = array_shift( wc_get_product_terms( $product->id, 'pa_ville', array( 'fields' => 'names' ) ) );
+							
+
+						?>
+
+						<?php 
+						echo $ville_name; ?>
 				</div>
 				<div class="date">
 					<?php echo get_field('date_de_la_formation'); ?>
 					<?php
-						
-						if(get_field('date_fin_formation')){
-							echo '<br/>au '.get_field('date_fin_formation');
+						if(current_user_can('manage_options')){
+							if(get_field('date_fin_formation')){
+								echo '<br/>au '.get_field('date_fin_formation');
+							}
 						}
-						
 					?>
 				</div>
 				<h5><?php echo get_the_title(); ?></h5>

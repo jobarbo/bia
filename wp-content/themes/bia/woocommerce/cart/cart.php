@@ -73,8 +73,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 							echo "<p>".get_field('date_de_la_formation', $productId).' - '; 
 
-							$ville = get_field('location_short', $productId);
-							echo $ville->name."</p>";
+							global $product;
+							$ville_name = array_shift( wc_get_product_terms( $product->id, 'pa_ville', array( 'fields' => 'names' ) ) );
+
+							echo $ville_name."</p>";
 						?>
 					</td>
 

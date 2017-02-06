@@ -21,21 +21,22 @@
 				<div class="content">
 					<div>
 					<div class="location">
-						<?php $location = get_field('location_short');
-						echo $location->name; ?>
+						<?php  
+
+							global $product;
+							$ville_name = array_shift( wc_get_product_terms( $product->id, 'pa_ville', array( 'fields' => 'names' ) ) );
+							
+
+						?>
+
+						<?php 
+						echo $ville_name; ?>
 					</div>
 					<div class="date">
 						<?php echo get_field('date_de_la_formation'); ?>
-						<?php
-						
-						if(get_field('date_fin_formation')){
-							echo '<br/>au '.get_field('date_fin_formation');
-						}
-						
-					?>
 					</div>
 					<h5><?php echo get_the_title(); ?></h5>
- 
+
 					<?php
 						if(get_field('list_form')){
 					?>
@@ -77,13 +78,7 @@
 				<div class="description">
 					<?php the_content(); ?>
 				</div>
-				<div class="date"><p class="width-fixed" ><?php echo _e('Date','bia'); ?></p><p><?php echo get_field('date_de_la_formation'); ?><?php
-						
-						if(get_field('date_fin_formation')){
-							echo '<br/>au '.get_field('date_fin_formation');
-						}
-						
-					?></p></div>
+				<div class="date"><p class="width-fixed" ><?php echo _e('Date','bia'); ?></p><p><?php echo get_field('date_de_la_formation'); ?></p></div>
 				<div class="heure"><p class="width-fixed" ><?php echo _e('Heure','bia'); ?></p><span><?php echo get_field('heure'); ?></span></div>
 				<div class="endroit"><p class="width-fixed" ><?php echo _e('Endroit','bia'); ?></p><span><?php echo get_field('location_long'); ?></span></div>
 				<a class="bouton" href="<?php echo get_permalink(237); ?>" target="_blank"><?php echo _e('Politique de remboursement','bia'); ?></a>

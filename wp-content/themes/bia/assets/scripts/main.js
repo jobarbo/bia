@@ -89,6 +89,7 @@
           }
         });
     }
+
   });
 
   function resizePartenaires(){
