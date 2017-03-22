@@ -30,6 +30,22 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php endif; ?>
 
 <?php
+	global $woocommerce, $post;
+	$order = new WC_Order($post->ID);
+?>
+
+<h3><?php _e('Voici votre reçu de formation.','bia'); ?></h3>
+<?php
+	$order_date = $order->order_date;
+	$order_date = explode(' ',$order_date);
+
+	$date = explode('-',$order_date[0]);
+	$time = $order_date[1];
+
+
+?>
+<p><?php _e("Date de l'achat",'bia'); ?> : <?php echo $date[2].'-'.$date[1].'-'.$date[0]; ?> <?php echo $time; ?></p>
+<?php
 
 /**
  * @hooked WC_Emails::order_details() Shows the order details table.

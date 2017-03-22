@@ -35,22 +35,24 @@ $order = new WC_Order($post->ID);
 	    <?php endforeach; ?>
 
 	    <?php
-
-	    	echo 'Profession : '. get_post_meta( $order->id, 'Profession', true )."<br/>";
-	    	echo 'Employeur : '. get_post_meta( $order->id, 'Employeur', true )."<br/>";
-	    	echo 'Grandeur Chandail : '. get_post_meta( $order->id, 'Grandeur chandail', true )."<br/>";
-	    	echo 'Allergie au lactose : '. returnTextMeta('Lactose', $order)."<br/>";
-	    	echo 'Allergie au gluten : '. returnTextMeta('Gluten', $order)."<br/>";
-	    	echo 'Végétarien : '. returnTextMeta('Végétarien', $order) ."<br/>";
-	    	echo 'Autres : '. get_post_meta( $order->id, 'Autres', true )."<br/>";
-	    	echo "<hr>";
-	    	echo "Inscription à l'infolettre : ". returnTextMeta("Inscription à l'infolettre", $order) ."<br/>";
-	    	echo 'Autorisation photo : '. returnTextMeta("Autorisation photo", $order) ."<br/>";
+	    	echo '<strong>Nom du client</strong> : ' . $order->billing_first_name." ".$order->billing_last_name."<br/>";
+	    	echo '<strong>Profession</strong> : '. get_post_meta( $order->id, 'Profession', true )."<br/>";
+	    	echo '<strong>Employeur</strong> : '. get_post_meta( $order->id, 'Employeur', true )."<br/><br/>";
+	    	echo '<strong>Grandeur Chandail</strong> : '. get_post_meta( $order->id, 'Grandeur chandail', true )."<br/>";
+	    	echo '<strong>Allergie au lactose</strong> : '. returnTextMeta('Lactose', $order)."<br/>";
+	    	echo '<strong>Allergie au gluten</strong> : '. returnTextMeta('Gluten', $order)."<br/>";
+	    	echo '<strong>Végétarien</strong> : '. returnTextMeta('Végétarien', $order) ."<br/><br/>";
+	    	echo '<strong>Autres</strong> : '. get_post_meta( $order->id, 'Autres', true )."<br/><br/>";
+	    	
+	    	echo "<strong>Inscription à l'infolettre</strong> : ". returnTextMeta("Inscription à l'infolettre", $order) ."<br/>";
+	    	echo '<strong>Autorisation photo</strong> : '. returnTextMeta("Autorisation photo", $order) ."<br/>";
 	    ?>
 
 </div>
 <div style="width:50%;  float:left;">
-	<h2><?php _e( 'Détails du vendeur', 'bia' ); ?></h2>
-	<p>Bia Formations<br/>389 ch. du Tour-du-Lac · Lac-Beauport,<br/>Qc G3B0T8 · Canada</p>
+	<h2><?php _e( 'Détails du formateur', 'bia' ); ?></h2>
+	<p><strong>Bia Formations</strong><br/>389 ch. du Tour-du-Lac · Lac-Beauport,<br/>Qc G3B0T8 · Canada</p>
+	<p><strong>TPS</strong> : 757533922 RT0001<br/>
+	<strong>TVQ</strong> : 1223880106 TQ0001</p>
 	<?php echo 'Commentaires : '. get_post_meta( $order->id, 'Commentaires', true ); ?>
 </div>
