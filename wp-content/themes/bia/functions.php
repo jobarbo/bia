@@ -145,13 +145,13 @@ function my_custom_checkout_field( $checkout ) {
         'required'  => false,
         ), $checkout->get_value( 'employeur' ));
 
-    woocommerce_form_field( 'size_shirt', array(
-        'type'          => 'text',
-        'label'         => __(''),
-        'placeholder'   => __('Grandeur de chandail*'),
-        'class' => array('form-row-first'),
-        'required'  => true,
-        ), $checkout->get_value( 'size_shirt' ));
+    // woocommerce_form_field( 'size_shirt', array(
+    //     'type'          => 'text',
+    //     'label'         => __(''),
+    //     'placeholder'   => __('Grandeur de chandail*'),
+    //     'class' => array('form-row-first'),
+    //     'required'  => true,
+    //     ), $checkout->get_value( 'size_shirt' ));
 
     echo "<br/>";
     echo '<span class="clear"></span>';
@@ -230,8 +230,8 @@ function my_custom_checkout_field_process() {
     if ( ! $_POST['profession'] )
         wc_add_notice( __( 'Vous devez ajouter une profession.' ), 'error' );
 
-    if ( ! $_POST['size_shirt'] )
-      wc_add_notice( __( 'Vous devez saisir une grandeur de chandail.' ), 'error' );
+    // if ( ! $_POST['size_shirt'] )
+    //   wc_add_notice( __( 'Vous devez saisir une grandeur de chandail.' ), 'error' );
 
 }
 
@@ -248,9 +248,9 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
     if ( ! empty( $_POST['employeur'] ) ) {
         update_post_meta( $order_id, 'Employeur', sanitize_text_field( $_POST['employeur'] ) );
     }
-    if ( ! empty( $_POST['size_shirt'] ) ) {
-        update_post_meta( $order_id, 'Grandeur chandail', sanitize_text_field( $_POST['size_shirt'] ) );
-    }
+    // if ( ! empty( $_POST['size_shirt'] ) ) {
+    //     update_post_meta( $order_id, 'Grandeur chandail', sanitize_text_field( $_POST['size_shirt'] ) );
+    // }
     if ( ! empty( $_POST['other'] ) ) {
         update_post_meta( $order_id, 'Autres', sanitize_text_field( $_POST['other'] ) );
     }
@@ -295,7 +295,7 @@ function my_custom_checkout_field_display_admin_order_meta($order){
     echo "<hr>";
     echo '<p><strong>'.__('Profession').':</strong> ' . get_post_meta( $order->id, 'Profession', true ) . '</p>';
     echo '<p><strong>'.__('Employeur').':</strong> ' . get_post_meta( $order->id, 'Employeur', true ) . '</p>';
-    echo '<p><strong>'.__('Grandeur Chandail').':</strong> ' . get_post_meta( $order->id, 'Grandeur chandail', true ) . '</p>';
+    // echo '<p><strong>'.__('Grandeur Chandail').':</strong> ' . get_post_meta( $order->id, 'Grandeur chandail', true ) . '</p>';
     echo "<hr>";
     echo '<p><strong>'.__('Allergies et préférences alimentaire : ').'</strong></p>';
     echo '<p><strong>'.__('Lactose').':</strong> ' . returnTextMeta('Lactose',$order) . '</p>';

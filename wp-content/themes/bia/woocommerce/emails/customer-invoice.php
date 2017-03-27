@@ -30,7 +30,8 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php endif; ?>
 
 <?php
-	global $woocommerce, $post;
+	global $woocommerce, $post, $bia_sent_to_customer;
+	$bia_sent_to_customer = true;
 	$order = new WC_Order($post->ID);
 ?>
 
