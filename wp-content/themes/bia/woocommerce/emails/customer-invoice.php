@@ -30,9 +30,9 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php endif; ?>
 
 <?php
-	global $woocommerce, $post, $bia_sent_to_customer;
+	global  $bia_sent_to_customer, $bia_order_id;
 	$bia_sent_to_customer = true;
-	$order = new WC_Order($post->ID);
+	$bia_order_id = $order->id;
 ?>
 
 <h3><?php _e('Voici votre reçu de formation.','bia'); ?></h3>

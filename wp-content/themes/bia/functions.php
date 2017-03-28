@@ -275,9 +275,9 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
 }
 
 
-function returnTextMeta($meta, $order){
+function returnTextMeta($order_id, $meta){
   
-  $val = get_post_meta( $order->id, $meta, true );
+  $val = get_post_meta( $order_id, $meta, true );
   if($val == 1 || $val == '1' || $val == true){
     return 'oui';
   }else{
@@ -298,13 +298,13 @@ function my_custom_checkout_field_display_admin_order_meta($order){
     // echo '<p><strong>'.__('Grandeur Chandail').':</strong> ' . get_post_meta( $order->id, 'Grandeur chandail', true ) . '</p>';
     echo "<hr>";
     echo '<p><strong>'.__('Allergies et préférences alimentaire : ').'</strong></p>';
-    echo '<p><strong>'.__('Lactose').':</strong> ' . returnTextMeta('Lactose',$order) . '</p>';
-    echo '<p><strong>'.__('Gluten').':</strong> ' . returnTextMeta('Gluten',$order) . '</p>';
-    echo '<p><strong>'.__('Végétarien').':</strong> ' . returnTextMeta('Végétarien',$order) . '</p>';
+    echo '<p><strong>'.__('Lactose').':</strong> ' . returnTextMeta($order->id, 'Lactose') . '</p>';
+    echo '<p><strong>'.__('Gluten').':</strong> ' . returnTextMeta($order->id, 'Gluten') . '</p>';
+    echo '<p><strong>'.__('Végétarien').':</strong> ' . returnTextMeta($order->id, 'Végétarien') . '</p>';
     echo '<p><strong>'.__('Autres').':</strong> ' . get_post_meta( $order->id, 'Autres', true ) . '</p>';
     echo "<hr>";
-    echo '<p><strong>'.__('Infolettre ?').':</strong> ' . returnTextMeta("Inscription à l'infolettre",$order). '</p>';
-    echo '<p><strong>'.__('Autorisation photo ?').':</strong> ' . returnTextMeta("Autorisation photo",$order). '</p>';
+    echo '<p><strong>'.__('Infolettre ?').':</strong> ' . returnTextMeta($order->id, "Inscription à l'infolettre"). '</p>';
+    echo '<p><strong>'.__('Autorisation photo ?').':</strong> ' . returnTextMeta($order->id, "Autorisation photo"). '</p>';
     echo "<hr>";    
     echo '<p><strong>'.__('Commentaires').':</strong> ' . get_post_meta( $order->id, 'Commentaires', true ) . '</p>';
 }

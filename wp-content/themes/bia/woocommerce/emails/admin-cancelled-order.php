@@ -20,6 +20,10 @@
  	exit;
  }
 
+  global  $bia_sent_to_customer, $bia_order_id;
+  $bia_sent_to_customer = false;
+  $bia_order_id = $order->id;
+
  /**
   * @hooked WC_Emails::email_header() Output the email header
   */

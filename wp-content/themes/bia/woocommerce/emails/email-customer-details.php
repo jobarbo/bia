@@ -22,8 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $woocommerce, $post, $bia_sent_to_customer;
-$order = new WC_Order($post->ID);
+global $woocommerce, $bia_sent_to_customer, $bia_order_id;
+$order = new WC_Order($bia_order_id);
 
 $first_name = $order->billing_first_name;
 $last_name = $order->billing_last_name;
@@ -37,25 +37,24 @@ $last_name = $order->billing_last_name;
 	    <?php endforeach; ?>
 
 	    <?php
-
 	    	echo '<p>';
 
 	    	echo '<strong>Nom du client:</strong> '. $first_name . ' ' . $last_name . '<br>';
-	    	echo '<strong>Profession:</strong> '. get_post_meta( $order->id, 'Profession', true )."<br/>";
-	    	echo '<strong>Employeur:</strong> '. get_post_meta( $order->id, 'Employeur', true )."<br/>";
+	    	echo '<strong>Profession:</strong> '. get_post_meta( $bia_order_id, 'Profession', true )."<br/>";
+	    	echo '<strong>Employeur:</strong> '. get_post_meta( $bia_order_id, 'Employeur', true )."<br/>";
 
 	    	echo '</p>';
 
 	    	if( $bia_sent_to_customer !== true ) {
 	    		echo '<p>';
-		    	echo '<strong>Allergie au lactose:</strong> '. returnTextMeta('Lactose', $order)."<br/>";
-		    	echo '<strong>Allergie au gluten:</strong> '. returnTextMeta('Gluten', $order)."<br/>";
-		    	echo '<strong>Végétarien:</strong> '. returnTextMeta('Végétarien', $order) ."<br/>";
+		    	echo '<strong>Allergie au lactose:</strong> '. returnTextMeta($bia_order_id, 'Lactose')."<br/>";
+		    	echo '<strong>Allergie au gluten:</strong> '. returnTextMeta($bia_order_id, 'Gluten')."<br/>";
+		    	echo '<strong>Végétarien:</strong> '. returnTextMeta($bia_order_id, 'Végétarien') ."<br/>";
 		    	echo "<hr>";
-		    	echo '<strong>Autres:</strong> '. get_post_meta( $order->id, 'Autres', true )."<br/>";
+		    	echo '<strong>Autres:</strong> '. get_post_meta( $bia_order_id, 'Autres', true )."<br/>";
 		    	echo "<hr>";
-		    	echo "<strong>Inscription à l'infolettre:</strong> ". returnTextMeta("Inscription à l'infolettre", $order) ."<br/>";
-		    	echo '<strong>Autorisation photo:</strong> '. returnTextMeta("Autorisation photo", $order) ."<br/>";
+		    	echo "<strong>Inscription à l'infolettre:</strong> ". returnTextMeta($bia_order_id, "Inscription à l'infolettre") ."<br/>";
+		    	echo '<strong>Autorisation photo:</strong> '. returnTextMeta($bia_order_id, "Autorisation photo") ."<br/>";
 	    	}
 
 	    	echo '</p>';
@@ -70,10 +69,8 @@ $last_name = $order->billing_last_name;
 
 	<?php 
 	    if( $bia_sent_to_customer !== true ) {
-			echo '<p><strong>Commentaires:</strong> '. get_post_meta( $order->id, 'Commentaires', true ) . '</p>';
+			echo '<p><strong>Commentaires:</strong> '. get_post_meta( $bia_order_id, 'Commentaires', true ) . '</p>';
 		}
-
-		if( $bia_sent_to_customer === true ) { $bia_sent_to_customer = false; }
 	?>
 
 </div>

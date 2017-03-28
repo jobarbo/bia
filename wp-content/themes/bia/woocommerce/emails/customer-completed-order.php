@@ -20,6 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+  global  $bia_sent_to_customer, $bia_order_id;
+  $bia_sent_to_customer = true;
+  $bia_order_id = $order->id;
+
 /**
  * @hooked WC_Emails::email_header() Output the email header
  */
