@@ -38,21 +38,21 @@ $last_name = $order->billing_last_name;
 
 	    <?php
 	    	echo '<p>';
-
 	    	echo '<strong>Nom du client:</strong> '. $first_name . ' ' . $last_name . '<br>';
 	    	echo '<strong>Profession:</strong> '. get_post_meta( $bia_order_id, 'Profession', true )."<br/>";
-	    	echo '<strong>Employeur:</strong> '. get_post_meta( $bia_order_id, 'Employeur', true )."<br/>";
-
+	    	echo '<strong>Employeur:</strong> '. get_post_meta( $bia_order_id, 'Employeur', true );
 	    	echo '</p>';
+
 
 	    	if( $bia_sent_to_customer !== true ) {
 	    		echo '<p>';
 		    	echo '<strong>Allergie au lactose:</strong> '. returnTextMeta($bia_order_id, 'Lactose')."<br/>";
 		    	echo '<strong>Allergie au gluten:</strong> '. returnTextMeta($bia_order_id, 'Gluten')."<br/>";
 		    	echo '<strong>Végétarien:</strong> '. returnTextMeta($bia_order_id, 'Végétarien') ."<br/>";
-		    	echo "<hr>";
-		    	echo '<strong>Autres:</strong> '. get_post_meta( $bia_order_id, 'Autres', true )."<br/>";
-		    	echo "<hr>";
+		    	echo '<strong>Autres:</strong> '. get_post_meta( $bia_order_id, 'Autres', true );
+	    		echo '</p>';
+
+	    		echo '<p>';
 		    	echo "<strong>Inscription à l'infolettre:</strong> ". returnTextMeta($bia_order_id, "Inscription à l'infolettre") ."<br/>";
 		    	echo '<strong>Autorisation photo:</strong> '. returnTextMeta($bia_order_id, "Autorisation photo") ."<br/>";
 	    	}
