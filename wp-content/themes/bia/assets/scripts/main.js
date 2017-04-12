@@ -24,6 +24,36 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
+    'woocommerce_checkout' : {
+      init: function() {
+
+        // Check if membre-club-iba coupon is already applied, if so pre-check the custom checkbox
+        if( $('a[data-coupon=membre-club-bia]').length > 0 ) {
+          $('.club_bia_ajax_checkbox_container label.checkbox').trigger('click');
+        }
+
+        // Membre club bia checkbox listeners
+        $('.club_bia_ajax_checkbox_container input[type=checkbox]').on('change', function() {
+          if( $(this).is(':checked') ){
+            $('form.checkout_coupon input[type=text]').val('membre-club-bia');
+            $('form.checkout_coupon').submit();
+          }
+          else {
+            $('a[data-coupon=membre-club-bia]').click();
+          }
+        });
+
+        // Check ajax event
+        $( document ).ajaxComplete(function( event, xhr, settings ) {
+          if(settings.url.indexOf('coupon') > -1) {
+            $('html, body').animate({
+              scrollTop: 0
+            }, 'slow');
+          }
+        });
+
+      }
+    },
     // Home page
     'home': {
       init: function() {

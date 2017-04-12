@@ -372,6 +372,26 @@ function after_order_paid( $order_id ) {
       
     // execute code here
    if($hasClubBia){
+
+      // $args = array(
+      //     'posts_per_page'   => 1,
+      //     'orderby'          => 'title',
+      //     'order'            => 'asc',
+      //     'post_type'        => 'shop_coupon',
+      //     'post_status'      => 'publish',
+      //     'name'             => 'membre-club-bia'
+      // );
+          
+      // $coupons = get_posts( $args );
+      // $coupon = $coupons[0];
+
+      // $email_list = get_post_meta( $coupon->ID, 'customer_email');
+      // $email_list[0][] = 'new@mail.com';
+      // update_post_meta( $coupon->ID, 'customer_email', $email_list[0]);
+
+
+
+
       $coupon_code = 'club-bia-'.$order_id; // Code
       $amount = '5'; // Amount
       $discount_type = 'percent'; // Type: fixed_cart, percent, fixed_product, percent_product
@@ -452,3 +472,24 @@ function after_order_paid( $order_id ) {
 
 }
 add_action( 'woocommerce_payment_complete', 'after_order_paid' );
+
+
+
+
+
+
+function bia_club_bia_check_after_billing_details() {
+
+  echo '<div class="club_bia_ajax_checkbox_container">';
+    echo '<p class="form-row">';
+      echo '<label class="checkbox">';
+        echo '<input type="checkbox">';
+        echo 'Membre du Club Bia?';
+        echo '</input>';
+      echo '</label>';
+    echo '</p>';
+    echo '<small>Votre courriel doit correspondre à celui utilisé lors de votre adhésion au Club Bia.</small>';
+  echo '</div>';
+
+}
+add_action( 'woocommerce_after_checkout_billing_form', 'bia_club_bia_check_after_billing_details' );
