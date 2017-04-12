@@ -253,6 +253,12 @@ body.woocommerce-cart{
 		}	
 	}
 
+	.membre-club-bia-cart-notice {
+		max-width: 300px;
+		padding-top: 10px;
+		font-size: 14px;
+	}
+
 	table.cart td.actions .coupon .input-text{
 		border:none;
 		border-bottom:3px solid black;
@@ -554,6 +560,10 @@ body.single-product{
 					display:none;
 				}
 			}
+		}
+
+		.membre-club-bia-cart-notice {
+			max-width: none;
 		}
 	}
 
