@@ -43,9 +43,6 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 	 
 	        ?>
 
-	        <?php if($hasClubBia){ ?>
-	        	<p><?php echo _e('Votre code promotionnel vous donnant 5% sur les formations : ','bia'); ?><strong>club-bia-<?php echo $order->get_order_number(); ?></strong></p>
-	        <?php } ?>
 
 <table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
 	<thead>

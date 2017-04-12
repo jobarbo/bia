@@ -57,7 +57,7 @@ if ( $order ) : ?>
 			<h3 class="titreSection"><?php echo _e('Merci!','bia'); ?></h3>
 				<?php if($hasClubBia){ ?>
 	        		<p class="woocommerce-thankyou-order-received">
-	        			<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( "Votre commande a bien été reçue. Vous recevrez prochainement un courriel de confirmation. Celui-ci <strong>contenant votre code promotionnel</strong> lié à votre abonnement au Club Bia (5% sur l'achat de formations).", 'bia' ), $order ); ?>        				
+	        			<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( "Votre commande a bien été reçue. Vous recevrez prochainement un courriel de confirmation.", 'bia' ), $order ); ?>        				
 	        		</p>
         		<?php }else{ ?>
         			<p class="woocommerce-thankyou-order-received">
