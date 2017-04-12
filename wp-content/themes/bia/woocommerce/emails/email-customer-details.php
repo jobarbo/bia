@@ -27,6 +27,33 @@ $order = new WC_Order($bia_order_id);
 
 $first_name = $order->billing_first_name;
 $last_name = $order->billing_last_name;
+$user_email = $order->billing_email;
+
+if( $bia_sent_to_customer !== true ) {
+	$membre_club_bia = 'non';
+
+	$args = array(
+		'posts_per_page'   => 1,
+		'orderby'          => 'title',
+		'order'            => 'asc',
+		'post_type'        => 'shop_coupon',
+		'post_status'      => 'publish',
+		'name'             => 'membre-club-bia'
+	);
+	  
+	$coupons = get_posts( $args );
+	$coupon = $coupons[0];
+
+	$email_list = get_post_meta( $coupon->ID, 'customer_email');
+	$email_list = $email_list[0];
+
+	foreach( $email_list as $email ) {
+		if( $email == $user_email ) {
+			$membre_club_bia = 'oui';
+		}
+	}
+}
+
 
 ?>
 <div style="width:50%; float:left;">
@@ -39,6 +66,7 @@ $last_name = $order->billing_last_name;
 	    <?php
 	    	echo '<p>';
 	    	echo '<strong>Nom du client:</strong> '. $first_name . ' ' . $last_name . '<br>';
+		    echo ( $bia_sent_to_customer !== true ) ? "<strong>Membre du Club Bia:</strong> $membre_club_bia<br/>" : "";
 	    	echo '<strong>Profession:</strong> '. get_post_meta( $bia_order_id, 'Profession', true )."<br/>";
 	    	echo '<strong>Employeur:</strong> '. get_post_meta( $bia_order_id, 'Employeur', true );
 	    	echo '</p>';
@@ -55,6 +83,7 @@ $last_name = $order->billing_last_name;
 	    		echo '<p>';
 		    	echo "<strong>Inscription à l'infolettre:</strong> ". returnTextMeta($bia_order_id, "Inscription à l'infolettre") ."<br/>";
 		    	echo '<strong>Autorisation photo:</strong> '. returnTextMeta($bia_order_id, "Autorisation photo") ."<br/>";
+	    		echo '</p>';
 	    	}
 
 	    	echo '</p>';

@@ -537,6 +537,7 @@ add_action( 'woocommerce_admin_order_data_after_billing_address', 'custom_checko
 
 /**
  * Add used coupons to the order edit page
+ * Also add Membre Club Bia status
  *
 */
 function custom_checkout_field_display_admin_order_meta($order){
@@ -558,5 +559,31 @@ function custom_checkout_field_display_admin_order_meta($order){
         
         echo '</p>';
     }
+
+
+    $membre_club_bia = 'non';
+
+    $args = array(
+      'posts_per_page'   => 1,
+      'orderby'          => 'title',
+      'order'            => 'asc',
+      'post_type'        => 'shop_coupon',
+      'post_status'      => 'publish',
+      'name'             => 'membre-club-bia'
+    );
+      
+    $coupons = get_posts( $args );
+    $coupon = $coupons[0];
+
+    $email_list = get_post_meta( $coupon->ID, 'customer_email');
+    $email_list = $email_list[0];
+
+    foreach( $email_list as $email ) {
+      if( $email == $order->billing_email ) {
+        $membre_club_bia = 'oui';
+      }
+    }
+
+    echo "<p><strong>Membre du Club Bia:</strong> $membre_club_bia</p>";
 
 }
