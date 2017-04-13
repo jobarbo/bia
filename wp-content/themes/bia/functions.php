@@ -279,9 +279,11 @@ function returnTextMeta($order_id, $meta){
   
   $val = get_post_meta( $order_id, $meta, true );
   if($val == 1 || $val == '1' || $val == true){
-    return 'oui';
+    // return 'oui'; //request de la cliente de ramener les 1 et les 0
+    return '1';
   }else{
-    return 'non';
+    // return 'non'; //request de la cliente de ramener les 1 et les 0
+    return '0';
   }
 
 }
@@ -561,7 +563,7 @@ function custom_checkout_field_display_admin_order_meta($order){
     }
 
 
-    $membre_club_bia = 'non';
+    $membre_club_bia = '0';
 
     $args = array(
       'posts_per_page'   => 1,
@@ -580,7 +582,7 @@ function custom_checkout_field_display_admin_order_meta($order){
 
     foreach( $email_list as $email ) {
       if( $email == $order->billing_email ) {
-        $membre_club_bia = 'oui';
+        $membre_club_bia = '1';
       }
     }
 
@@ -593,6 +595,7 @@ function custom_checkout_field_display_admin_order_meta($order){
 /*
 
 Liste des Membres du Club Bia en date du 12 avril 2017
+
 
 corinnelanfranc@hotmail.com,
 amanda.matos@mail.mcgill.ca,
@@ -643,6 +646,7 @@ mariebil02@hotmail.com,
 melody_meilleur@hotmail.com,
 pierluc.parent@live.ca,
 jean-benoit.brochu.1@ulaval.ca,
-gb@mambomambo.ca 
+gb@mambomambo.ca,
+ebelliveau94@gmail.com
 
 */

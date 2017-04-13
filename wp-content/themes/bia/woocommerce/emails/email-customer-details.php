@@ -30,7 +30,7 @@ $last_name = $order->billing_last_name;
 $user_email = $order->billing_email;
 
 if( $bia_sent_to_customer !== true ) {
-	$membre_club_bia = 'non';
+	$membre_club_bia = '0';
 
 	$args = array(
 		'posts_per_page'   => 1,
@@ -49,7 +49,7 @@ if( $bia_sent_to_customer !== true ) {
 
 	foreach( $email_list as $email ) {
 		if( $email == $user_email ) {
-			$membre_club_bia = 'oui';
+			$membre_club_bia = '1';
 		}
 	}
 }
