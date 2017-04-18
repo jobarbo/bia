@@ -20,16 +20,6 @@ $sage_includes = [
 ];
 
 
-//Send copy of invoice to admin
-add_filter( 'woocommerce_email_headers', 'mycustom_headers_filter_function', 10, 2);
-
-function mycustom_headers_filter_function( $headers, $object ) {
-    if ($object == 'customer_completed_order') {
-        $headers .= 'BCC: Bia Formations <mmd@biaformations.com>' . "\r\n";
-    }
-
-    return $headers;
-}
 
 
 foreach ($sage_includes as $file) {
