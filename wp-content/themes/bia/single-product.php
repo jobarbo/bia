@@ -67,7 +67,22 @@
 
 					<div class="price"><?php echo $product->price; ?> $</div>
 
-					<button type="submit" data-quantity="1" data-product_id="<?php echo $product->id; ?>" class="button ajax_add_to_cart add_to_cart_button product_type_simple"><?php echo _e('Ajouter au panier','bia'); ?></button>
+					
+					<?php 
+						$product_stock = $product->stock;
+						if($product_stock < 0) { $product_stock=0; }
+
+						if(round($product_stock) <= 0) { 
+					?>
+
+						<a href="mailto:info@biaformations.com" class="bouton"><?php echo _e("Écrivez-nous pour vous</br>inscrire sur la liste d'attente",'bia'); ?></a>
+						<p style="clear:both;padding-top:10px;"><?php echo _e('Places restantes','bia'); ?> : <?php echo round($product_stock); ?></p>
+						
+					<?php }else{ ?>
+						<button type="submit" data-quantity="1" data-product_id="<?php echo $product->id; ?>" class="button ajax_add_to_cart add_to_cart_button product_type_simple"><?php echo _e('Ajouter au panier','bia'); ?></button>
+					<?php }	?>
+
+					
 
 						
 					<span class="clear"></span>

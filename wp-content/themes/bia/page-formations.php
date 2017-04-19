@@ -265,12 +265,12 @@
 		?>
 
 		<?php
-			if(round($product->stock) == 0){
-				$location = '';
-			}else{
+			// if(round($product->stock) == 0){
+			// 	$location = '';
+			// }else{
 				$url =  "'".get_permalink()."'";
 				$location = "onclick='window.location.href=$url'";
-			}
+			// }
 
 		?>
 
@@ -329,16 +329,19 @@
 				<?php } ?>
 				
 				<?php
-					if(round($product->stock) <= 3){ ?>
+					$product_stock = $product->stock;
+					if($product_stock < 0) { $product_stock=0; }
+
+					if(round($product_stock) <= 3): ?>
 				<div class="qty">
 					<p><?php echo _e('Places restantes','bia'); ?></p>
 					<?php
-						echo round($product->stock);
+						echo round($product_stock);
 					?>
 				</div>
-				<?php } ?>
+				<?php endif; ?>
 				<?php
-					if(round($product->stock) == 0){ ?>
+					if(round($product_stock) <= 0){ ?>
 						<a href="mailto:info@biaformations.com" class="bouton"><?php echo _e("Écrivez-nous pour vous</br>inscrire sur la liste d'attente",'bia'); ?></a>
 					<?php }else{ ?>
 						<a class="button" href="<?php echo get_permalink(); ?>"><?php echo _e('En savoir plus','bia'); ?></a>
