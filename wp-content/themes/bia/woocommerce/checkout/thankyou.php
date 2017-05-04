@@ -52,6 +52,13 @@ if ( $order ) : ?>
  
         ?>
 
+        <script>
+            if (typeof fbq == 'function') { 
+				fbq('track', 'Achat complété');
+			}
+		</script>
+
+
 		<div class="white-bloc thank-you-bloc">
 
 			<h3 class="titreSection"><?php echo _e('Merci!','bia'); ?></h3>
